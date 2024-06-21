@@ -6,7 +6,7 @@ export default function ButtonAction({ agentProfile }) {
           href={button.url}
           target="_blank"
           key={index}
-          className="group flex flex-row justify-center items-center gap-4 px-8 py-6 border-2 border-solid border-neutral-200 rounded-xl shadow-lg hover:shadow-blue-500/20 hover:border-blue-600 hover:scale-105 transition-all cursor-pointer"
+          className="group flex flex-row justify-start items-center gap-4 px-8 py-6 border-2 border-solid border-neutral-200 rounded-xl shadow-lg hover:shadow-blue-500/20 hover:border-blue-600 hover:scale-105 transition-all cursor-pointer"
         >
           <i
             className={`fi ${button.icon} text-2xl text-neutral-500 group-hover:text-blue-600`}
