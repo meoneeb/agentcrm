@@ -67,6 +67,8 @@ export default function Form({ agentProfile }) {
       body: JSON.stringify({
         toEmail: "hello@realty-va.com", // Recipient email
         adfXml: adfXml,
+        subject: `Lead from ${agentName}`,
+        message: adfXml,
       }),
     });
 
