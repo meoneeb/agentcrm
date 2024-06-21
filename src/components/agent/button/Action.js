@@ -1,6 +1,6 @@
 export default function ButtonAction({ agentProfile }) {
   return (
-    <div className="flex flex-row flex-wrap gap-4 grid grid-cols-1 md:grid-cols-3">
+    <div className="flex flex-row flex-wrap gap-4 grid grid-cols-1 md:grid-cols-3 ">
       {agentProfile.action.map((button, index) => (
         <a
           href={button.url}
