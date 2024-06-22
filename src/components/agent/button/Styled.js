@@ -14,7 +14,7 @@ export default function StyledButton({
         sec
           ? "bg-blue-50 hover:bg-blue-600 border-2 border-solid border-blue-500 text-blue-600 hover:text-white font-medium"
           : "bg-blue-500 hover:bg-blue-600 text-white border-2 border-solid border-blue-500"
-      } text-white rounded-full focus:outline-none ${className} ${
+      } rounded-full focus:outline-none ${className} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
       onClick={onClick}
