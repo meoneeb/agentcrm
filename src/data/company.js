@@ -1,0 +1,26 @@
+export const companyArr = [
+  {
+    name: "Edge Performance Sports",
+    company: "edge",
+    website: "https://edgeperformancesports.com",
+    logo: "/companies/edge-logo.jpg",
+    accent: "234, 22, 44",
+    address: "1625 N. Oregon St.",
+    city: "Ontario",
+    region: "Oregon",
+    zipcode: "97914",
+    workphone: "5418894099",
+  },
+  {
+    name: "Figics",
+    company: "figics",
+    website: "https://edgeperformancesports.com",
+    logo: "https://www.somatichealth.com/logo/logo-tag.png",
+    accent: "22, 243, 24",
+    address: "1625 N. Oregon St.",
+    city: "Ontario",
+    region: "Oregon",
+    zipcode: "97914",
+    workphone: "5418894099",
+  },
+];

@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import StyledButton from "../button/Styled";
 
 export default function Form({ agentProfile }) {
+  const router = useRouter();
   const agentName = `${agentProfile.firstname} ${agentProfile.lastname}`;
 
   const [formData, setFormData] = useState({
@@ -14,6 +16,7 @@ export default function Form({ agentProfile }) {
 
   const [isLoading, setIsLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
+  const [formError, setFormError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,18 +26,44 @@ export default function Form({ agentProfile }) {
     }));
   };
 
-  const generateADFXML = (data) => {
-    return `
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const validatePhone = (phone) => {
+    const re = /^\d{10}$/;
+    return re.test(String(phone));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(formData.email)) {
+      setFormError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      setFormError("Please enter a valid phone number (10 digits).");
+      return;
+    }
+
+    setFormError("");
+    setIsLoading(true);
+    setResponseMessage("");
+
+    const adfXml = `
       <adf>
         <prospect>
           <source>i1Smart Marketing</source>
           <requestdate>${new Date().toISOString()}</requestdate>
           <customer>
             <contact>
-              <name part="first">${data.firstName}</name>
-              <name part="last">${data.lastName}</name>
-              <email><![CDATA[${data.email}]]></email>
-              <phone><![CDATA[${data.phone}]]></phone>
+              <name part="first">${formData.firstName}</name>
+              <name part="last">${formData.lastName}</name>
+              <email><![CDATA[${formData.email}]]></email>
+              <phone><![CDATA[${formData.phone}]]></phone>
             </contact>
           </customer>
           <provider>
@@ -49,37 +78,36 @@ export default function Form({ agentProfile }) {
         </prospect>
       </adf>
     `;
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          toEmail: "hello@realty-va.com", // Recipient email
+          adfXml: adfXml,
+          subject: `Lead from ${agentName}`,
+          message: adfXml,
+        }),
+      });
 
-    setIsLoading(true);
-    setResponseMessage("");
+      const result = await response.json();
 
-    const adfXml = generateADFXML(formData);
-
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        toEmail: "hello@realty-va.com", // Recipient email
-        adfXml: adfXml,
-        subject: `Lead from ${agentName}`,
-        message: adfXml,
-      }),
-    });
-
-    const result = await response.json();
-
-    if (response.ok) {
-      setResponseMessage("Email sent successfully");
-    } else {
-      setResponseMessage(`Failed to send email: ${result.message}`);
+      if (response.ok) {
+        setResponseMessage("Email sent successfully");
+        setTimeout(() => {
+          router.push(`${agentProfile.walletpass}`); // Replace with the desired link
+        }, 3000);
+      } else {
+        setResponseMessage(`Failed to send email: ${result.message}`);
+      }
+    } catch (error) {
+      setResponseMessage(`An error occurred: ${error.message}`);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
   };
 
   return (
@@ -132,22 +160,18 @@ export default function Form({ agentProfile }) {
             required
           />
 
-          {/* <div className="border border-gray-300 p-4 rounded w-full focus:border-blue-500 focus:border-2 focus:outline-none">
-            <input
-              type="text"
-              name="agentName"
-              placeholder="Agent Name"
-              value={agentName}
-              disabled
-            />
-          </div> */}
+          {formError && (
+            <p className="text-red-500 text-center">{formError}</p>
+          )}
 
           <StyledButton type="submit" disabled={isLoading}>
             {isLoading ? "Sending..." : "Submit"}
           </StyledButton>
         </div>
       </form>
-      {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
+      {responseMessage && (
+        <p className="text-center mt-4">{responseMessage}</p>
+      )}
     </div>
   );
 }
