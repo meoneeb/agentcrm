@@ -43,6 +43,7 @@ export default function AgentPage({ params }) {
       </Head>
       <div className="fixed top-0 w-screen h-2" style={{background: `rgba(${companyProfile.accent}, 1)`}}></div>
       <AgentProfile companyProfile={companyProfile} agentProfile={agentProfile} />
+      <div className="w-screen py-4 text-neutral-400 flex justify-center items-center">Powered by i1SmartMarketing</div>
     </>
   );
 }
