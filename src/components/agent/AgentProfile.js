@@ -1,6 +1,8 @@
 "use client";
+import PoweredBy from "../home/PoweredBy";
 import SideModal from "./SideModal";
-import ButtonAction from "./button/Action";
+import ActionBar from "./button/ActionBar";
+import SocialBar from "./button/SocialBar";
 import StyledButton from "./button/Styled";
 import Form from "./form/Form";
 import { useState } from "react";
@@ -12,9 +14,11 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
   const company = companyProfile.name;
   const accent = companyProfile.accent;
 
-
   const handleClick = () => {
-    alert("button clicked");
+    window.open(agentProfile.smartpass, "_blank");
+  };
+  const handleVCard = () => {
+    window.open(agentProfile.vcard, "_blank");
   };
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -26,62 +30,45 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
     setModalOpen(false);
   };
   return (
-    <div className="flex flex-row justify-center items-start">
-      <div className="container flex lg:flex-row flex-col justify-center items-start">
-        <div className="w-full h-screen md:h-fit lg:w-1/3 flex flex-col lg:justify-start justify-center items-center pt-12">
+    <div className="flex flex-col justify-start items-center bg-zinc-300 min-h-screen overflow-hidden">
+      <div className="container flex flex-col justify-start items-center w-full h-full min-h-screen pb-24 max-w-sm bg-white relative">
+        <div
+          className="absolute top-0 w-full max-w-sm h-2"
+          style={{ background: `rgba(${companyProfile.accent}, 1)` }}
+        ></div>
+        <div className="w-full h-screen h-fit flex flex-col justify-start items-center pt-12">
           <div className="flex flex-col gap-4 justify-start items-center pb-6">
+            <img
+              className="w-60 text-neutral-500"
+              src={companyProfile.logo}
+              alt={company}
+            />
             <img
               src={img}
               alt={fullname}
-              className="w-40 h-40 rounded-full p-1 border-solid shadow-lg"
-              style={{ border: `4px solid rgba(${accent}, 1)` }}
+              className="w-36 h-36 rounded-full p-1 border-solid shadow-lg"
+              style={{ border: `3px solid rgba(${accent}, 1)` }}
             />
-            <div className="flex flex-col gap-2 justify-center items-center">
+            <div className="flex flex-col gap-0 justify-center items-center">
               <h1 className="text-2xl font-semibold text-neutral-900">
                 {fullname}
               </h1>
               <h3 className="text-lg text-neutral-500">{title}</h3>
-              <img
-                className="w-72 text-neutral-500"
-                src={companyProfile.logo}
-                alt={company}
-              />
             </div>
-            {/* <div className="flex flex-row gap-2">
-              {agentProfile.social.map((handle, index) => (
-                <div
-                  key={index}
-                  className="group flex justify-center items-center w-12 h-12 rounded-xl border border-solid border-neutral-300 bg-white hover:-translate-y-1 cursor-pointer"
-                >
-                  <i className={`${handle.icon} text-xl text-neutral-400 `}></i>
-                </div>
-              ))}
-            </div> */}
-          </div>
-          <div className="flex flex-col gap-4">
-            <StyledButton
-              onClick={handleOpenModal}
-              companyProfile={companyProfile}
-            >
-              <p>Share my info</p>
-              <i className="fi fi-rr-redo"></i>
-            </StyledButton>
-            <StyledButton
-              sec
-              onClick={handleClick}
-              companyProfile={companyProfile}
-            >
-              <p>Download Contact</p>
-              <i className="fi fi-rr-download"></i>
-            </StyledButton>
-
-            <SideModal isOpen={isModalOpen} onClose={handleCloseModal}>
-              <Form agentProfile={agentProfile} />
-            </SideModal>
+            <div className="flex flex-col justify-center items-center gap-2">
+              <StyledButton onClick={handleVCard} className={`w-full`}>
+                Save my Business Card
+              </StyledButton>
+              <StyledButton onClick={handleClick} className={`w-full`}>
+                Add to Wallet App
+              </StyledButton>
+            </div>
+            <PoweredBy />
+            <SocialBar agentProfile={agentProfile} />
           </div>
         </div>
-        <div className="w-full lg:w-2/3 md:pt-12 px-4 lg:pr-24 mb-12">
-          <ButtonAction
+        <div className="fixed bottom-0 w-full max-w-sm">
+          <ActionBar
             agentProfile={agentProfile}
             companyProfile={companyProfile}
           />
@@ -89,4 +76,12 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
       </div>
     </div>
   );
+}
+
+{
+  /* <div className="flex flex-col gap-4">
+            <SideModal isOpen={isModalOpen} onClose={handleCloseModal}>
+              <Form agentProfile={agentProfile} />
+            </SideModal>
+          </div> */
 }

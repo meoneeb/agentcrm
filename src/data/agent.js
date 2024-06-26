@@ -9,41 +9,46 @@ export const agentArr = [
     company: "edge",
     buttontext: "Get Dollar Gift Card",
     img: "/fallbackImg.jpg",
-    csv: "",
-    walletpass:
+    vcard: "/api/download-vcard",
+    smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/_z0eif68y-1ns6675e4e8c115d",
     social: [
       {
-        icon: "fi-brands-linkedin",
-        href: "#",
+        label: "Linkedin",
+        icon: "/icons/social/linkedin.svg",
+        href: "/icons/social/linkedin.svg",
       },
       {
-        icon: "fi-brands-instagram",
-        href: "#",
+        label: "Instagtam",
+        icon: "/icons/social/instagram.svg",
+        href: "/icons/social/instagram.svg",
       },
       {
-        icon: "fi-brands-facebook",
-        href: "#",
+        label: "Facebook",
+        icon: "/icons/social/facebook.svg",
+        href: "/icons/social/facebook.svg",
       },
     ],
     action: [
       {
-        label: "Call me",
-        label2: "5412120563",
+        label: "Call",
         icon: "fi-rr-phone-call",
         url: "tel:+15412120563",
       },
       {
-        label: "Text me",
-        label2: "5412120563",
+        label: "Text",
         icon: "fi-rr-messages",
         url: "https://wa.me/15412120563",
       },
       {
-        label: "Email me",
-        label2: "kelli@edgeperformancesports.com",
+        label: "Email",
         icon: "fi-rr-envelope",
         url: "mailto:kelli@edgeperformancesports.com",
+      },
+      {
+        label: "Save",
+        icon: "fi-rr-download",
+        url: "",
       },
     ],
   },

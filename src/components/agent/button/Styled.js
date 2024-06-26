@@ -5,7 +5,6 @@ export default function StyledButton({
   onClick,
   className,
   disabled,
-  sec,
   companyProfile,
   ...props
 }) {
@@ -13,24 +12,16 @@ export default function StyledButton({
   const [isHovered, setIsHovered] = useState(false);
 
   const DefaultStyle = {
-    backgroundColor: sec ? `rgba(${accent}, 0.05)` : `rgba(${accent}, 1)`,
-    color: sec ? "rgba(0, 0, 255, 1)" : "white",
-    border: `2px solid rgba(${accent}, 1)`,
-    color: sec ? `rgba(${accent}, 1)` : "white"
+    height: 48,
   };
 
   const HoverStyle = {
-    backgroundColor: sec ? `rgba(${accent}, 1)` : `rgba(${accent}, 1)`,
-    color: sec ? "white" : "white",
-    border: `2px solid rgba(${accent}, 1)`,
-    color: "white"
+    height: 48,
   };
 
   return (
     <button
-      className={`flex flex-row px-12 py-4 gap-4 justify-center items-center ${
-        sec ? "font-medium" : "text-white"
-      } rounded-full focus:outline-none ${className} ${
+      className={`flex flex-row px-12 gap-4 justify-center items-center rounded-xl text-white font-medium bg-zinc-800 hover:bg-zinc-900 focus:outline-none ${className} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
       style={isHovered ? HoverStyle : DefaultStyle}

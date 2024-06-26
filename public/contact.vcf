@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Joe  Test
+N;CHARSET=UTF-8:Test;Joe ;;;
+NICKNAME;CHARSET=UTF-8:Joey
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:info@edge.com
+TEL;TYPE=CELL:2223334444
+TEL;TYPE=WORK,VOICE:5419035438
+LABEL;CHARSET=UTF-8;TYPE=WORK:Dealership Address 
+ADR;CHARSET=UTF-8;TYPE=WORK:;;1625 N Oregon St ;Ontario ;OR;07914;USA
+TITLE;CHARSET=UTF-8:General Sales Manager 
+ORG;CHARSET=UTF-8:Edge Preformance Sports 
+URL;type=WORK;CHARSET=UTF-8:https://edgeperformancesports.com/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/anthony-iannone-1288ab6/
+X-SOCIALPROFILE;TYPE=Website :https://edgeperformancesports.com/
+REV:2024-06-26T18:50:52.085Z
+END:VCARD
