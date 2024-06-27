@@ -1,6 +1,6 @@
 export default function PoweredBy() {
   return (
-    <div>
+    <div className="w-full text-center py-8">
       <p className="text-neutral-400 text-sm">
         Powered by{" "}
         <a

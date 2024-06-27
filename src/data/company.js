@@ -2,25 +2,58 @@ export const companyArr = [
   {
     name: "Edge Performance Sports",
     company: "edge",
-    website: "https://edgeperformancesports.com",
+    website: "www.edgeperformancesports.com",
     logo: "/companies/edge-logo.jpg",
     accent: "234, 22, 44",
     address: "1625 N. Oregon St.",
     city: "Ontario",
     region: "Oregon",
     zipcode: "97914",
+    country: "USA",
     workphone: "5418894099",
+    providerUri: "",
+    recipientEmail: "",
+
+    social: [
+      {
+        label: "Instagram",
+        icon: "/icons/social/instagram.svg",
+        href: "https://www.instagram.com/edge_performance_sports/",
+      },
+      {
+        label: "Facebook",
+        icon: "/icons/social/facebook.svg",
+        href: "https://www.facebook.com/edgeperformancesports",
+      },
+    ],
+    action: [
+      {
+        label: "Call",
+        icon: "fi-rr-phone-call",
+        url: "tel:+15418894099",
+      },
+    ],
+    about: (
+      <>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
+        euismod porttitor. Duis luctus mattis ex vel imperdiet. Donec sagittis
+        nisi eget elit ultricies, a consequat odio laoreet. Fusce convallis mi
+        augue. Vestibulum vulputate iaculis nunc, mollis aliquet nulla malesuada
+        a.
+      </>
+    ),
   },
   {
     name: "Figics",
     company: "figics",
     website: "https://edgeperformancesports.com",
     logo: "https://www.somatichealth.com/logo/logo-tag.png",
-    accent: "22, 243, 24",
-    address: "1625 N. Oregon St.",
-    city: "Ontario",
-    region: "Oregon",
-    zipcode: "97914",
-    workphone: "5418894099",
+    accent: "24, 24, 24",
+    address: "24 C3 Kickstart, MM Alam Rd",
+    city: "Lahore",
+    region: "Punjab",
+    zipcode: "60000",
+    country: "PK",
+    workphone: "+923246807263",
   },
 ];
