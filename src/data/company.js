@@ -16,14 +16,40 @@ export const companyArr = [
 
     social: [
       {
+        label: "Facebook",
+        icon: "/icons/social/facebook.svg",
+        href: "https://www.facebook.com/edgeperformancesports",
+      },
+
+      {
+        label: "LinkedIn",
+        icon: "/icons/social/linkedin.svg",
+        href: "https://www.linkedin.com/company/edge-performance-sports/",
+      },
+      {
+        label: "TikTok",
+        icon: "/icons/social/tiktok.svg",
+        href: "https://www.tiktok.com/@edge_performance_sports",
+      },
+      {
         label: "Instagram",
         icon: "/icons/social/instagram.svg",
         href: "https://www.instagram.com/edge_performance_sports/",
       },
       {
-        label: "Facebook",
-        icon: "/icons/social/facebook.svg",
-        href: "https://www.facebook.com/edgeperformancesports",
+        label: "Yelp",
+        icon: "/icons/social/.svg",
+        href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
+      },
+      {
+        label: "Youtube",
+        icon: "/icons/social/.svg",
+        href: "https://www.youtube.com/@edgeperformancesports",
+      },
+      {
+        label: "",
+        icon: "/icons/social/.svg",
+        href: "",
       },
     ],
     action: [
