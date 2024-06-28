@@ -20,7 +20,6 @@ export const companyArr = [
         icon: "/icons/social/facebook.svg",
         href: "https://www.facebook.com/edgeperformancesports",
       },
-
       {
         label: "LinkedIn",
         icon: "/icons/social/linkedin.svg",
@@ -46,11 +45,6 @@ export const companyArr = [
         icon: "/icons/social/.svg",
         href: "https://www.youtube.com/@edgeperformancesports",
       },
-      {
-        label: "",
-        icon: "/icons/social/.svg",
-        href: "",
-      },
     ],
     action: [
       {
@@ -61,11 +55,16 @@ export const companyArr = [
     ],
     about: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
-        euismod porttitor. Duis luctus mattis ex vel imperdiet. Donec sagittis
-        nisi eget elit ultricies, a consequat odio laoreet. Fusce convallis mi
-        augue. Vestibulum vulputate iaculis nunc, mollis aliquet nulla malesuada
-        a.
+        Edge Performance Sports in Ontario, OR is
+        a premier ATV & Motorcycle Dealership. Only a short drive from Boise,
+        Idaho; our Dealership sells a variety of powersports to the heart of the
+        Western Treasure Valley. We're a full-service dealership that offers new
+        and used sales, parts, and service. To keep up with demand, we continue
+        to expand our business and grow in conjunction with the community. We
+        now offer 11 brands under one roof. Brands like: Can-Am, KTM, Sea-Doo,
+        Ski-Doo, Timbersled, Honda, Suzuki, Kawasaki, Polaris, Kayo, Segway and
+        CFMOTO. We also specialize in Powersports recreation and racing
+        merchandise.
       </>
     ),
   },
