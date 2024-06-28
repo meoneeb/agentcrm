@@ -18,11 +18,14 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
   const handleClick = () => {
     window.open(agentProfile.smartpass, "_blank");
   };
-  
+
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleOpenModal = () => {
     setModalOpen(true);
+  };
+  const handleVCard = () => {
+    window.open(agentProfile.vcard, "_blank");
   };
 
   const handleCloseModal = () => {

@@ -12,11 +12,7 @@ export default function AboutCompany({ companyProfile }) {
             About {companyProfile.name}
           </h3>
           <p className="text-neutral-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            egestas euismod porttitor. Duis luctus mattis ex vel imperdiet.
-            Donec sagittis nisi eget elit ultricies, a consequat odio laoreet.
-            Fusce convallis mi augue. Vestibulum vulputate iaculis nunc, mollis
-            aliquet nulla malesuada a.
+            {companyProfile.about}
           </p>
         </div>
         <div className="flex flex-col gap-2">

@@ -21,7 +21,7 @@ export default function SocialBar({ agentProfile = {}, companyProfile = {} }) {
           href={handle.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex justify-center items-center cursor-pointer"
+          className="group flex justify-center items-center cursor-pointer h-6 w-6"
         >
           <img src={handle.icon} alt={handle.label} />
         </a>

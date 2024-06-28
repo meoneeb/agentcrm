@@ -37,12 +37,12 @@ export const companyArr = [
       },
       {
         label: "Yelp",
-        icon: "/icons/social/.svg",
+        icon: "/icons/social/yelp.svg",
         href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
       },
       {
         label: "Youtube",
-        icon: "/icons/social/.svg",
+        icon: "/icons/social/youtube.svg",
         href: "https://www.youtube.com/@edgeperformancesports",
       },
     ],
