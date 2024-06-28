@@ -10,7 +10,7 @@ export const agentArr = [
     cellphone: "5412120563",
     company: "edge",
     img: "/fallbackImg.jpg",
-    vcard: "/api/download-vcard",
+    vcard: "/contact.vcf",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/_z0eif68y-1ns6675e4e8c115d",
     action: [

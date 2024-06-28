@@ -1,9 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import AgentProfile from "@/components/agent/AgentProfile";
 import { updatedAgentArr } from "@/data/agent"; // Ensure this path is correct
-import Head from "next/head";
 
 export default function AgentPage({ params }) {
   console.log(params, "params");
@@ -18,7 +16,8 @@ export default function AgentPage({ params }) {
   };
 
   const agentProfile = updatedAgentArr.find(
-    (value) => agentid === username(value.agentid) && company === username(value.company)
+    (value) =>
+      agentid === username(value.agentid) && company === username(value.company)
   );
 
   if (!agentProfile) {
@@ -26,22 +25,35 @@ export default function AgentPage({ params }) {
   }
 
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
-  const companyProfile = agentProfile.companyDetails; // Assuming company details are stored here
+  const companyProfile = agentProfile.companyDetails;
 
   return (
     <>
-      <Head>
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/fav.png" />
-        <meta property="og:site_name" content="figics.com" key="ogsitename" />
         <meta charSet="utf-8" />
-        <meta name="description" content={fullname} />
-        <meta property="og:title" content={`${fullname} | figics.com`} key="ogtitle" />
-        <meta property="og:description" content={fullname} key="ogdesc" />
-        <meta data-rh="true" name="twitter:card" content="summary_large_image" />
-        <title>{`${fullname} | figics.com`}</title>
-      </Head>
-      <AgentProfile companyProfile={companyProfile} agentProfile={agentProfile} />
+        <meta name="description" content="" />
+        <meta property="og:title" content={fullname} key="ogtitle" />
+        <meta property="og:description" content="" key="ogdesc" />
+        <meta
+          property="og:image"
+          content={`https://www.flarepass.com${agentProfile.img}`}
+          key="ogimage"
+        />
+        <meta
+          name="twitter:image:src"
+          content={`https://www.flarepass.com${agentProfile.img}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>{`${fullname} - ${companyProfile.name}`}</title>
+      </head>
+      <div>
+        <AgentProfile
+          companyProfile={companyProfile}
+          agentProfile={agentProfile}
+        />
+      </div>
     </>
   );
 }
