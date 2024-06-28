@@ -11,9 +11,7 @@ export default function AboutCompany({ companyProfile }) {
           <h3 className="font-bold text-sm text-center mb-2">
             About {companyProfile.name}
           </h3>
-          <p className="text-neutral-500">
-            {companyProfile.about}
-          </p>
+          <p className="text-neutral-500">{companyProfile.about}</p>
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-neutral-500">

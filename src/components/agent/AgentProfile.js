@@ -48,7 +48,7 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
             <img
               src={img}
               alt={fullname}
-              className="w-36 h-36 rounded-full p-1 border-solid shadow-lg"
+              className="w-36 h-36 rounded-full p-1 border-solid object-cover shadow-lg"
               style={{ border: `3px solid rgba(${accent}, 1)` }}
             />
             <div className="flex flex-col gap-0 justify-center items-center">

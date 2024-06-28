@@ -55,16 +55,15 @@ export const companyArr = [
     ],
     about: (
       <>
-        Edge Performance Sports in Ontario, OR is
-        a premier ATV & Motorcycle Dealership. Only a short drive from Boise,
-        Idaho; our Dealership sells a variety of powersports to the heart of the
-        Western Treasure Valley. We're a full-service dealership that offers new
-        and used sales, parts, and service. To keep up with demand, we continue
-        to expand our business and grow in conjunction with the community. We
-        now offer 11 brands under one roof. Brands like: Can-Am, KTM, Sea-Doo,
-        Ski-Doo, Timbersled, Honda, Suzuki, Kawasaki, Polaris, Kayo, Segway and
-        CFMOTO. We also specialize in Powersports recreation and racing
-        merchandise.
+        Edge Performance Sports in Ontario, OR is a premier ATV & Motorcycle
+        Dealership. Only a short drive from Boise, Idaho; our Dealership sells a
+        variety of powersports to the heart of the Western Treasure Valley.
+        We're a full-service dealership that offers new and used sales, parts,
+        and service. To keep up with demand, we continue to expand our business
+        and grow in conjunction with the community. We now offer 11 brands under
+        one roof. Brands like: Can-Am, KTM, Sea-Doo, Ski-Doo, Timbersled, Honda,
+        Suzuki, Kawasaki, Polaris, Kayo, Segway and CFMOTO. We also specialize
+        in Powersports recreation and racing merchandise.
       </>
     ),
   },
