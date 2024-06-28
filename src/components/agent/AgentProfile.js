@@ -7,6 +7,7 @@ import StyledButton from "./button/Styled";
 import Form from "./form/Form";
 import { useState } from "react";
 import AboutCompany from "./details/Company";
+import VCardDownload from "./button/VCardDownload";
 
 export default function AgentProfile({ agentProfile, companyProfile }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
@@ -24,9 +25,9 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
   const handleOpenModal = () => {
     setModalOpen(true);
   };
-  const handleVCard = () => {
-    window.open(agentProfile.vcard, "_blank");
-  };
+  // const handleVCard = () => {
+  //   window.open(agentProfile.vcard, "_blank");
+  // };
 
   const handleCloseModal = () => {
     setModalOpen(false);
@@ -58,9 +59,13 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
               <h3 className="text-lg text-neutral-500">{title}</h3>
             </div>
             <div className="flex flex-col justify-center items-center gap-2">
-              <StyledButton onClick={handleVCard} className={`w-full`}>
+              <VCardDownload
+                agentProfile={agentProfile}
+                companyProfile={companyProfile}
+              />
+              {/* <StyledButton onClick={handleVCard} className={`w-full`}>
                 Save my Business Card
-              </StyledButton>
+              </StyledButton> */}
               <StyledButton onClick={handleClick} className={`w-full`}>
                 Add to Wallet App
               </StyledButton>
