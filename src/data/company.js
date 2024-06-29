@@ -11,8 +11,8 @@ export const companyArr = [
     zipcode: "97914",
     country: "USA",
     workphone: "5418894099",
-    providerUri: "",
-    recipientEmail: "",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "adf@psxdigital.com",
 
     social: [
       {
