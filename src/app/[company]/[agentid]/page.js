@@ -38,12 +38,12 @@ export default function AgentPage({ params }) {
         <meta property="og:description" content="" key="ogdesc" />
         <meta
           property="og:image"
-          content={`https://www.flarepass.com${agentProfile.img}`}
+          content={`https://www.flarepass.com${companyProfile.logo}`}
           key="ogimage"
         />
         <meta
           name="twitter:image:src"
-          content={`https://www.flarepass.com${agentProfile.img}`}
+          content={`https://www.flarepass.com${companyProfile.logo}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{`${fullname} - ${companyProfile.name}`}</title>
