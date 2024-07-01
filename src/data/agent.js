@@ -287,9 +287,9 @@ export const agentArr = [
     ],
   },
   {
-    firstname: "Javierr",
+    firstname: "Javier",
     lastname: "Cardoza",
-    agentid: "javierr-cardoza",
+    agentid: "javier-cardoza",
     crmEmployerID: "5412495125",
     title: "Finance",
     email: "javier@edgeperformancesports.com",
