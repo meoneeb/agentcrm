@@ -13,6 +13,7 @@ export const companyArr = [
     workphone: "5418894099",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
+    emailSubject: "Tapped Business Card",
 
     social: [
       {

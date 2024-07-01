@@ -10,6 +10,7 @@ export default function Form({ agentProfile, companyProfile }) {
   const agentPhone = agentProfile.cellphone;
   const providerUri = companyProfile.providerUri;
   const recipientEmail = companyProfile.recipientEmail;
+  const emailSubject = companyProfile.emailSubject;
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -148,11 +149,11 @@ export default function Form({ agentProfile, companyProfile }) {
         body: JSON.stringify({
           toEmail: recipientEmail,
           adfXml: adfXml,
-          subject: `Tapped Business Card`,
+          subject: emailSubject,
           message: adfXml,
         }),
       });
-
+console.log(emailSubject)
       const result = await response.json();
 
       if (response.ok) {
