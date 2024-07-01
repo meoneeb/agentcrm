@@ -148,7 +148,7 @@ export default function Form({ agentProfile, companyProfile }) {
         body: JSON.stringify({
           toEmail: recipientEmail,
           adfXml: adfXml,
-          subject: `Lead Submit`,
+          subject: `Tapped Business Card`,
           message: adfXml,
         }),
       });
