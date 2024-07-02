@@ -3,7 +3,7 @@ import PoweredBy from "../home/PoweredBy";
 import ScreenModal from "@/componentsGlobal/modal/ScreenModal";
 import ActionBar from "./button/ActionBar";
 import SocialBar from "./button/SocialBar";
-import StyledButton from "./button/Styled";
+import StyledButton from "../../componentsGlobal/button/Styled";
 import Form from "./form/Form";
 import { useState } from "react";
 import AboutCompany from "./details/Company";
@@ -25,9 +25,6 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
   const handleOpenModal = () => {
     setModalOpen(true);
   };
-  // const handleVCard = () => {
-  //   window.open(agentProfile.vcard, "_blank");
-  // };
 
   const handleCloseModal = () => {
     setModalOpen(false);

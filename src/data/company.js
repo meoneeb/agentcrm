@@ -9,7 +9,7 @@ export const companyArr = [
     city: "Ontario",
     region: "Oregon",
     zipcode: "97914",
-    country: "USA",
+    country: "Canada",
     workphone: "5418894099",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
@@ -17,33 +17,27 @@ export const companyArr = [
 
     social: [
       {
-        label: "Facebook",
-        icon: "/icons/social/facebook.svg",
+        icon: "facebook",
         href: "https://www.facebook.com/edgeperformancesports",
       },
       {
-        label: "LinkedIn",
-        icon: "/icons/social/linkedin.svg",
+        icon: "linkedin",
         href: "https://www.linkedin.com/company/edge-performance-sports/",
       },
       {
-        label: "TikTok",
-        icon: "/icons/social/tiktok.svg",
+        icon: "tiktok",
         href: "https://www.tiktok.com/@edge_performance_sports",
       },
       {
-        label: "Instagram",
-        icon: "/icons/social/instagram.svg",
+        icon: "instagram",
         href: "https://www.instagram.com/edge_performance_sports/",
       },
       {
-        label: "Yelp",
-        icon: "/icons/social/yelp.svg",
+        icon: "yelp",
         href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
       },
       {
-        label: "Youtube",
-        icon: "/icons/social/youtube.svg",
+        icon: "youtube",
         href: "https://www.youtube.com/@edgeperformancesports",
       },
     ],

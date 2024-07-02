@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import StyledButton from "../button/Styled";
+import StyledButton from "../../../componentsGlobal/button/Styled";
 
 export default function Form({ agentProfile, companyProfile }) {
   const router = useRouter();

@@ -1,5 +1,5 @@
 import React from "react";
-import StyledButton from "./Styled";
+import StyledButton from "../../../componentsGlobal/button/Styled";
 
 export default function VCardDownload({ agentProfile, companyProfile }) {
   const fname = agentProfile.firstname;
