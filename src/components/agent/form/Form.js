@@ -11,6 +11,7 @@ export default function Form({ agentProfile, companyProfile }) {
   const providerUri = companyProfile.providerUri;
   const recipientEmail = companyProfile.recipientEmail;
   const emailSubject = companyProfile.emailSubject;
+  const adfXML = companyProfile.adfXML;
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -111,34 +112,35 @@ export default function Form({ agentProfile, companyProfile }) {
     setIsLoading(true);
     setResponseMessage("");
 
-    const adfXml = `
-      <adf>
-        <prospect>
-          <source>i1Smart Marketing</source>
-          <requestdate>${new Date().toISOString()}</requestdate>
-          <customer>
-            <contact>
-              <name part="first">${formData.firstName}</name>
-              <name part="last">${formData.lastName}</name>
-              <email><![CDATA[${formData.email}]]></email>
-              <phone><![CDATA[${formData.phone}]]></phone>
-            </contact>
-          </customer>
-          <provider>
-          <id>${agentProfile.crmEmployerID}</id>
-            <name part="full">i1Smart Marketing</name>
-            <service>i1Smart Marketing</service>
-            <url><![CDATA[${providerUri}]]></url>
-            <email><![CDATA[leads@i1smartmarketing.com]]></email>
-            <contact>
-              <name part="full" type="individual">${agentName}</name>
-              <email><![CDATA[${agentEmail}]]></email>
-              <phone><![CDATA[${agentPhone}]]></phone>
-            </contact>
-          </provider>
-        </prospect>
-      </adf>
-    `;
+    const adfXml = adfXML
+    //  `
+    //   <adf>
+    //     <prospect>
+    //       <source>i1Smart Marketing</source>
+    //       <requestdate>${new Date().toISOString()}</requestdate>
+    //       <customer>
+    //         <contact>
+    //           <name part="first">${formData.firstName}</name>
+    //           <name part="last">${formData.lastName}</name>
+    //           <email><![CDATA[${formData.email}]]></email>
+    //           <phone><![CDATA[${formData.phone}]]></phone>
+    //         </contact>
+    //       </customer>
+    //       <provider>
+    //       <id>${agentProfile.crmEmployerID}</id>
+    //         <name part="full">i1Smart Marketing</name>
+    //         <service>i1Smart Marketing</service>
+    //         <url><![CDATA[${providerUri}]]></url>
+    //         <email><![CDATA[leads@i1smartmarketing.com]]></email>
+    //         <contact>
+    //           <name part="full" type="individual">${agentName}</name>
+    //           <email><![CDATA[${agentEmail}]]></email>
+    //           <phone><![CDATA[${agentPhone}]]></phone>
+    //         </contact>
+    //       </provider>
+    //     </prospect>
+    //   </adf>
+    // `;
 
     try {
       const response = await fetch("/api/send-email", {

@@ -9,13 +9,19 @@ import { useState } from "react";
 import AboutCompany from "./details/Company";
 import VCardDownload from "./button/VCardDownload";
 
-export default function AgentProfile({ agentProfile, companyProfile }) {
-  const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
+export default function AgentProfile({
+  agentProfile,
+  companyProfile,
+  agentid,
+}) {
+  console.log(agentProfile, "==")
+  const fullname = `${agentProfile.firstName} ${agentProfile.lastName}`;
   const img = agentProfile.img;
   const title = agentProfile.title;
   const company = companyProfile.name;
   const accent = companyProfile.accent;
 
+  
   const handleClick = () => {
     window.open(agentProfile.smartpass, "_blank");
   };

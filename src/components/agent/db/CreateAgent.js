@@ -14,7 +14,7 @@ export default function CreateAgent() {
     company: "",
     img: "",
     smartpass: "",
-    actions: [
+    action: [
       {
         label: "",
         icon: "",
@@ -324,7 +324,7 @@ export default function CreateAgent() {
                 </button>
               </div>
 
-              {formData.actions.map((action, index) => (
+              {formData.action.map((action, index) => (
                 <div
                   key={index}
                   className="flex gap-4 flex-col border border-grey-300 rounded-xl p-4 bg-neutral-100 mb-4"

@@ -61,6 +61,7 @@ export const companyArr = [
         in Powersports recreation and racing merchandise.
       </>
     ),
+    
   },
   {
     name: "Figics",

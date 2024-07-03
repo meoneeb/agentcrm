@@ -2,6 +2,7 @@
 import { useState } from "react";
 import StyledButton from "@/componentsGlobal/button/Styled";
 import CreateAgent from "@/components/agent/db/CreateAgent";
+import axios from "axios";
 
 export default function CreateCompanyPage() {
   const [password, setPassword] = useState("");
@@ -11,10 +12,16 @@ export default function CreateCompanyPage() {
     setPassword(e.target.value);
   };
 
-  const handlePasswordSubmit = () => {
+  const handlePasswordSubmit = async() => {
     // Define your password check logic here
-    if (password === "your_password") {
+    if (password === "") {
       setIsAuthenticated(true);
+      const agentid = 'agent-two'
+      const response = await axios.get(`/api/agent/get-agent?agentid=${agentid}`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
     } else {
       alert("Incorrect password");
     }
