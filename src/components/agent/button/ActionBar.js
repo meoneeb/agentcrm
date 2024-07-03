@@ -45,7 +45,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
           </p>
         </a>
       ))}
-      {agentProfile?.actions?.map((button, index) => (
+      {agentProfile?.action?.map((button, index) => (
         <a
           href={button.url}
           target="_blank"
