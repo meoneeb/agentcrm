@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import CreateCompany from "@/components/company/db/CreateCompany";
 import StyledButton from "@/componentsGlobal/button/Styled";
+import AddNewCompany from "@/components/company/db/AddNewCompany";
 
 export default function CreateCompanyPage() {
   const [password, setPassword] = useState("");
@@ -13,10 +13,15 @@ export default function CreateCompanyPage() {
 
   const handlePasswordSubmit = () => {
     // Define your password check logic here
-    if (password === "your_password") {
+    if (password === "1245") {
       setIsAuthenticated(true);
     } else {
       alert("Incorrect password");
+    }
+  };
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handlePasswordSubmit();
     }
   };
 
@@ -34,6 +39,7 @@ export default function CreateCompanyPage() {
               type="password"
               value={password}
               onChange={handlePasswordChange}
+              onKeyDown={handleKeyDown}
               className={inputStyle}
             />
             <StyledButton onClick={handlePasswordSubmit} style={buttonStyle}>
@@ -42,7 +48,7 @@ export default function CreateCompanyPage() {
           </div>
         </div>
       ) : (
-        <CreateCompany />
+        <AddNewCompany />
       )}
     </>
   );

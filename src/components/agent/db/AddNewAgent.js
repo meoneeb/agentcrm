@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import StyledButton from "../../../componentsGlobal/button/Styled";
-import AgentProfile from "../AgentProfile";
+import { companyArr } from "@/data/company";
 
-export default function CreateAgent() {
+export default function AddNewAgent() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -14,7 +14,7 @@ export default function CreateAgent() {
     company: "",
     img: "",
     smartpass: "",
-    actions: [
+    action: [
       {
         label: "",
         icon: "",
@@ -46,25 +46,25 @@ export default function CreateAgent() {
 
   const handleActionChange = (index, e) => {
     const { name, value } = e.target;
-    const newActions = [...formData.actions];
-    newActions[index][name] = value;
+    const newAction = [...formData.action];
+    newAction[index][name] = value;
     setFormData({
       ...formData,
-      actions: newActions,
+      action: newAction,
     });
   };
 
   const addNewAction = () => {
     setFormData({
       ...formData,
-      actions: [...formData.actions, { label: "", icon: "", url: "" }],
+      action: [...formData.action, { label: "", icon: "", url: "" }],
     });
   };
   const removeAction = (index) => {
-    const newActions = formData.actions.filter((_, i) => i !== index);
+    const newAction = formData.action.filter((_, i) => i !== index);
     setFormData({
       ...formData,
-      actions: newActions,
+      action: newAction,
     });
   };
 
@@ -81,7 +81,7 @@ export default function CreateAgent() {
   const addNewSocial = () => {
     setFormData({
       ...formData,
-      social: [...formData.social, { label: "", icon: "", href: "" }],
+      social: [...formData.social, { icon: "", href: "" }],
     });
   };
   const removeSocial = (index) => {
@@ -104,7 +104,15 @@ export default function CreateAgent() {
   const validateForm = () => {
     const errors = {};
     Object.keys(formData).forEach((key) => {
-      if (!formData[key]) {
+      if (Array.isArray(formData[key])) {
+        formData[key].forEach((item, index) => {
+          Object.keys(item).forEach((subKey) => {
+            if (!item[subKey]) {
+              errors[`${key}[${index}].${subKey}`] = "Field is required.";
+            }
+          });
+        });
+      } else if (!formData[key]) {
         errors[key] = "Field is required.";
       }
     });
@@ -225,14 +233,23 @@ export default function CreateAgent() {
               )}
             </div>
             <div className="w-full">
-              <input
-                className={inputClass}
-                type="text"
+              <select
+                id="company"
+                className={`w-auto flex justify-center items-center ${actionClass}`}
                 name="company"
-                placeholder="Company"
                 value={formData.company}
-                onChange={handleChange}
-              />
+                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                required
+              >
+                <option value="" disabled>
+                  Select Company
+                </option>
+                {companyArr.map((company) => (
+                  <option key={company.company} value={company.company}>
+                    {company.name}
+                  </option>
+                ))}
+              </select>
               {validationMessages.company && (
                 <p className="text-red-500 text-sm">
                   {validationMessages.company}
@@ -298,18 +315,7 @@ export default function CreateAgent() {
                 <p className="text-red-500 text-sm">{validationMessages.img}</p>
               )}
             </div>
-            {/* <div className="w-full">
-            <input
-              type="file"
-              class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-              name="img"
-              value={formData.img}
-              onChange={handleChange}
-            />
-            {validationMessages.img && (
-              <p className="text-red-500 text-sm">{validationMessages.img}</p>
-            )}
-          </div> */}
+
             <div>
               <div className="flex flex-row gap-2 my-4">
                 <h3 className="text-xl font-semibold text-zinc-800">
@@ -324,7 +330,7 @@ export default function CreateAgent() {
                 </button>
               </div>
 
-              {formData.actions.map((action, index) => (
+              {formData.action.map((action, index) => (
                 <div
                   key={index}
                   className="flex gap-4 flex-col border border-grey-300 rounded-xl p-4 bg-neutral-100 mb-4"
@@ -461,9 +467,9 @@ export default function CreateAgent() {
           </div>
         </form>
       </div>
-      <div className="flex max-w-sm w-full h-screen bg-zinc-200 lg:sticky lg:top-0 lg:mr-8">
+      {/* <div className="flex max-w-sm w-full h-screen bg-zinc-200 lg:sticky lg:top-0 lg:mr-8">
         PREVIEW
-      </div>
+      </div> */}
     </div>
   );
 }

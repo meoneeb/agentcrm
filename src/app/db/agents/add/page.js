@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import StyledButton from "@/componentsGlobal/button/Styled";
-import CreateAgent from "@/components/agent/db/CreateAgent";
+import AddNewAgent from "@/components/agent/db/AddNewAgent";
 
 export default function CreateCompanyPage() {
   const [password, setPassword] = useState("");
@@ -12,17 +12,22 @@ export default function CreateCompanyPage() {
   };
 
   const handlePasswordSubmit = () => {
-    // Define your password check logic here
-    if (password === "your_password") {
+    if (password === "1245") {
       setIsAuthenticated(true);
     } else {
       alert("Incorrect password");
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handlePasswordSubmit();
+    }
+  };
+
   return (
     <>
-      <title>Add New Company</title>
+      <title>Add New Agent</title>
       {!isAuthenticated ? (
         <div style={overlayStyle}>
           <div
@@ -34,6 +39,7 @@ export default function CreateCompanyPage() {
               type="password"
               value={password}
               onChange={handlePasswordChange}
+              onKeyDown={handleKeyDown}
               className={inputStyle}
             />
             <StyledButton onClick={handlePasswordSubmit} style={buttonStyle}>
@@ -42,7 +48,7 @@ export default function CreateCompanyPage() {
           </div>
         </div>
       ) : (
-        <CreateAgent />
+        <AddNewAgent />
       )}
     </>
   );

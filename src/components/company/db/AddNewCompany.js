@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import StyledButton from "@/componentsGlobal/button/Styled";
-export default function CreateCompany() {
+export default function AddNewCompany() {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -23,7 +23,7 @@ export default function CreateCompany() {
         href: "",
       },
     ],
-    actions: [
+    action: [
       {
         label: "",
         icon: "",
@@ -49,25 +49,25 @@ export default function CreateCompany() {
 
   const handleActionChange = (index, e) => {
     const { name, value } = e.target;
-    const newActions = [...formData.actions];
-    newActions[index][name] = value;
+    const newAction = [...formData.action];
+    newAction[index][name] = value;
     setFormData({
       ...formData,
-      actions: newActions,
+      action: newAction,
     });
   };
 
   const addNewAction = () => {
     setFormData({
       ...formData,
-      actions: [...formData.actions, { label: "", icon: "", url: "" }],
+      action: [...formData.action, { label: "", icon: "", url: "" }],
     });
   };
   const removeAction = (index) => {
-    const newActions = formData.actions.filter((_, i) => i !== index);
+    const newAction = formData.action.filter((_, i) => i !== index);
     setFormData({
       ...formData,
-      actions: newActions,
+      action: newAction,
     });
   };
 
@@ -417,7 +417,7 @@ export default function CreateCompany() {
               </button>
             </div>
 
-            {formData.actions.map((action, index) => (
+            {formData.action.map((action, index) => (
               <div
                 key={index}
                 className="flex gap-4 flex-col border border-grey-300 rounded-xl p-4 bg-neutral-100 mb-4"
