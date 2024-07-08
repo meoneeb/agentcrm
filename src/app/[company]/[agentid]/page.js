@@ -7,7 +7,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function AgentPage({ params }) {
-  console.log(params, "params");
+  // console.log(params, "params");
   const { company, agentid } = params;
 
   const [agent, setAgent] = useState(null);
@@ -24,6 +24,7 @@ export default function AgentPage({ params }) {
             },
           }
         );
+        // console.log(response.data.agent, 'params')
         setAgent(response.data.agent);
         setError("");
       } catch (err) {
@@ -37,7 +38,7 @@ export default function AgentPage({ params }) {
     }
   }, [agentid]);
 
-  console.log(agent, "agent");
+  // console.log(agent, "agent");
 
   // Function to convert spaces to hyphens
   const username = (text) => {
@@ -55,9 +56,10 @@ export default function AgentPage({ params }) {
   if (!agentProfile) {
     // return <div>Agent not found</div>; // You can replace this with a custom 404 component
   }
-
+  // console.log(agent, '===')
   function mergeCompanyData( companyArr) {
     const company = companyArr.find((c) => c.company === agent?.company);
+    console.log(company, 'company')
     if (company && agent) {
       return {
         ...agent,
@@ -70,7 +72,7 @@ export default function AgentPage({ params }) {
   const updatedAgentArrrrr = mergeCompanyData(companyArr);
   const fullname = `${updatedAgentArrrrr?.firstname} ${updatedAgentArrrrr?.lastname}`;
   const companyProfile = updatedAgentArrrrr?.companyDetails;
-  console.log(updatedAgentArrrrr, '===')
+ 
   return (
     <>
       {/* <head>
