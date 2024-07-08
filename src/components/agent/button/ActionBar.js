@@ -13,7 +13,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
 
   return (
     <div className="flex flex-row justify-center items-center flex-wrap grid grid-cols-3 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
-      {companyProfile?.action.map((button, index) => (
+      {companyProfile?.action?.map((button, index) => (
         <a
           href={button.url}
           target="_blank"
