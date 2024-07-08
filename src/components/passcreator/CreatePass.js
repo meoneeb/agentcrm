@@ -11,13 +11,23 @@ export default function CreatePassForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const additionalProperties = {
-      "64e3b2319d9136.54009888": firstName,
-      "64e3b2319d92f1.10727381": lastName,
-      "64e3b3ca9e5611.21711074": year,
+    let additional_properties = {
+      "firstName": firstName,
+      "last name": lastName,
+      "Year": year,
       "64e3b3ca9e5648.94044252": make,
       "64e3b3ca9e5675.67666073": model,
     };
+    const passData = {
+      "64e3b2319d9136.54009888":firstName,
+      additionalProperties: [
+        {  id:'64e3b2319d9136.54009888', value: firstName },
+        { 'last name': lastName },
+        {id:'Year', value: year}
+      ]
+    };
+    // additional_properties = Object.entries(additional_properties)
+    // .map(([id, value]) => ({ id, value }));
     try {
       const response = await fetch(
         `/api/passcreator/create-pass?passtemplate=${passTemplateUid}`,
@@ -26,10 +36,11 @@ export default function CreatePassForm() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ additionalProperties }),
+          body: JSON.stringify(passData),
         }
        
-      );  console.log(additionalProperties)
+      );  
+      // console.log(additionalProperties)
 
       const data = await response.json();
 

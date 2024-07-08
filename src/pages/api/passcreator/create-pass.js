@@ -18,7 +18,8 @@ export default async function handler(req, res) {
           Authorization: apiKey,
           "Content-Type": "application/json",
         },
-        body: { additionalProperties },
+        body: req.body
+        // JSON.stringify({ additionalProperties }),
       }
     );
 

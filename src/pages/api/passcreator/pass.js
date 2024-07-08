@@ -8,7 +8,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ message: 'passUid is required' });
     }
 
-    const url = `https://app.passcreator.com/api/pass/${passUid}`;
+    const url = `https://app.passcreator.com/api/pass-template/${passUid}`;
 
     try {
         const response = await fetch(url, {
@@ -25,6 +25,7 @@ export default async function handler(req, res) {
         }
 
         const data = JSON.parse(responseText);
+        console.log(data, '===')
         res.status(200).json(data);
     } catch (error) {
         console.error('Error fetching pass:', error.message, 'Response:', error);
