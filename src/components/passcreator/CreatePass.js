@@ -11,22 +11,14 @@ export default function CreatePassForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let additional_properties = {
-      "firstName": firstName,
-      "last name": lastName,
-      "Year": year,
+    let genericProperties = {
+      "64e3b2319d9136.54009888": firstName,
+      "64e3b2319d92f1.10727381": lastName,
+      "64e3b3ca9e5611.21711074": year,
       "64e3b3ca9e5648.94044252": make,
       "64e3b3ca9e5675.67666073": model,
     };
-    const passData = {
-      "64e3b2319d9136.54009888":firstName,
-      additionalProperties: [
-        {  id:'64e3b2319d9136.54009888', value: firstName },
-        { 'last name': lastName },
-        {id:'Year', value: year}
-      ]
-    };
-    // additional_properties = Object.entries(additional_properties)
+    // genericProperties = Object.entries(genericProperties)
     // .map(([id, value]) => ({ id, value }));
     try {
       const response = await fetch(
@@ -36,11 +28,10 @@ export default function CreatePassForm() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(passData),
+          body: JSON.stringify({ genericProperties }),
         }
        
-      );  
-      // console.log(additionalProperties)
+      );  console.log(genericProperties)
 
       const data = await response.json();
 
