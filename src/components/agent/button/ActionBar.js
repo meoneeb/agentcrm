@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SendMessage from "./SendMessage";
 
 export default function ActionBar({ agentProfile, companyProfile }) {
   const accent = companyProfile ? companyProfile.accent : "0, 0, 0"; // Default to black if no companyProfile
@@ -12,7 +13,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center flex-wrap grid grid-cols-3 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
+    <div className="flex flex-row justify-center items-center flex-wrap grid grid-cols-4 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
       {companyProfile.action.map((button, index) => (
         <a
           href={button.url}
@@ -77,6 +78,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
           </p>
         </a>
       ))}
+      <SendMessage companyProfile={companyProfile}/>
     </div>
   );
 }
