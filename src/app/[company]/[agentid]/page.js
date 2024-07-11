@@ -7,7 +7,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function AgentPage({ params }) {
-  // console.log(params, "params");
   const { company, agentid } = params;
 
   const [agent, setAgent] = useState(null);
@@ -24,7 +23,6 @@ export default function AgentPage({ params }) {
             },
           }
         );
-        // console.log(response.data.agent, 'params')
         setAgent(response.data.agent);
         setError("");
       } catch (err) {
@@ -38,14 +36,8 @@ export default function AgentPage({ params }) {
     }
   }, [agentid]);
 
-  // console.log(agent, "agent");
-
-  // Function to convert spaces to hyphens
   const username = (text) => {
-    if (!text) {
-      return "";
-    }
-    return text.toLowerCase().replace(/\s+/g, "-");
+    return text ? text.toLowerCase().replace(/\s+/g, "-") : "";
   };
 
   const agentProfile = updatedAgentArr.find(
@@ -53,56 +45,29 @@ export default function AgentPage({ params }) {
       agentid === username(value.agentid) && company === username(value.company)
   );
 
+  const mergeCompanyData = (companyArr) => {
+    const companyDetails = companyArr.find((c) => c.company === agent?.company);
+    return companyDetails && agent ? { ...agent, companyDetails } : agent;
+  };
+
+  const updatedAgent = mergeCompanyData(companyArr);
+  const fullname = `${updatedAgent?.firstname} ${updatedAgent?.lastname}`;
+  const companyProfile = updatedAgent?.companyDetails;
+
   if (!agentProfile) {
-    // return <div>Agent not found</div>; // You can replace this with a custom 404 component
+    return <div>Agent not found</div>; // Custom 404 message or component
   }
-  // console.log(agent, '===')
-  function mergeCompanyData( companyArr) {
-    const company = companyArr.find((c) => c.company === agent?.company);
-    console.log(company, 'company')
-    if (company && agent) {
-      return {
-        ...agent,
-        companyDetails: company,
-      };
-    }
-    return agent;
-  }
-  
-  const updatedAgentArrrrr = mergeCompanyData(companyArr);
-  const fullname = `${updatedAgentArrrrr?.firstname} ${updatedAgentArrrrr?.lastname}`;
-  const companyProfile = updatedAgentArrrrr?.companyDetails;
- 
+
   return (
-    <>
-      {/* <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icons/fav.png" />
-        <meta charSet="utf-8" />
-        <meta name="description" content="" />
-        <meta property="og:title" content={fullname} key="ogtitle" />
-        <meta property="og:description" content="" key="ogdesc" />
-        <meta
-          property="og:image"
-          content={`https://www.flarepass.com${companyProfile.logo}`}
-          key="ogimage"
-        />
-        <meta
-          name="twitter:image:src"
-          content={`https://www.flarepass.com${companyProfile.logo}`}
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>{`${fullname} - ${companyProfile.name}`}</title>
-      </head> */}
-      <div>
-        {agent && companyProfile &&
+    <div>
+      {agent && companyProfile && (
         <AgentProfile
           companyProfile={companyProfile}
           agentProfile={agent}
           agentid={agentid}
         />
-        }
-      </div>
-    </>
+      )}
+      {error && <div>Error: {error}</div>}
+    </div>
   );
 }

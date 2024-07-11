@@ -1,5 +1,4 @@
 import client from "@/lib/mongodb";
-import { ObjectId } from "mongodb";
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
@@ -13,7 +12,7 @@ export default async function handler(req, res) {
 
       // Find agent by agent_id
       if (agentid) {
-        const agent = await collection.findOne({agentid: agentid });
+        const agent = await collection.findOne({ agentid: agentid });
         if (!agent) {
           return res.status(404).json({ message: "Agent not found" });
         }
@@ -22,7 +21,9 @@ export default async function handler(req, res) {
         return res.status(400).json({ message: "agent_id is required" });
       }
     } catch (error) {
-      res.status(500).json({ message: "Internal Server Error", error: error.message });
+      res
+        .status(500)
+        .json({ message: "Internal Server Error", error: error.message });
     } finally {
       await client.close(); // Ensure the database connection is closed
     }
