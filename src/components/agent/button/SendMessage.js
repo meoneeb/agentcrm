@@ -36,7 +36,7 @@ export default function SendMessage({ companyProfile, agentProfile }) {
       >
         <i className="fi fi-rr-redo text-white"></i>
       </button>
-      <p className="text-xs font-semibold mt-2" style={{ textStyle }}>
+      <p className="text-xs font-semibold mt-2" style={textStyle}>
         Share
       </p>
     </div>
