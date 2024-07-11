@@ -3,7 +3,8 @@ import RedirectSmartMarketing from "@/components/home/RedirectSmartMarketing";
 export default function Home() {
   return (
     <main className="min-h-screen w-screen bg-zinc-900">
-      <RedirectSmartMarketing />
+      {/* <RedirectSmartMarketing /> */}
+      <h1 className="text-white text-center p-4">AgentCRM</h1>
     </main>
   );
 }
