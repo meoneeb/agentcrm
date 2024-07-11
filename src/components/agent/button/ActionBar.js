@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SendMessage from "./SendMessage";
 
 export default function ActionBar({ agentProfile, companyProfile }) {
   const accent = companyProfile ? companyProfile.accent : "0, 0, 0"; // Default to black if no companyProfile
@@ -77,6 +78,10 @@ export default function ActionBar({ agentProfile, companyProfile }) {
           </p>
         </a>
       ))}
+      <SendMessage
+        agentProfile={agentProfile}
+        companyProfile={companyProfile}
+      />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import StyledButton from "@/componentsGlobal/button/Styled";
-import CreateAgent from "@/components/agent/db/CreateAgent";
+import CreateAgent from "@/components/agent/db/AddNewAgent";
 import axios from "axios";
 
 export default function CreateCompanyPage() {
@@ -29,7 +29,7 @@ export default function CreateCompanyPage() {
 
   return (
     <>
-      <title>Add New Company</title>
+      <title>Add New Agent</title>
       {!isAuthenticated ? (
         <div style={overlayStyle}>
           <div

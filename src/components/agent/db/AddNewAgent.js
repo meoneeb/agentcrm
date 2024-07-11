@@ -162,9 +162,7 @@ export default function AddNewAgent() {
   return (
     <div className="flex lg:flex-row flex-col justify-start items-start w-full">
       <div className="flex flex-col justify-start items-center w-full mx-auto p-6">
-        <h2 className="text-2xl font-semibold text-zinc-800">
-          Create New Agent
-        </h2>
+        <h2 className="text-2xl font-semibold text-zinc-800">Add New Agent</h2>
         <p className="text-neutral-500 mb-8">
           Enter the required information to create new agent page
         </p>
@@ -428,7 +426,7 @@ export default function AddNewAgent() {
                       type="text"
                       className={actionClass}
                       id={`url-${index}`}
-                      name="url"
+                      name="href"
                       value={social.href}
                       onChange={(e) => handleSocialChange(index, e)}
                       placeholder="Link"
@@ -464,14 +462,11 @@ export default function AddNewAgent() {
             )}
 
             <StyledButton type="submit" disabled={isLoading}>
-              {isLoading ? "Sending..." : "Submit"}
+              {isLoading ? "Adding..." : "Add Agent"}
             </StyledButton>
           </div>
         </form>
       </div>
-      {/* <div className="flex max-w-sm w-full h-screen bg-zinc-200 lg:sticky lg:top-0 lg:mr-8">
-        PREVIEW
-      </div> */}
     </div>
   );
 }
