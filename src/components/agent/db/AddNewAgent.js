@@ -368,7 +368,7 @@ export default function AddNewAgent() {
                     type="text"
                     className={actionClass}
                     id={`url-${index}`}
-                    name="url"
+                    name="href"
                     value={action.url}
                     onChange={(e) => handleActionChange(index, e)}
                     placeholder="Link"
