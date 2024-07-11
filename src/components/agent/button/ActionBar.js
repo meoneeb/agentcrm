@@ -78,7 +78,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
           </p>
         </a>
       ))}
-      <SendMessage companyProfile={companyProfile}/>
+      <SendMessage companyProfile={companyProfile} agentProfile={agentProfile}/>
     </div>
   );
 }
