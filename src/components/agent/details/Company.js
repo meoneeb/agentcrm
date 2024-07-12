@@ -32,7 +32,8 @@ export default function AboutCompany({ companyProfile }) {
             className="text-neutral-500"
           >
             <i className="fi fi-rr-up-right-from-square text-sm mr-2"></i>
-            {companyProfile.website}
+            Vist our website
+            {/* {companyProfile.website} */}
           </a>
         </div>
       </div>
