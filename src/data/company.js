@@ -66,9 +66,9 @@ export const companyArr = [
   {
     name: "Dempsey CDJR Plano",
     company: "dempsey",
-    website: "www.edgeperformancesports.com",
-    logo: "/companies/edge-logo.jpg",
-    accent: "234, 22, 44",
+    website: "www.dempseydodgechryslerjeepplano.com",
+    logo: "/companies/dempsey-logo.webp",
+    accent: "117, 131, 109",
     address: "1000 E Route 34",
     city: "Plano",
     region: "IL",

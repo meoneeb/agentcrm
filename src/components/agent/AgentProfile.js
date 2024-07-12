@@ -11,7 +11,7 @@ import VCardDownload from "./button/VCardDownload";
 
 export default function AgentProfile({ agentProfile, companyProfile }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
-  const img = agentProfile.img;
+  const img = agentProfile.img || `/avatar.webp`;
   const title = agentProfile.title;
   const company = companyProfile.name;
   const accent = companyProfile.accent;
@@ -39,7 +39,7 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
         <div className="w-full min-h-screen h-fit flex flex-col justify-start items-center pt-12">
           <div className="flex flex-col gap-4 justify-start items-center pb-6">
             <img
-              className="w-60 text-neutral-500"
+              className="w-60 max-h-16 object-contain text-neutral-500"
               src={companyProfile.logo}
               alt={company}
             />
