@@ -1,6 +1,5 @@
 import { companyArr } from "./company";
 export const agentArr = [
-
   // EDGE PERFORMANCE SPORTS START
   {
     firstname: "Kelli",
@@ -316,6 +315,138 @@ export const agentArr = [
     // img: "",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/p_1iofaqos-nc64f21e54c5e6c",
+  },
+  {
+    firstname: "Dwayne",
+    lastname: "Gustave",
+    agentid: "dwayne-gustave",
+    title: "General Manager",
+    email: "dwayneg@dempseyplano.com",
+    cellphone: "630-466-3245",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/j1x9hb_pl_4sg64f2350c5efb5",
+  },
+  {
+    firstname: "Joshua",
+    lastname: "Bickle",
+    agentid: "joshua-bickle",
+    title: "Sales Manager",
+    email: "joshuab@dempseyplano.com",
+    cellphone: "630-466-3238",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/isrnampmjakbh64f233519d442",
+  },
+  {
+    firstname: "Jesse",
+    lastname: "Elias",
+    agentid: "jesse-elias",
+    title: "Business Development Manager",
+    email: "jesse@dempseyplano.com",
+    cellphone: "630-466-3246",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/wauk4axolpioy64f2399d81415",
+  },
+  {
+    firstname: "Jordan",
+    lastname: "Murley",
+    agentid: "jordan-murley",
+    title: "Inventory Manager",
+    email: "jordanm@dempseyplano.com",
+    cellphone: "630-466-3244",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/v4tu3vu_vpf2m64f23655bf089",
+  },
+  {
+    firstname: "John",
+    lastname: "Weissensel",
+    agentid: "john-weissensel",
+    title: "Sales Consultant",
+    email: "johnw@dempseyplano.com",
+    cellphone: "630-466-3235",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/qd5m6okb34xvo64f238275dfdc",
+  },
+  {
+    firstname: "Larry",
+    lastname: "Ladd",
+    agentid: "larry-ladd",
+    title: "Sales Consultant",
+    email: "larryl@dempseyplano.com",
+    cellphone: "630-466-3244",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/aruj2tysrrjam64f235a7ae1ad",
+  },
+  {
+    firstname: "Kenneth",
+    lastname: "Gonzalez",
+    agentid: "kenneth-gonzalez",
+    title: "Sales Consultant",
+    email: "keng@dempseyplano.com",
+    cellphone: "630-466-3236",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/1r9nggwt_hehx64f2347582a78",
+  },
+  {
+    firstname: "Elijah ",
+    lastname: "Willis",
+    agentid: "elijah-willis",
+    title: "Sales Consultant",
+    email: "elijahw@dempseyplano.com",
+    cellphone: "630-466-3237",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/h9-yenajff7t164f238e25989f",
+  },
+  {
+    firstname: "London",
+    lastname: "Patel",
+    agentid: "london-patel",
+    title: "Finance Manager",
+    email: "londonp@dempseyplano.com",
+    cellphone: "630-466-3229",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/ydf89jwbghmwm64f2378d004b7",
+  },
+  {
+    firstname: "Krystal",
+    lastname: "Myers",
+    agentid: "krystal-myers",
+    title: "Service Director",
+    email: "krystalm@dempseyplano.com",
+    cellphone: "630-332-3719",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/lcw87yjny2u5364f2370b90f70",
+  },
+  {
+    firstname: "Devon",
+    lastname: "Dempsey",
+    agentid: "devon-dempsey",
+    title: "Parts Manager",
+    email: "devond@dempseyplano.com",
+    cellphone: "630-552-6680",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/qbgb19q2u259a64f2324051e6e",
   },
 
   // DEMPSEY END
