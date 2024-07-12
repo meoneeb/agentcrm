@@ -10,6 +10,7 @@ export const companyArr = [
     region: "Oregon",
     zipcode: "97914",
     country: "Canada",
+    countrycode: "1",
     workphone: "5418894099",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
@@ -63,52 +64,27 @@ export const companyArr = [
     ),
   },
   {
-    name: "Dempsey",
+    name: "Dempsey CDJR Plano",
     company: "dempsey",
     website: "www.edgeperformancesports.com",
     logo: "/companies/edge-logo.jpg",
     accent: "234, 22, 44",
-    address: "1625 N. Oregon St.",
-    city: "Ontario",
-    region: "Oregon",
-    zipcode: "97914",
-    country: "Canada",
-    workphone: "5418894099",
+    address: "1000 E Route 34",
+    city: "Plano",
+    region: "IL",
+    zipcode: "60545",
+    country: "USA",
+    countrycode: "1",
+    workphone: "630-552-6281",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
     emailSubject: "Tapped Business Card",
 
-    social: [
-      {
-        icon: "facebook",
-        href: "https://www.facebook.com/edgeperformancesports",
-      },
-      {
-        icon: "linkedin",
-        href: "https://www.linkedin.com/company/edge-performance-sports/",
-      },
-      {
-        icon: "tiktok",
-        href: "https://www.tiktok.com/@edge_performance_sports",
-      },
-      {
-        icon: "instagram",
-        href: "https://www.instagram.com/edge_performance_sports/",
-      },
-      {
-        icon: "yelp",
-        href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
-      },
-      {
-        icon: "youtube",
-        href: "https://www.youtube.com/@edgeperformancesports",
-      },
-    ],
     action: [
       {
         label: "Call",
         icon: "fi-rr-phone-call",
-        url: "tel:+15418894099",
+        url: "tel:+1630-552-6281",
       },
     ],
     about: (
