@@ -1,5 +1,7 @@
 import { companyArr } from "./company";
 export const agentArr = [
+
+  // EDGE PERFORMANCE SPORTS START
   {
     firstname: "Kelli",
     lastname: "Cordes",
@@ -300,24 +302,24 @@ export const agentArr = [
       },
     ],
   },
+  // EDGE PERFORMANCE SPORTS END
+
   // DEMPSEY START
-{
-  firstname: "Tom ",
-  lastname: "Dempsey",
-  agentid: "tom-dempsey",
-  title: "Dealer Principal",
-  email: "dempsey@dempseyplano.com",
-  cellphone: "630-552-7688",
-  company: "dempsey",
-  // img: "",
-  smartpass: "https://smartpass.i1smartmarketing.com/en/p/p_1iofaqos-nc64f21e54c5e6c",
-  
-}
+  {
+    firstname: "Tom ",
+    lastname: "Dempsey",
+    agentid: "tom-dempsey",
+    title: "Dealer Principal",
+    email: "dempsey@dempseyplano.com",
+    cellphone: "630-552-7688",
+    company: "dempsey",
+    // img: "",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p_1iofaqos-nc64f21e54c5e6c",
+  },
 
-// DEMPSEY END
+  // DEMPSEY END
 ];
-
-
 
 function mergeCompanyData(agentArr, companyArr) {
   return agentArr.map((agent) => {

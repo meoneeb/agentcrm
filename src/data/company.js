@@ -15,7 +15,6 @@ export const companyArr = [
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
     emailSubject: "Tapped Business Card",
-
     social: [
       {
         icon: "facebook",
@@ -40,13 +39,6 @@ export const companyArr = [
       {
         icon: "youtube",
         href: "https://www.youtube.com/@edgeperformancesports",
-      },
-    ],
-    action: [
-      {
-        label: "Call",
-        icon: "fi-rr-phone-call",
-        url: "tel:+15418894099",
       },
     ],
     about: (
@@ -79,14 +71,6 @@ export const companyArr = [
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "adf@psxdigital.com",
     emailSubject: "Tapped Business Card",
-
-    action: [
-      {
-        label: "Call",
-        icon: "fi-rr-phone-call",
-        url: "tel:+1630-552-6281",
-      },
-    ],
     about: (
       <>
         Edge Performance Sports in Ontario, OR is a premier ATV & Motorcycle
