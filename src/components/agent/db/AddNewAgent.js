@@ -18,7 +18,7 @@ export default function AddNewAgent() {
       {
         label: "",
         icon: "",
-        url: "",
+        href: "",
       },
     ],
     social: [
@@ -44,57 +44,31 @@ export default function AddNewAgent() {
   const [responseMessage, setResponseMessage] = useState("");
   const [validationMessages, setValidationMessages] = useState({});
 
-  const handleActionChange = (index, e) => {
+  const handleNestedChange = (arrayName, index, e) => {
     const { name, value } = e.target;
-    const newAction = [...formData.action];
-    newAction[index][name] = value;
-    setFormData({
-      ...formData,
-      action: newAction,
+    setFormData((prevFormData) => {
+      const updatedArray = [...prevFormData[arrayName]];
+      updatedArray[index][name] = value;
+      return { ...prevFormData, [arrayName]: updatedArray };
     });
   };
 
-  const addNewAction = () => {
-    setFormData({
-      ...formData,
-      action: [...formData.action, { label: "", icon: "", url: "" }],
-    });
-  };
-  const removeAction = (index) => {
-    const newAction = formData.action.filter((_, i) => i !== index);
-    setFormData({
-      ...formData,
-      action: newAction,
-    });
+  const addNewItem = (arrayName, newItem) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [arrayName]: [...prevFormData[arrayName], newItem],
+    }));
   };
 
-  const handleSocialChange = (index, e) => {
-    const { name, value } = e.target;
-    const newSocial = [...formData.social];
-    newSocial[index][name] = value;
-    setFormData({
-      ...formData,
-      social: newSocial,
-    });
-  };
-
-  const addNewSocial = () => {
-    setFormData({
-      ...formData,
-      social: [...formData.social, { icon: "", href: "" }],
-    });
-  };
-  const removeSocial = (index) => {
-    const newSocial = formData.social.filter((_, i) => i !== index);
-    setFormData({
-      ...formData,
-      social: newSocial,
-    });
+  const removeItem = (arrayName, index) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [arrayName]: prevFormData[arrayName].filter((_, i) => i !== index),
+    }));
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
@@ -121,7 +95,6 @@ export default function AddNewAgent() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const errors = validateForm();
     if (Object.keys(errors).length > 0) {
       setValidationMessages(errors);
@@ -144,6 +117,30 @@ export default function AddNewAgent() {
 
       if (response.ok) {
         setResponseMessage("Information submitted successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          title: "",
+          email: "",
+          agentid: "",
+          cellphone: "",
+          company: "",
+          img: "",
+          smartpass: "",
+          action: [
+            {
+              label: "",
+              icon: "",
+              href: "",
+            },
+          ],
+          social: [
+            {
+              icon: "",
+              href: "",
+            },
+          ],
+        });
       } else {
         setResponseMessage(`Failed to submit: ${result.message}`);
       }
@@ -238,7 +235,9 @@ export default function AddNewAgent() {
                 className={`w-auto flex justify-center items-center ${actionClass}`}
                 name="company"
                 value={formData.company}
-                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, company: e.target.value })
+                }
                 required
               >
                 <option value="" disabled>
@@ -271,7 +270,6 @@ export default function AddNewAgent() {
                 </p>
               )}
             </div>
-
             <div className="w-full">
               <input
                 className={inputClass}
@@ -324,13 +322,15 @@ export default function AddNewAgent() {
                 <button
                   type="button"
                   className="h-8 px-4 gap-2 text-sm flex justify-center items-center border border-solid border-zinc-800 rounded-full text-white bg-zinc-800 hover:bg-zinc-900"
-                  onClick={addNewAction}
+                  onClick={() =>
+                    addNewItem("action", { label: "", icon: "", href: "" })
+                  }
                 >
                   <i className="fi fi-rr-plus"></i> ADD NEW ACTION BUTTON
                 </button>
               </div>
 
-              {formData.action.map((action, index) => (
+              {formData?.action?.map((action, index) => (
                 <div
                   key={index}
                   className="flex gap-4 flex-col border border-grey-300 rounded-xl p-4 bg-neutral-100 mb-4"
@@ -341,7 +341,7 @@ export default function AddNewAgent() {
                       className={`w-auto flex justify-center items-center ${actionClass}`}
                       name="icon"
                       value={action.icon}
-                      onChange={(e) => handleActionChange(index, e)}
+                      onChange={(e) => handleNestedChange("action", index, e)}
                       required
                     >
                       <option value="" disabled>
@@ -359,7 +359,7 @@ export default function AddNewAgent() {
                       id={`label-${index}`}
                       name="label"
                       value={action.label}
-                      onChange={(e) => handleActionChange(index, e)}
+                      onChange={(e) => handleNestedChange("action", index, e)}
                       placeholder="Label"
                       required
                     />
@@ -368,16 +368,16 @@ export default function AddNewAgent() {
                     type="text"
                     className={actionClass}
                     id={`url-${index}`}
-                    name="url"
-                    value={action.url}
-                    onChange={(e) => handleActionChange(index, e)}
+                    name="href"
+                    value={action.href}
+                    onChange={(e) => handleNestedChange("action", index, e)}
                     placeholder="Link"
                     required
                   />
                   <button
                     type="button"
                     className="h-8 px-4 gap-2 text-sm flex justify-center items-center border border-solid border-red-400 rounded-full text-white bg-red-600 hover:bg-red-700"
-                    onClick={() => removeAction(index)}
+                    onClick={() => removeItem("action", index)}
                   >
                     <i className="fi fi-rr-trash"></i> REMOVE ACTION
                   </button>
@@ -393,13 +393,13 @@ export default function AddNewAgent() {
                 <button
                   type="button"
                   className="h-8 px-4 gap-2 text-sm flex justify-center items-center border border-solid border-zinc-800 rounded-full text-white bg-zinc-800 hover:bg-zinc-900"
-                  onClick={addNewSocial}
+                  onClick={() => addNewItem("social", { icon: "", href: "" })}
                 >
                   <i className="fi fi-rr-plus"></i> ADD
                 </button>
               </div>
 
-              {formData.social.map((social, index) => (
+              {formData?.social?.map((social, index) => (
                 <div
                   key={index}
                   className="flex gap-4 flex-col border border-grey-300 rounded-xl p-4 bg-neutral-100 mb-4"
@@ -410,7 +410,7 @@ export default function AddNewAgent() {
                       className={`w-auto flex justify-center items-center ${actionClass}`}
                       name="icon"
                       value={social.icon}
-                      onChange={(e) => handleSocialChange(index, e)}
+                      onChange={(e) => handleNestedChange("social", index, e)}
                       required
                     >
                       <option value="" disabled>
@@ -426,18 +426,17 @@ export default function AddNewAgent() {
                       type="text"
                       className={actionClass}
                       id={`url-${index}`}
-                      name="url"
+                      name="href"
                       value={social.href}
-                      onChange={(e) => handleSocialChange(index, e)}
+                      onChange={(e) => handleNestedChange("social", index, e)}
                       placeholder="Link"
                       required
                     />
                   </div>
-
                   <button
                     type="button"
                     className="h-8 px-4 gap-2 text-sm flex justify-center items-center border border-solid border-red-400 rounded-full text-white bg-red-600 hover:bg-red-700"
-                    onClick={() => removeSocial(index)}
+                    onClick={() => removeItem("social", index)}
                   >
                     <i className="fi fi-rr-trash"></i> REMOVE
                   </button>
@@ -462,14 +461,11 @@ export default function AddNewAgent() {
             )}
 
             <StyledButton type="submit" disabled={isLoading}>
-              {isLoading ? "Sending..." : "Submit"}
+              {isLoading ? "Adding..." : "Add Agent"}
             </StyledButton>
           </div>
         </form>
       </div>
-      {/* <div className="flex max-w-sm w-full h-screen bg-zinc-200 lg:sticky lg:top-0 lg:mr-8">
-        PREVIEW
-      </div> */}
     </div>
   );
 }

@@ -1,19 +1,33 @@
-import { useState } from "react";
+// import { useState } from "react";
+import SendMessage from "./SendMessage";
+import CallButton from "./actionbuttons/CallButton";
+import TextButton from "./actionbuttons/TextButton";
+import EmailButton from "./actionbuttons/EmailButton";
 
 export default function ActionBar({ agentProfile, companyProfile }) {
-  const accent = companyProfile ? companyProfile.accent : "0, 0, 0"; // Default to black if no companyProfile
-  const [hoveredCompanyIndex, setHoveredCompanyIndex] = useState(null);
-  const [hoveredAgentIndex, setHoveredAgentIndex] = useState(null);
+  // const accent = companyProfile ? companyProfile.accent : "0, 0, 0"; // Default to black if no companyProfile
+  // const [hoveredCompanyIndex, setHoveredCompanyIndex] = useState(null);
+  // const [hoveredAgentIndex, setHoveredAgentIndex] = useState(null);
 
-  const DefaultStyle = {};
+  // const DefaultStyle = {};
 
-  const HoverStyle = {
-    color: `rgba(${accent}, 1)`,
-  };
+  // const HoverStyle = {
+  //   color: `rgba(${accent}, 1)`,
+  // };
 
   return (
-    <div className="flex flex-row justify-center items-center flex-wrap grid grid-cols-3 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
-      {companyProfile.action.map((button, index) => (
+    <div className="flex flex-row justify-center items-center flex-wrap grid grid-cols-4 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
+      <CallButton companyProfile={companyProfile} />
+      <TextButton companyProfile={companyProfile} agentProfile={agentProfile} />
+      <EmailButton
+        companyProfile={companyProfile}
+        agentProfile={agentProfile}
+      />
+      <SendMessage
+        companyProfile={companyProfile}
+        agentProfile={agentProfile}
+      />
+      {/* {companyProfile.action.map((button, index) => (
         <a
           href={button.url}
           target="_blank"
@@ -44,8 +58,8 @@ export default function ActionBar({ agentProfile, companyProfile }) {
             {button.label}
           </p>
         </a>
-      ))}
-      {agentProfile.action.map((button, index) => (
+      ))} */}
+      {/* {agentProfile.action.map((button, index) => (
         <a
           href={button.url}
           target="_blank"
@@ -76,7 +90,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
             {button.label}
           </p>
         </a>
-      ))}
+      ))} */}
     </div>
   );
 }
