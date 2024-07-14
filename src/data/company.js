@@ -69,8 +69,8 @@ export const companyArr = [
     countrycode: "1",
     workphone: "630-552-6281",
     providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "adf@psxdigital.com",
-    emailSubject: "Tapped Business Card",
+    recipientEmail: "dempseydodge@promaxonline.net",
+    emailSubject: "i1SmatMarketing Geo Lead",
     about: (
       <>
         
