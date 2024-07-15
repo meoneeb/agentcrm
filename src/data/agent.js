@@ -453,7 +453,7 @@ export const agentArr = [
     lastname: "Sanders",
     agentid: "jim-sanders",
     title: "Finance Manager",
-    email: "jim@dempseyplano.com",
+    email: "jims@dempseyplano.com",
     cellphone: "630-522-6281",
     company: "dempsey",
     // img: "",
