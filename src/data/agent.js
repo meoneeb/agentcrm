@@ -342,8 +342,8 @@ export const agentArr = [
   },
   {
     firstname: "Jesse",
-    lastname: "Elias",
-    agentid: "jesse-elias",
+    lastname: "E",
+    agentid: "jesse-e",
     title: "Business Development Manager",
     email: "jesse@dempseyplano.com",
     cellphone: "630-466-3246",
@@ -352,18 +352,18 @@ export const agentArr = [
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/wauk4axolpioy64f2399d81415",
   },
-  {
-    firstname: "Jordan",
-    lastname: "Murley",
-    agentid: "jordan-murley",
-    title: "Inventory Manager",
-    email: "jordanm@dempseyplano.com",
-    cellphone: "630-466-3244",
-    company: "dempsey",
-    // img: "",
-    smartpass:
-      "https://smartpass.i1smartmarketing.com/en/p/v4tu3vu_vpf2m64f23655bf089",
-  },
+  // {
+  //   firstname: "Jordan",
+  //   lastname: "Murley",
+  //   agentid: "jordan-murley",
+  //   title: "Inventory Manager",
+  //   email: "jordanm@dempseyplano.com",
+  //   cellphone: "630-466-3244",
+  //   company: "dempsey",
+  //   // img: "",
+  //   smartpass:
+  //     "https://smartpass.i1smartmarketing.com/en/p/v4tu3vu_vpf2m64f23655bf089",
+  // },
   {
     firstname: "John",
     lastname: "Weissensel",
@@ -388,18 +388,18 @@ export const agentArr = [
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/aruj2tysrrjam64f235a7ae1ad",
   },
-  {
-    firstname: "Kenneth",
-    lastname: "Gonzalez",
-    agentid: "kenneth-gonzalez",
-    title: "Sales Consultant",
-    email: "keng@dempseyplano.com",
-    cellphone: "630-466-3236",
-    company: "dempsey",
-    // img: "",
-    smartpass:
-      "https://smartpass.i1smartmarketing.com/en/p/1r9nggwt_hehx64f2347582a78",
-  },
+  // {
+  //   firstname: "Kenneth",
+  //   lastname: "Gonzalez",
+  //   agentid: "kenneth-gonzalez",
+  //   title: "Sales Consultant",
+  //   email: "keng@dempseyplano.com",
+  //   cellphone: "630-466-3236",
+  //   company: "dempsey",
+  //   // img: "",
+  //   smartpass:
+  //     "https://smartpass.i1smartmarketing.com/en/p/1r9nggwt_hehx64f2347582a78",
+  // },
   {
     firstname: "Elijah ",
     lastname: "Willis",
@@ -416,7 +416,7 @@ export const agentArr = [
     firstname: "London",
     lastname: "Patel",
     agentid: "london-patel",
-    title: "Finance Manager",
+    title: "Inventory Manager",
     email: "londonp@dempseyplano.com",
     cellphone: "630-466-3229",
     company: "dempsey",
@@ -447,6 +447,17 @@ export const agentArr = [
     // img: "",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/qbgb19q2u259a64f2324051e6e",
+  },
+  {
+    firstname: "Jim",
+    lastname: "Sanders",
+    agentid: "jim-sanders",
+    title: "Finance Manager",
+    email: "jim@dempseyplano.com",
+    cellphone: "630-522-6281",
+    company: "dempsey",
+    // img: "",
+    smartpass: "#",
   },
 
   // DEMPSEY END
