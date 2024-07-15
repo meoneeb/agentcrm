@@ -457,7 +457,8 @@ export const agentArr = [
     cellphone: "630-522-6281",
     company: "dempsey",
     // img: "",
-    smartpass: "#",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/q_la6nbzkttj4669591ab03c4d",
   },
 
   // DEMPSEY END
