@@ -35,8 +35,8 @@ export default function Page() {
         );
 
   const mobileFrame = {
-    width: 360 /* Width of iPhone 12 */,
-    height: 720 /* Height of iPhone 12 */,
+    width: 360,
+    height: 720,
     border: "16px solid black",
     borderWidth: "40px 10px 40px 10px",
     borderRadius: 36,
@@ -48,8 +48,8 @@ export default function Page() {
     <div className="w-full">
       <title>List - All Agents Landing Pages DB</title>
 
-      <div className="flex flex-row w-full">
-        <div className="flex flex-col flex-wrap gap-8 mt-4 w-1/2 p-4">
+      <div className="flex lg:flex-row flex-col w-full">
+        <div className="flex flex-col flex-wrap gap-8 mt-4 lg:w-1/2 w-full p-4">
           <h1 className="text-center text-black text-2xl font-bold mt-4 mb-6">
             All Agents Landing Pages DB
           </h1>
@@ -82,7 +82,7 @@ export default function Page() {
                   {agent.title}, {agent.company}
                 </p>
                 <div
-                  className="p-2 flex flex-row items-center justify-between rounded border border-black/20 mt-2 bg-black/5 hover:bg-black/10"
+                  className="p-2 flex flex-row flex-wrap items-center justify-between rounded border border-black/20 mt-2 bg-black/5 hover:bg-black/10"
                   onClick={() =>
                     handleCopyLink(
                       `https://flarepass.com/${agent.company}/${agent.agentid}`
@@ -98,13 +98,13 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <div className="w-1/2 px-4">
+        <div className="lg:w-1/2 w-full">
           {selectedAgent ? (
             <div
               id="preview"
               className="w-full h-screen sticky top-0 flex justify-center items-center"
             >
-              <div style={mobileFrame}>
+              <div style={mobileFrame} className="lg:mt-0 mt-24">
                 <iframe
                   src={`https://flarepass.com/${selectedAgent.company}/${selectedAgent.agentid}`}
                   title="Agent Preview"

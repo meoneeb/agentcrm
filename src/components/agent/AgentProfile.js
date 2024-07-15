@@ -11,7 +11,8 @@ import VCardDownload from "./button/VCardDownload";
 
 export default function AgentProfile({ agentProfile, companyProfile }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
-  const img = agentProfile.img || `/avatar.webp`;
+  const img =
+    agentProfile.img || companyProfile.defaultProfileImg || `/avatar.webp`;
   const title = agentProfile.title;
   const company = companyProfile.name;
   const accent = companyProfile.accent;
@@ -60,9 +61,6 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
                 agentProfile={agentProfile}
                 companyProfile={companyProfile}
               />
-              {/* <StyledButton onClick={handleVCard} className={`w-full`}>
-                Save my Business Card
-              </StyledButton> */}
               <StyledButton onClick={handleClick} className={`w-full`}>
                 Add to Wallet App
               </StyledButton>
