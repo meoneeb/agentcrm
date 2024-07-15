@@ -1,5 +1,5 @@
 "use client";
-import { agentArr, updatedAgentArr } from "@/data/agent";
+import { agentArr } from "@/data/agent";
 import { companyArr } from "@/data/company";
 import { useState } from "react";
 
@@ -34,16 +34,26 @@ export default function Page() {
           (agent) => agent.company === selectedCompany.toLowerCase()
         );
 
+  const mobileFrame = {
+    width: 360 /* Width of iPhone 12 */,
+    height: 720 /* Height of iPhone 12 */,
+    border: "16px solid black",
+    borderWidth: "40px 10px 40px 10px",
+    borderRadius: 36,
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.2)",
+    overflow: "hidden",
+  };
+
   return (
     <div className="w-full">
       <title>List - All Agents Landing Pages DB</title>
 
       <div className="flex flex-row w-full">
-        <div className="flex flex-col flex-wrap gap-8 mt-4 w-1/2">
+        <div className="flex flex-col flex-wrap gap-8 mt-4 w-1/2 p-4">
           <h1 className="text-center text-black text-2xl font-bold mt-4 mb-6">
             All Agents Landing Pages DB
           </h1>
-          <div className="w-full flex flex-row gap-4 items-center justify-end">
+          <div className="w-full flex flex-row gap-4 items-center justify-center">
             Filter by company:
             <select
               value={selectedCompany}
@@ -58,51 +68,54 @@ export default function Page() {
               ))}
             </select>
           </div>
-          {filteredAgents.map((agent, index) => (
-            <div
-              key={index}
-              onClick={() => handleAgentClick(agent)}
-              className="p-4 border border-black/20 w-full bg-white text-black rounded-xl shadow-xl hover:shadow-black/20 hover:border-black cursor-pointer"
-            >
-              <h3 className="text-xl">
-                {agent.firstname} {agent.lastname}
-              </h3>
-              <p>
-                {agent.title}, {agent.company}
-              </p>
-              <div className="p-2 flex flex-row items-center justify-between border border-black/20 mt-2 bg-black/20">
+          <div className="w-full flex flex-col justify-start items-center gap-4">
+            {filteredAgents.map((agent, index) => (
+              <div
+                key={index}
+                onClick={() => handleAgentClick(agent)}
+                className="p-4 border border-black/20 w-full max-w-lg bg-white text-black rounded hover:bg-black/5 hover:border-black cursor-pointer hover:scale-105 transition-all"
+              >
+                <h3 className="text-xl">
+                  {agent.firstname} {agent.lastname}
+                </h3>
                 <p>
-                  https://flarepass.com/{agent.company}/{agent.agentid}
+                  {agent.title}, {agent.company}
                 </p>
-                <button
+                <div
+                  className="p-2 flex flex-row items-center justify-between rounded border border-black/20 mt-2 bg-black/5 hover:bg-black/10"
                   onClick={() =>
                     handleCopyLink(
                       `https://flarepass.com/${agent.company}/${agent.agentid}`
                     )
                   }
-                  className="fi fi-rr-copy text-sm p-2 border border-black/30 text-white bg-black rounded"
                 >
-                  Copy Link
-                </button>
+                  <p className="text-sm">
+                    https://flarepass.com/{agent.company}/{agent.agentid}
+                  </p>
+                  <span className="text-xs uppercase font-bold text-black/50">Click to Copy Link</span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="w-1/2 px-4">
           {selectedAgent ? (
             <div
               id="preview"
-              className="w-full h-screen sticky top-0 overflow-hidden"
+              className="w-full h-screen sticky top-0 flex justify-center items-center"
             >
-              <iframe
-                src={`https://flarepass.com/${selectedAgent.company}/${selectedAgent.agentid}`}
-                title="Agent Preview"
-                className="w-full h-full border-0"
-                style={{ overflow: "hidden" }}
-              />
+              <div style={mobileFrame}>
+                <iframe
+                  src={`https://flarepass.com/${selectedAgent.company}/${selectedAgent.agentid}`}
+                  title="Agent Preview"
+                  className="w-full h-full"
+                />
+              </div>
             </div>
           ) : (
-            <div className="text-center">Select an agent to preview</div>
+            <div className="text-center w-full h-screen flex justify-center items-center sticky top-0">
+              Select an agent to preview
+            </div>
           )}
         </div>
       </div>
