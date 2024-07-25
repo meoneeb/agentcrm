@@ -31,16 +31,9 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: "leads@i1smartmarketing.com",
-      to: toEmail, // Array of recipient emails
+      to: toEmail,
       subject: subject,
       text: message,
-      // attachments: [
-      //   {
-      //     filename: "lead.xml",
-      //     content: adfXml,
-      //     contentType: "application/xml",
-      //   },
-      // ],
     };
 
     try {

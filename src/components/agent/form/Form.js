@@ -7,7 +7,6 @@ export default function Form({ agentProfile, companyProfile }) {
   const router = useRouter();
   const agentName = `${agentProfile.firstname} ${agentProfile.lastname}`;
   const agentEmail = agentProfile.email;
-  const agentPhone = agentProfile.cellphone;
   const providerUri = companyProfile.providerUri;
   const recipientEmail = companyProfile.recipientEmail;
   const emailSubject = companyProfile.emailSubject;
@@ -125,20 +124,19 @@ export default function Form({ agentProfile, companyProfile }) {
             </contact>
           </customer>
           <provider>
-          <id>${agentProfile.crmEmployerID}</id>
             <name part="full">i1Smart Marketing</name>
             <service>i1Smart Marketing</service>
             <url><![CDATA[${providerUri}]]></url>
-            <email><![CDATA[leads@i1smartmarketing.com]]></email>
-            <contact>
-              <name part="full" type="individual">${agentName}</name>
-              <email><![CDATA[${agentEmail}]]></email>
-              <phone><![CDATA[${agentPhone}]]></phone>
-            </contact>
+            <email><![CDATA[${agentEmail}]]></email>
           </provider>
         </prospect>
       </adf>
     `;
+    // <contact>
+    //           <name part="full" type="individual">${agentName}</name>
+    //           <email><![CDATA[${agentEmail}]]></email>
+    //           <phone><![CDATA[${agentPhone}]]></phone>
+    //         </contact>
 
     try {
       const response = await fetch("/api/send-email", {
@@ -149,11 +147,11 @@ export default function Form({ agentProfile, companyProfile }) {
         body: JSON.stringify({
           toEmail: recipientEmail,
           adfXml: adfXml,
-          subject: emailSubject,
+          subject: `${emailSubject} from ${agentEmail}`,
           message: adfXml,
         }),
       });
-console.log(emailSubject)
+
       const result = await response.json();
 
       if (response.ok) {

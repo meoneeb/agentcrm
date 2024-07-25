@@ -1,5 +1,20 @@
 import { companyArr } from "./company";
 export const agentArr = [
+
+  // FIGICS DEMO START //
+  {
+    firstname: "Oneeb",
+    lastname: "Faisal",
+    agentid: "meoneeb",
+    title: "Full Stack Designer",
+    email: "meoneeb@figics.ocm",
+    cellphone: "3246807263",
+    company: "figics",
+    // img: "",
+    smartpass:
+      "#",
+  },
+  // FIGICS DEMO END //
   // EDGE PERFORMANCE SPORTS START
   {
     firstname: "Kelli",
@@ -13,18 +28,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2023/09/Kelli-Cordes-Marketing-Director-1.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/azwtdwsk9h-t4667f061a6b4f3",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412120563",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:kelli@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Chuck",
@@ -38,18 +41,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2019/08/Chuck-Scott-General-Manager-e1566515611253.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/mlto894120xsh667f227034ce4",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+14804522989",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:cscott@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Jason",
@@ -63,18 +54,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2020/11/Jason-11-2020-scaled-e1620168169673.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/6ffavuzecnm-96682d301b5021",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+12089228431",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:cscott@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Rory",
@@ -88,18 +67,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/RORY-scaled-e1708458559484.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/-8snb00ymel0q6682d848a6875",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+12087404785",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:rory@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Cam",
@@ -113,18 +80,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/06/cam-2-scaled-e1717689472940.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/qrykl4lc9bjyw6682daf198663",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412129406",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:cam@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Steffani",
@@ -138,18 +93,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2018/11/Steffani-Gilbert-Parts-Manager-e1541193620412.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/s_wodefnb5yk-6682e11014416",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+12087391315",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:steffani@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Marty",
@@ -163,18 +106,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2018/11/Marty-Grindstaff-sales-e1541194552521.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ysgj9ltwsm86h6682e3354e62b",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412494879",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:marty@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Tina",
@@ -188,18 +119,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/TINA-e1708458826645.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/kjdlf65yivl3d6682e698ce941",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412492520",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:tina@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Kyle",
@@ -213,18 +132,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2019/08/Kyle-Chapman-1-e1566516252198.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ash0muti7e_7z6682e89baa844",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+12082686459",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:kyle@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Colton",
@@ -238,18 +145,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/COLTON-scaled-e1708458977230.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/o7ldchdt9udbr6682ea8cd9b3a",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412644760",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:Colton@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Randy",
@@ -263,18 +158,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2020/11/Randy-scaled.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/36pw_ndryqe516682ecb26e76a",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15415277365",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:randy@edgeperformancesports.com",
-      },
-    ],
   },
   {
     firstname: "Javier",
@@ -288,18 +171,6 @@ export const agentArr = [
     img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2018/11/Javier-Cardoza-Finance-Manager-e1566517889878.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/s5k6z521gjlg86682ef347f58e",
-    action: [
-      {
-        label: "Text",
-        icon: "fi-rr-messages",
-        url: "sms:+15412495125",
-      },
-      {
-        label: "Email",
-        icon: "fi-rr-envelope",
-        url: "mailto:javier@edgeperformancesports.com",
-      },
-    ],
   },
   // EDGE PERFORMANCE SPORTS END
 
