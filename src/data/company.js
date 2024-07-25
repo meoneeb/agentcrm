@@ -72,7 +72,7 @@ export const companyArr = [
     workphone: "630-552-6281",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "dempseydodge@promaxonline.net",
-    emailSubject: "i1SmatMarketing Geo Lead",
+    emailSubject: "Tapped Business Card",
     defaultProfileImg:
       "https://media.gettyimages.com/id/458624423/photo/2010-jeep-wrangler.jpg?s=612x612&w=0&k=20&c=sDhnGNsti2dAeoWaqg3QSoW2oY5MJ2Y7okPaT_iQQlA=",
     about: <></>,
