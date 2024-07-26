@@ -139,28 +139,50 @@ export default function Form({ agentProfile, companyProfile }) {
     //         </contact>
 
     try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          toEmail: recipientEmail,
-          adfXml: adfXml,
-          subject: `${emailSubject} from ${agentEmail}`,
-          message: adfXml,
+      // Execute both fetch requests concurrently
+      const [sendEmailResponse, sendEmailCcResponse] = await Promise.all([
+        fetch("/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            toEmail: recipientEmail,
+            adfXml: adfXml,
+            subject: `${emailSubject} from ${agentEmail}`,
+            message: adfXml,
+          }),
         }),
-      });
+        fetch("/api/send-email-cc", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            toEmail: "i1smartmarketing@gmail.com", // Assuming a different recipient for CC
+            adfXml: adfXml,
+            subject: `COPY - ${emailSubject} from ${agentEmail}`,
+            message: adfXml,
+          }),
+        }),
+      ]);
 
-      const result = await response.json();
+      // Parse both responses
+      const [sendEmailResult, sendEmailCcResult] = await Promise.all([
+        sendEmailResponse.json(),
+        sendEmailCcResponse.json(),
+      ]);
 
-      if (response.ok) {
-        setResponseMessage("Information submitted successfully!");
+      // Check if both requests succeeded
+      if (sendEmailResponse.ok && sendEmailCcResponse.ok) {
+        setResponseMessage(
+          "Information submitted successfully to both recipients!"
+        );
         setTimeout(() => {
           router.push(`${agentProfile.smartpass}`);
         }, 3000);
       } else {
-        setResponseMessage(`Failed to submit: ${result.message}`);
+        setResponseMessage(`Failed to submit`);
       }
     } catch (error) {
       setResponseMessage(`An error occurred: ${error.message}`);
