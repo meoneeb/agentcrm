@@ -176,7 +176,7 @@ export default function Form({ agentProfile, companyProfile }) {
       // Check if both requests succeeded
       if (sendEmailResponse.ok && sendEmailCcResponse.ok) {
         setResponseMessage(
-          "Information submitted successfully to both recipients!"
+          "Information submitted successfully!"
         );
         setTimeout(() => {
           router.push(`${agentProfile.smartpass}`);
