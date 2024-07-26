@@ -16,17 +16,17 @@ export default async function handler(req, res) {
     //   },
     // });
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "i1smartmarketing@gmail.com",
-        pass: "oixiaycjghbdlrdq",
-      },
-      tls: {
-        // do not fail on invalid certs
-        rejectUnauthorized: false,
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   service: "gmail",
+    //   auth: {
+    //     user: "i1smartmarketing@gmail.com",
+    //     pass: "oixiaycjghbdlrdq",
+    //   },
+    //   tls: {
+    //     // do not fail on invalid certs
+    //     rejectUnauthorized: false,
+    //   },
+    // });
 
     // const transporter = nodemailer.createTransport({
     //   host: "reseller20.webserversystems.com",
@@ -56,8 +56,22 @@ export default async function handler(req, res) {
     //   },
     // });
 
+    const transporter = nodemailer.createTransport({
+      host: "box1.technoleadz.com",
+      port: 587,
+      secure: false, // Use true for port 465
+      auth: {
+        user: "leads@flarepass.com",
+        pass: "fsf4n_DZU",
+      },
+      tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false,
+      },
+    });
+
     const mailOptions = {
-      from: "leads@i1smartmarketing.com",
+      from: "leads@flarepass.com",
       to: toEmail,
       subject: subject,
       text: message,
