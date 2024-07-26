@@ -15,19 +15,46 @@ export default async function handler(req, res) {
     //     rejectUnauthorized: false,
     //   },
     // });
+
     const transporter = nodemailer.createTransport({
-      host: "reseller20.webserversystems.com",
-      port: 465,
-      secure: true, // Use true for port 465
+      service: "gmail",
       auth: {
-        user: "leads@i1smartmarketing.com",
-        pass: "vjE+C#-Y_(#@",
+        user: "i1smartmarketing@gmail.com",
+        pass: "oixiaycjghbdlrdq",
       },
       tls: {
         // do not fail on invalid certs
         rejectUnauthorized: false,
       },
     });
+
+    // const transporter = nodemailer.createTransport({
+    //   host: "reseller20.webserversystems.com",
+    //   port: 465,
+    //   secure: true, // Use true for port 465
+    //   auth: {
+    //     user: "lead@flarepass.com",
+    //     pass: "&2+&H+Ora*]%",
+    //   },
+    //   tls: {
+    //     // do not fail on invalid certs
+    //     rejectUnauthorized: false,
+    //   },
+    // });
+
+    // const transporter = nodemailer.createTransport({
+    //   host: "reseller20.webserversystems.com",
+    //   port: 465,
+    //   secure: true, // Use true for port 465
+    //   auth: {
+    //     user: "leads@i1smartmarketing.com",
+    //     pass: "vjE+C#-Y_(#@",
+    //   },
+    //   tls: {
+    //     // do not fail on invalid certs
+    //     rejectUnauthorized: false,
+    //   },
+    // });
 
     const mailOptions = {
       from: "leads@i1smartmarketing.com",
