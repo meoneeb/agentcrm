@@ -7,7 +7,7 @@ export const agentArr = [
     lastname: "Faisal",
     agentid: "meoneeb",
     title: "Full Stack Designer",
-    email: "meoneeb@figics.ocm",
+    email: "meoneeb@figics.com",
     cellphone: "3246807263",
     company: "figics",
     // img: "",
