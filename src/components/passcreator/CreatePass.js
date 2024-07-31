@@ -22,7 +22,7 @@ export default function CreatePassForm() {
     // .map(([id, value]) => ({ id, value }));
     try {
       const response = await fetch(
-        `/api/passcreator/create-pass?passtemplate=${passTemplateUid}`,
+        `/api/passcreator/create-pass?passtemplate=${passTemplateUid}&zapierStyle=true`,
         {
           method: "POST",
           headers: {
