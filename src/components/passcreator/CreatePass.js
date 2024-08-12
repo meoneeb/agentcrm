@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function CreatePassForm() {
-  const [passTemplateUid, setPassTemplateUid] = useState("");
+  const [passTemplateUid, setPassTemplateUid] = useState("a10176e4-b5ad-4ba7-8258-c174d29e65ac");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [year, setYear] = useState("");
