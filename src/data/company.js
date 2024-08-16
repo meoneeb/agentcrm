@@ -83,7 +83,7 @@ export const companyArr = [
     name: "Figics",
     company: "figics",
     website: "www.figics.com",
-    logo: "/companies/dempsey-logo.webp",
+    logo: "/companies/figics-logo.jpg",
     favicon: "/companies/favicon-dempsey.png",
     accent: "24, 24, 24",
     address: "24 C3 Kickstart, MM Alam Rd",
