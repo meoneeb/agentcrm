@@ -23,7 +23,13 @@ export default function Page({ params }) {
 
   return (
     <div>
-     <iframe className="w-screen h-screen" style={{border: "none"}} src={temp.prototypeUrl}></iframe>
+      <a href="/template" className="fixed top-4 left-4 bg-neutral-200 p-2 hover:bg-neutral-300 text-black font-semibold border border-black rounded shadow-xl cursor-pointer decoration-none">Go Back</a>
+      <iframe
+        className="w-screen h-screen"
+        style={{ border: "none" }}
+        src={temp.prototypeUrl}
+        allowfullscreen
+      ></iframe>
     </div>
   );
 }
