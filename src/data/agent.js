@@ -9,7 +9,7 @@ export const agentArr = [
     title: "Full Stack Designer",
     email: "meoneeb@figics.com",
     cellphone: "3246807263",
-    company: "figics",
+    company: "figicsolutions",
     // img: "",
     smartpass:
       "#",
