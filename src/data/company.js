@@ -114,7 +114,7 @@ export const companyArr = [
     countrycode: "1",
     workphone: "6306016611",
     providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "hi@meoneeb.com",
+    recipientEmail: "dortiz@castlecars.com",
     emailSubject: "Lead Generation",
     // defaultProfileImg: "",
     about: (

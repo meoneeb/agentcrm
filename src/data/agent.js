@@ -338,7 +338,7 @@ export const agentArr = [
     agentid: "david-ortiz",
     crmEmployerID: "7086502600",
     title: "Executive Director, Sales & Business Development",
-    email: "dortiz@castlecars.com ",
+    email: "dortiz@castlecars.com",
     cellphone: "7086502600",
     company: "castle",
     img: "https://castleautomotivegroup.com/wp-content/uploads/2023/06/David_3-scaled-1-e1692124186261-1024x1024.jpg",
