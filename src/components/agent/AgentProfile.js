@@ -54,7 +54,7 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
               <h1 className="text-2xl font-semibold text-neutral-900">
                 {fullname}
               </h1>
-              <h3 className="text-lg text-neutral-500">{title}</h3>
+              <h3 className="text-lg text-neutral-500 text-center">{title}</h3>
             </div>
             <div className="flex flex-col justify-center items-center gap-2">
               <VCardDownload

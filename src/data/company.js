@@ -99,4 +99,44 @@ export const companyArr = [
     // defaultProfileImg: "",
     about: <></>,
   },
+  {
+    name: "Castle Automotive Group",
+    company: "castle",
+    website: "http://castleautomotivegroup.com",
+    logo: "https://castleautomotivegroup.com/wp-content/uploads/2021/10/cropped-Castle-Automotive-Group-Logo-v3-Round-2.png",
+    favicon: "/companies/favicon-dempsey.png",
+    accent: "234, 33, 40",
+    address: "1107 State Route 31",
+    city: "McHenry",
+    region: "IL",
+    zipcode: "60050",
+    country: "US",
+    countrycode: "1",
+    workphone: "6306016611",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "hi@meoneeb.com",
+    emailSubject: "Lead Generation",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Castle Automotive Group, a well-established and expanding dealer group,
+        is always looking for ways to improve and grow, giving all team members
+        opportunities to advance their careers.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/ShopCastleCars",
+      },
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/castleautomotivegroup",
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/castleautomotivegroup/",
+      },
+    ],
+  },
 ];

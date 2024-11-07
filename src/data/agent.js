@@ -1,6 +1,5 @@
 import { companyArr } from "./company";
 export const agentArr = [
-
   // FIGICS DEMO START //
   {
     firstname: "Oneeb",
@@ -11,8 +10,7 @@ export const agentArr = [
     cellphone: "3246807263",
     company: "figicsolutions",
     // img: "",
-    smartpass:
-      "#",
+    smartpass: "#",
   },
   // FIGICS DEMO END //
   // EDGE PERFORMANCE SPORTS START
@@ -331,8 +329,22 @@ export const agentArr = [
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/q_la6nbzkttj4669591ab03c4d",
   },
-
   // DEMPSEY END
+
+  // CASTLE AUTOMOBILE START
+  {
+    firstname: "David",
+    lastname: "Ortiz",
+    agentid: "david-ortiz",
+    crmEmployerID: "7086502600",
+    title: "Executive Director, Sales & Business Development",
+    email: "dortiz@castlecars.com ",
+    cellphone: "7086502600",
+    company: "castle",
+    img: "https://castleautomotivegroup.com/wp-content/uploads/2023/06/David_3-scaled-1-e1692124186261-1024x1024.jpg",
+    smartpass: "#",
+  },
+  // CASTE AUTOMOBILE END
 ];
 
 function mergeCompanyData(agentArr, companyArr) {
