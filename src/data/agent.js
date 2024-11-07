@@ -342,7 +342,7 @@ export const agentArr = [
     cellphone: "7086502600",
     company: "castle",
     img: "https://castleautomotivegroup.com/wp-content/uploads/2023/06/David_3-scaled-1-e1692124186261-1024x1024.jpg",
-    smartpass: "#",
+    smartpass: "https://smartpass.i1smartmarketing.com/en/p/p6a8jly3_t3-2672d149bc2cce",
   },
   // CASTE AUTOMOBILE END
 ];
