@@ -25,7 +25,7 @@ export const agentArr = [
     email: "kelli@edgeperformancesports.com",
     cellphone: "5412120563",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2023/09/Kelli-Cordes-Marketing-Director-1.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Kelli-Cordes-Marketing-Director.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/azwtdwsk9h-t4667f061a6b4f3",
   },
@@ -38,7 +38,7 @@ export const agentArr = [
     email: "cscott@edgeperformancesports.com",
     cellphone: "4804522989",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2019/08/Chuck-Scott-General-Manager-e1566515611253.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Chuck-Scott-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/mlto894120xsh667f227034ce4",
   },
@@ -51,7 +51,7 @@ export const agentArr = [
     email: "jcarlin@edgeperformancesports.com",
     cellphone: "2089228431",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2020/11/Jason-11-2020-scaled-e1620168169673.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/jason-circle-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/6ffavuzecnm-96682d301b5021",
   },
@@ -64,7 +64,7 @@ export const agentArr = [
     email: "rory@edgeperformancesports.com",
     cellphone: "2087404785",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/RORY-scaled-e1708458559484.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Rory-Kelly-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/-8snb00ymel0q6682d848a6875",
   },
@@ -77,7 +77,7 @@ export const agentArr = [
     email: "cam@edgeperformancesports.com",
     cellphone: "5412129406",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/06/cam-2-scaled-e1717689472940.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Cam-Scott-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/qrykl4lc9bjyw6682daf198663",
   },
@@ -103,7 +103,7 @@ export const agentArr = [
     email: "marty@edgeperformancesports.com",
     cellphone: "5412494879",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2018/11/Marty-Grindstaff-sales-e1541194552521.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Marty-Grindstaff-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ysgj9ltwsm86h6682e3354e62b",
   },
@@ -116,7 +116,7 @@ export const agentArr = [
     email: "tina@edgeperformancesports.com",
     cellphone: "5412492520",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/TINA-e1708458826645.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Tina-Marsing-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/kjdlf65yivl3d6682e698ce941",
   },
@@ -129,7 +129,7 @@ export const agentArr = [
     email: "kyle@edgeperformancesports.com",
     cellphone: "2082686459",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2019/08/Kyle-Chapman-1-e1566516252198.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Kyle-Chapman-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ash0muti7e_7z6682e89baa844",
   },
@@ -142,7 +142,7 @@ export const agentArr = [
     email: "Colton@edgeperformancesports.com",
     cellphone: "5412644760",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2024/02/COLTON-scaled-e1708458977230.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Colton-Powell-300x300.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/o7ldchdt9udbr6682ea8cd9b3a",
   },
@@ -155,7 +155,7 @@ export const agentArr = [
     email: "randy@edgeperformancesports.com",
     cellphone: "5415277365",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2020/11/Randy-scaled.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Randy-Mudica-300x300.png",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/36pw_ndryqe516682ecb26e76a",
   },
@@ -168,7 +168,7 @@ export const agentArr = [
     email: "javier@edgeperformancesports.com",
     cellphone: "5412495125",
     company: "edge",
-    img: "https://edgeperformancesports.com/wp-content/uploads/sites/45/2018/11/Javier-Cardoza-Finance-Manager-e1566517889878.jpg",
+    img: "https://edgeperformancesports.com/wp-content/uploads/sites/2/2024/10/Javier-Cardoza-300x300.png",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/s5k6z521gjlg86682ef347f58e",
   },
