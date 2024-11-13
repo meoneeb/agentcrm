@@ -71,9 +71,9 @@ export const companyArr = [
     country: "USA",
     countrycode: "1",
     workphone: "630-552-6281",
-    crm: "Promax Online",
+    crm: "Vin Solution",
     providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "dempseydodge@promaxonline.net",
+    recipientEmail: "leads@dempseychrysler.com",
     emailSubject: "Tapped Business Card",
     defaultProfileImg:
       "https://media.gettyimages.com/id/458624423/photo/2010-jeep-wrangler.jpg?s=612x612&w=0&k=20&c=sDhnGNsti2dAeoWaqg3QSoW2oY5MJ2Y7okPaT_iQQlA=",
