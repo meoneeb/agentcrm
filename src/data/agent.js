@@ -342,9 +342,130 @@ export const agentArr = [
     cellphone: "7086502600",
     company: "castle",
     img: "https://castleautomotivegroup.com/wp-content/uploads/2023/06/David_3-scaled-1-e1692124186261-1024x1024.jpg",
-    smartpass: "https://smartpass.i1smartmarketing.com/en/p/p6a8jly3_t3-2672d149bc2cce",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p6a8jly3_t3-2672d149bc2cce",
   },
   // CASTE AUTOMOBILE END
+
+  // FORT KENT START
+  {
+    firstname: "Frank",
+    lastname: "Fournier",
+    agentid: "frank-fournier",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Owner",
+    email: "fkps@fortkentpowersports.com",
+    cellphone: "207-316-7057",
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/16_p4zplcq_9y67365eeb33216",
+  },
+  {
+    firstname: "Keith",
+    lastname: "Pelletier",
+    agentid: "keith-pelletier",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Sales Manager",
+    email: "fkps.sales@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/vuuhdx-6rqs_n67365f72677d2",
+  },
+  {
+    firstname: "Brandan",
+    lastname: "Beaulieu",
+    agentid: "brandan-beaulieu",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Finace Manager",
+    email: "fkps.finance@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/lrfms6nsktxji67365ff980a1a",
+  },
+  {
+    firstname: "Tyler",
+    lastname: "Thibeault",
+    agentid: "tyler-thibeault",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Parts Manager",
+    email: "fkps.tyler@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/zbazt98gyjbt4673660ad46875",
+  },
+  {
+    firstname: "Brady",
+    lastname: "Desjardins",
+    agentid: "brady-desjardins",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Parts Clerk",
+    email: "fkps.bradyd@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/s7t9e2uda5zpz6736612bc5569",
+  },
+  {
+    firstname: "Parker",
+    lastname: "Jandreau",
+    agentid: "parker-jandreau",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Service/Warranty Clerk",
+    email: "fkps.parker@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/ms3f5uv2smf29673661ab8c0b5",
+  },
+  {
+    firstname: "Justin",
+    lastname: "Fickett",
+    agentid: "justin-fickett",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Service Manager",
+    email: "fkps.justin@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/jvqfmyoz8a5an6736622743173",
+  },
+  {
+    firstname: "Fancy",
+    lastname: "Drolet",
+    agentid: "fancy-drolet",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Office Administrator",
+    email: "f.droletfkps@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/iqx9y5x8_0c-s673662b9d6426",
+  },
+  {
+    firstname: "Brenda",
+    lastname: "Bourgoin",
+    agentid: "brenda-bourgoin",
+    crmEmployerID: "Fort Kent PowerSports",
+    title: "Shipping/Receiving",
+    email: "fkps.brenda@gmail.com",
+    cellphone: null,
+    company: "fortkent",
+    img: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/n06p60a7skon06736633313ff5",
+  },
+  // FORT KENT END
 ];
 
 function mergeCompanyData(agentArr, companyArr) {

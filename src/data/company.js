@@ -139,4 +139,42 @@ export const companyArr = [
       },
     ],
   },
+  {
+    name: "Fort Kent Powersports",
+    company: "fortkent",
+    website: "http://fortkentpowersports.com",
+    logo: "/companies/logo-fort.png",
+    favicon: "/companies/logo-fort.png",
+    accent: "237, 29, 36",
+    address: "337 Caribou Road",
+    city: "Fort Kent",
+    region: "ME",
+    zipcode: "4743",
+    country: "US",
+    countrycode: "1",
+    workphone: "2078343607",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "fkps@fortkentpowersports.com",
+    emailSubject: "Lead Generation",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Fort Kent Powersports carries a complete line of clothing and
+        accessories for your Ski-Doo® Snowmobile, Polaris® Snowmobile, Sea-Doo®
+        PWC, Evinrude Engines, Can-Am® ATV, Polaris® ATV, Can-Am® Spyder,
+        Commander UTV, Polaris® Ranger or Polaris® Razor. Many items are in
+        stock, while others are available by special order.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/fortkentpowersports",
+      },
+      {
+        icon: "ebay",
+        href: "https://www.ebay.com/str/Fort-Kent-Powersports",
+      },
+    ],
+  },
 ];
