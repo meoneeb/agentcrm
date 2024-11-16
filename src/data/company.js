@@ -154,8 +154,8 @@ export const companyArr = [
     countrycode: "1",
     workphone: "2078343607",
     providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "fkps@fortkentpowersports.com",
-    emailSubject: "Lead Generation",
+    recipientEmail: "developers@i1smartmarketing.com",
+    emailSubject: "FortKent Leads | Landing Pages",
     // defaultProfileImg: "",
     about: (
       <>
