@@ -4,7 +4,6 @@ import AgentProfile from "@/components/agent/AgentProfile";
 import { updatedAgentArr } from "@/data/agent"; // Ensure this path is correct
 
 export default function AgentPage({ params }) {
-  console.log(params, "params");
   const { company, agentid } = params;
 
   // Function to convert spaces to hyphens

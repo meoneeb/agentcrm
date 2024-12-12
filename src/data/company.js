@@ -177,4 +177,42 @@ export const companyArr = [
       },
     ],
   },
+  {
+    name: "Monetary Gold",
+    company: "monetary-gold",
+    website: "https://monetarygold.com",
+    logo: "https://www.monetarygold.com/wp-content/uploads/2021/09/logo.svg",
+    favicon: "https://www.monetarygold.com/wp-content/uploads/2021/09/logo.svg",
+    accent: "223, 162, 59",  
+    address: "21800 Oxnard St., Ste 1120",
+    city: "Woodland Hills",
+    region: "CA",
+    zipcode: "91367",
+    country: "US",
+    countrycode: "1",
+    workphone: "8884114653",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "developers@i1smartmarketing.com",
+    emailSubject: "Monetary Gold | Landing Pages",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        {/* Fort Kent Powersports carries a complete line of clothing and
+        accessories for your Ski-Doo® Snowmobile, Polaris® Snowmobile, Sea-Doo®
+        PWC, Evinrude Engines, Can-Am® ATV, Polaris® ATV, Can-Am® Spyder,
+        Commander UTV, Polaris® Ranger or Polaris® Razor. Many items are in
+        stock, while others are available by special order. */}
+      </>
+    ),
+    // social: [
+    //   {
+    //     icon: "facebook",
+    //     href: "https://www.facebook.com/fortkentpowersports",
+    //   },
+    //   {
+    //     icon: "ebay",
+    //     href: "https://www.ebay.com/str/Fort-Kent-Powersports",
+    //   },
+    // ],
+  },
 ];

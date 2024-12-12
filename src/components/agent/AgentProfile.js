@@ -11,8 +11,12 @@ import VCardDownload from "./button/VCardDownload";
 
 export default function AgentProfile({ agentProfile, companyProfile }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
+  const initials =
+    `${agentProfile.firstname[0]}${agentProfile.lastname[0]}`.toUpperCase();
   const img =
-    agentProfile.img || companyProfile.defaultProfileImg || `/avatar.webp`;
+    agentProfile.img ||
+    companyProfile.defaultProfileImg ||
+    `https://placehold.co/400x400?text=${initials}`;
   const title = agentProfile.title;
   const company = companyProfile.name;
   const accent = companyProfile.accent;

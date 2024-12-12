@@ -8,7 +8,7 @@ export const agentArr = [
     title: "Full Stack Designer",
     email: "meoneeb@figics.com",
     cellphone: "3246807263",
-    company: "figicsolutions",
+    company: "figics",
     // img: "",
     smartpass: "#",
   },
@@ -466,6 +466,22 @@ export const agentArr = [
       "https://smartpass.i1smartmarketing.com/en/p/n06p60a7skon06736633313ff5",
   },
   // FORT KENT END
+
+  // MONETARY GOLD START
+  {
+    firstname: "David",
+    lastname: "Schroeder",
+    agentid: "david-schroeder",
+    crmEmployerID: "",
+    title: "Marketing Director",
+    email: "marketing@monetarygold.com",
+    cellphone: "8184652681",
+    company: "monetary-gold",
+    img: null,
+    smartpass: "",
+    // "https://smartpass.i1smartmarketing.com/en/p/n06p60a7skon06736633313ff5",
+  },
+  // MONETARY GOLD END
 ];
 
 function mergeCompanyData(agentArr, companyArr) {

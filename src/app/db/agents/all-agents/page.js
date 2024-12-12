@@ -133,7 +133,7 @@ export default function Page() {
             >
               <div style={mobileFrame} className="lg:mt-0 mt-24">
                 <iframe
-                  src={`https://flarepass.com/${selectedAgent.company}/${selectedAgent.agentid}`}
+                  src={`/${selectedAgent.company}/${selectedAgent.agentid}`}
                   title="Agent Preview"
                   className="w-full h-full"
                 />
