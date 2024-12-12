@@ -478,8 +478,8 @@ export const agentArr = [
     cellphone: "8184652681",
     company: "monetary-gold",
     img: null,
-    smartpass: "",
-    // "https://smartpass.i1smartmarketing.com/en/p/n06p60a7skon06736633313ff5",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/naw8_m3kuz3xv675b24c380530",
   },
   // MONETARY GOLD END
 ];
