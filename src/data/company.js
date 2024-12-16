@@ -197,13 +197,13 @@ export const companyArr = [
     // defaultProfileImg: "",
     about: (
       <>
-        Monetary Gold can help secure your hard-earned savings by providing asset protection
-        during economic volatility and growth during economic prosperity.
-        Everyone needs to own gold in the current fiscal climate, and no one
-        should have to pay high commissions to do so. Monetary Gold is here to
-        serve investors, collectors and anyone seeking a more secure American
-        dream --- by offering a full range of precious metals products at fair
-        and competitive prices.
+        Monetary Gold can help secure your hard-earned savings by providing
+        asset protection during economic volatility and growth during economic
+        prosperity. Everyone needs to own gold in the current fiscal climate,
+        and no one should have to pay high commissions to do so. Monetary Gold
+        is here to serve investors, collectors and anyone seeking a more secure
+        American dream --- by offering a full range of precious metals products
+        at fair and competitive prices.
       </>
     ),
     // social: [
@@ -216,5 +216,60 @@ export const companyArr = [
     //     href: "https://www.ebay.com/str/Fort-Kent-Powersports",
     //   },
     // ],
+  },
+  {
+    name: "Mike Savoie Volkswagen of Troy",
+    company: "mikesavoievw",
+    website: "www.mikesavoievw.com",
+    logo: "/companies/mikesavoievw-logo.webp",
+    favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "0, 43, 92",
+    address: "1828 Maplelawn Rd",
+    city: "Troy",
+    region: "MI",
+    zipcode: "48084",
+    country: "US",
+    countrycode: "1",
+    workphone: "2483729026",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "developers@i1smartmarketing.com",
+    emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Check out our new specials and used specials for additional savings on
+        your next vehicle. As a premier Michigan Volkswagen dealer, we have a
+        huge selection of new and used vehicles from which to choose. Mike
+        Savoie Volkswagen of Troy online and offline customers enjoy vehicle
+        specials every day. We offer Volkswagen service & parts, an online
+        inventory, and outstanding financing options, making Mike Savoie
+        Volkswagen of Troy a preferred dealer serving Troy, Rochester,
+        Bloomfield Hills, Sterling Heights and Royal Oak area Volkswagen buyers.
+        Ready to set up a test drive? Visit our Rochester area Volkswagen
+        dealership in Troy, MI today!
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "www.facebook.com/VWoftroy",
+      },
+      {
+        icon: "instagram",
+        href: "www.instagram.com/volkswagenoftroy",
+      },
+      {
+        icon: "tiktok",
+        href: "www.tiktok.com/@volkswagenoftroy",
+      },
+      {
+        icon: "yelp",
+        href: "www.yelp.com/biz/mike-savoie-volkswagen-of-troy-troy",
+      },
+      {
+        icon: "google",
+        href: "https://g.page/r/CXKzhvUbBWFNEBM/review",
+      },
+    ],
   },
 ];
