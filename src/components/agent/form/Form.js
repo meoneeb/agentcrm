@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import StyledButton from "../../../componentsGlobal/button/Styled";
 
@@ -16,6 +16,9 @@ export default function Form({ agentProfile, companyProfile }) {
     lastName: "",
     email: "",
     phone: "",
+    latitude: "",
+    longitude: "",
+    locationName: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +30,54 @@ export default function Form({ agentProfile, companyProfile }) {
     email: "",
     phone: "",
   });
+  useEffect(() => {
+    handleGeolocation();
+  }, []);
+
+  const handleGeolocation = () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+
+          setFormData((prevFormData) => ({
+            ...prevFormData,
+            latitude,
+            longitude,
+          }));
+
+          // Fetch location name using reverse geocoding
+          try {
+            const response = await fetch(
+              `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyBxWsC8WA57JmSwgCqd8oAb5jUqJGZ6y2Q`
+            );
+            const data = await response.json();
+            if (data.results && data.results.length > 0) {
+              const locationName = data.results[0].formatted_address;
+              setFormData((prevFormData) => ({
+                ...prevFormData,
+                locationName,
+              }));
+            } else {
+              setResponseMessage("Unable to fetch location name.");
+            }
+          } catch (error) {
+            console.error("Reverse geocoding error:", error.message);
+            setResponseMessage("Failed to determine location name.");
+          }
+        },
+        (error) => {
+          console.error("Geolocation error:", error.message);
+          setResponseMessage(
+            "Geolocation is disabled or unavailable. Please enable it in your browser."
+          );
+        }
+      );
+    } else {
+      setResponseMessage("Geolocation is not supported by this browser.");
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -106,6 +157,11 @@ export default function Form({ agentProfile, companyProfile }) {
       return;
     }
 
+    if (!formData.latitude || !formData.longitude) {
+      setFormError("Geolocation is required. Please allow location access.");
+      return;
+    }
+
     setFormError("");
     setIsLoading(true);
     setResponseMessage("");
@@ -121,6 +177,10 @@ export default function Form({ agentProfile, companyProfile }) {
               <name part="last">${formData.lastName}</name>
               <email><![CDATA[${formData.email}]]></email>
               <phone><![CDATA[${formData.phone}]]></phone>
+              <location>
+                <latitude>${formData.latitude}</latitude>
+                <longitude>${formData.longitude}</longitude>
+              </location>
             </contact>
           </customer>
           <provider>
@@ -132,57 +192,28 @@ export default function Form({ agentProfile, companyProfile }) {
         </prospect>
       </adf>
     `;
-    // <contact>
-    //           <name part="full" type="individual">${agentName}</name>
-    //           <email><![CDATA[${agentEmail}]]></email>
-    //           <phone><![CDATA[${agentPhone}]]></phone>
-    //         </contact>
 
     try {
-      // Execute both fetch requests concurrently
-      const [sendEmailResponse, sendEmailCcResponse] = await Promise.all([
-        fetch("/api/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            toEmail: recipientEmail,
-            adfXml: adfXml,
-            subject: `${emailSubject} from ${agentEmail}`,
-            message: adfXml,
-          }),
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          toEmail: recipientEmail,
+          adfXml: adfXml,
+          subject: `${emailSubject} from ${agentEmail}`,
+          message: adfXml,
         }),
-        fetch("/api/send-email-cc", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            toEmail: "i1smartmarketing@gmail.com", // Assuming a different recipient for CC
-            adfXml: adfXml,
-            subject: `COPY - ${emailSubject} from ${agentEmail}`,
-            message: adfXml,
-          }),
-        }),
-      ]);
+      });
 
-      // Parse both responses
-      const [sendEmailResult, sendEmailCcResult] = await Promise.all([
-        sendEmailResponse.json(),
-        sendEmailCcResponse.json(),
-      ]);
-
-      // Check if both requests succeeded
-      if (sendEmailResponse.ok && sendEmailCcResponse.ok) {
-        setResponseMessage(
-          "Information submitted successfully!"
-        );
+      if (response.ok) {
+        setResponseMessage("Information submitted successfully!");
         setTimeout(() => {
           router.push(`${agentProfile.smartpass}`);
         }, 3000);
       } else {
-        setResponseMessage(`Failed to submit`);
+        setResponseMessage("Failed to submit.");
       }
     } catch (error) {
       setResponseMessage(`An error occurred: ${error.message}`);
@@ -211,6 +242,7 @@ export default function Form({ agentProfile, companyProfile }) {
       <p className="text-neutral-500 mb-8">
         Would you like to share your contact information with {agentName}?
       </p>
+
       <form onSubmit={handleSubmit} className="w-full md:max-w-lg">
         <div className="flex flex-col space-y-4 text-neutral-900">
           <div className="flex flex-col md:flex-row md:space-x-4 md:space-y-0 space-y-4">
@@ -278,6 +310,44 @@ export default function Form({ agentProfile, companyProfile }) {
             )}
           </div>
 
+          <div className="flex flex-col md:flex-row md:space-x-4 md:space-y-0 space-y-4">
+
+            <p>Geolocation: {formData.latitude}, {formData.longitude}</p>
+            {/* <div className="w-full">
+              <input
+                className={inputClass("latitude")}
+                type="text"
+                name="latitude"
+                placeholder="Latitude"
+                value={formData.latitude}
+                onChange={handleChange}
+                required
+                disabled
+              />
+              {validationMessages.firstName && (
+                <p className="text-red-500 text-sm">
+                  {validationMessages.firstName}
+                </p>
+              )}
+            </div>
+            <div className="w-full">
+              <input
+                className={inputClass("longitude")}
+                type="text"
+                name="longitude"
+                placeholder="Longitude"
+                value={formData.longitude}
+                onChange={handleChange}
+                required
+                disabled
+              />
+              {validationMessages.lastName && (
+                <p className="text-red-500 text-sm">
+                  {validationMessages.lastName}
+                </p>
+              )}
+            </div> */}
+          </div>
           {formError && <p className="text-red-500 text-center">{formError}</p>}
 
           <StyledButton type="submit" disabled={isLoading}>
@@ -285,6 +355,7 @@ export default function Form({ agentProfile, companyProfile }) {
           </StyledButton>
         </div>
       </form>
+
       {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
     </div>
   );
