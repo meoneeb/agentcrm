@@ -4,13 +4,15 @@ import ScreenModal from "@/componentsGlobal/modal/ScreenModal";
 import ActionBar from "./button/ActionBar";
 import SocialBar from "./button/SocialBar";
 import StyledButton from "../../componentsGlobal/button/Styled";
-import Form from "./form/Form";
 import { useState } from "react";
 import AboutCompany from "./details/Company";
 import VCardDownload from "./button/VCardDownload";
 import AffinitivForm from "./form/AffinitivForm";
 
-export default function AgentProfile({ agentProfile, companyProfile }) {
+export default function AffinitivAgentProfile({
+  agentProfile,
+  companyProfile,
+}) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
   const initials =
     `${agentProfile.firstname[0]}${agentProfile.lastname[0]}`.toUpperCase();
@@ -76,17 +78,10 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
               </StyledButton>
               <div>
                 <ScreenModal isOpen={isModalOpen} onClose={handleCloseModal}>
-                  {companyProfile.affinitiv ? (
-                    <AffinitivForm
-                      companyProfile={companyProfile}
-                      agentProfile={agentProfile}
-                    />
-                  ) : (
-                    <Form
-                      agentProfile={agentProfile}
-                      companyProfile={companyProfile}
-                    />
-                  )}
+                  <AffinitivForm
+                    agentProfile={agentProfile}
+                    companyProfile={companyProfile}
+                  />
                 </ScreenModal>
               </div>
             </div>

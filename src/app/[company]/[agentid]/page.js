@@ -1,12 +1,11 @@
 "use client";
 
 import AgentProfile from "@/components/agent/AgentProfile";
-import { updatedAgentArr } from "@/data/agent"; // Ensure this path is correct
+import { updatedAgentArr } from "@/data/agent";
 
 export default function AgentPage({ params }) {
   const { company, agentid } = params;
 
-  // Function to convert spaces to hyphens
   const username = (text) => {
     if (!text) {
       return "";
@@ -26,6 +25,11 @@ export default function AgentPage({ params }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
   const companyProfile = agentProfile.companyDetails;
   const favicon = companyProfile.favicon || "/icons/fav.png";
+  const profileImg =
+    agentProfile.img ||
+    `https://placehold.co/150?text=${
+      agentProfile.firstname[0] + agentProfile.lastname[0]
+    }`;
   return (
     <>
       <head>
@@ -35,15 +39,8 @@ export default function AgentPage({ params }) {
         <meta name="description" content="" />
         <meta property="og:title" content={fullname} key="ogtitle" />
         <meta property="og:description" content="" key="ogdesc" />
-        <meta
-          property="og:image"
-          content={`https://www.flarepass.com${companyProfile.logo}`}
-          key="ogimage"
-        />
-        <meta
-          name="twitter:image:src"
-          content={`https://www.flarepass.com${companyProfile.logo}`}
-        />
+        <meta property="og:image" content={profileImg} key="ogimage" />
+        <meta name="twitter:image:src" content={profileImg} />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{`${fullname} - ${companyProfile.name}`}</title>
       </head>

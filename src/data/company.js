@@ -1,5 +1,26 @@
 export const companyArr = [
   {
+    name: "Figics",
+    company: "figics",
+    website: "www.figics.com",
+    logo: "/companies/logo-figics.svg",
+    favicon: "/companies/favicon-dempsey.png",
+    accent: "63, 190, 167",
+    address: "24 C3 Kickstart, MM Alam Rd",
+    city: "Lahore",
+    region: "Punjab",
+    zipcode: "60000",
+    country: "PK",
+    countrycode: "92",
+    workphone: "3246807263",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "hi@meoneeb.com",
+    emailSubject: "Lead Generation",
+    // defaultProfileImg: "",
+    about: <></>,
+    affinitiv: true,
+  },
+  {
     name: "Edge Performance Sports",
     company: "edge",
     website: "www.edgeperformancesports.com",
@@ -77,26 +98,6 @@ export const companyArr = [
     emailSubject: "Tapped Business Card",
     defaultProfileImg:
       "https://media.gettyimages.com/id/458624423/photo/2010-jeep-wrangler.jpg?s=612x612&w=0&k=20&c=sDhnGNsti2dAeoWaqg3QSoW2oY5MJ2Y7okPaT_iQQlA=",
-    about: <></>,
-  },
-  {
-    name: "Figics",
-    company: "figics",
-    website: "www.figics.com",
-    logo: "/companies/figics-logo.jpg",
-    favicon: "/companies/favicon-dempsey.png",
-    accent: "24, 24, 24",
-    address: "24 C3 Kickstart, MM Alam Rd",
-    city: "Lahore",
-    region: "Punjab",
-    zipcode: "60000",
-    country: "PK",
-    countrycode: "92",
-    workphone: "3246807263",
-    providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "hi@meoneeb.com",
-    emailSubject: "Lead Generation",
-    // defaultProfileImg: "",
     about: <></>,
   },
   {
@@ -275,6 +276,48 @@ export const companyArr = [
   {
     name: "Gamble Interiors",
     company: "gamble-interiors",
+    // website: "www.mikesavoievw.com",
+    logo: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "37, 92, 146",
+    address: "1644 Orlando Central Pkwy",
+    city: "Orlando",
+    region: "FL",
+    zipcode: "32809",
+    country: "US",
+    countrycode: "1",
+    workphone: "4076959678",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Gamble Interiors Lead | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        For over 20 years, our Orlando-based interior design studio has been
+        transforming spaces into breathtaking, functional works of art. We
+        specialize in creating timeless designs that reflect your personality,
+        enhance your lifestyle, and elevate every corner of your home or
+        business. From concept to completion, we blend creativity with
+        meticulous attention to detail, crafting environments that inspire and
+        endure. <br />
+        <a
+          href="https://www.facebook.com/profile.php?id=100057285286840&sk=reviews"
+          className="underline"
+        >
+          See what our customers say
+        </a>
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/profile.php?id=100057285286840",
+      },
+    ],
+  },
+  {
+    name: "Affinitiv",
+    company: "affinitiv",
     // website: "www.mikesavoievw.com",
     logo: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
     // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
