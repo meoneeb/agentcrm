@@ -26,15 +26,16 @@ export default function AboutCompany({ companyProfile }) {
             <i className="fi fi-rr-phone-call text-sm mr-2"></i>
             {companyProfile.workphone}
           </a>
-          <a
-            href={`https://${companyProfile.website}`}
-            target="_blank"
-            className="text-neutral-500"
-          >
-            <i className="fi fi-rr-up-right-from-square text-sm mr-2"></i>
-            Vist our website
-            {/* {companyProfile.website} */}
-          </a>
+          {companyProfile.website && (
+            <a
+              href={`https://${companyProfile.website}`}
+              target="_blank"
+              className="text-neutral-500"
+            >
+              <i className="fi fi-rr-up-right-from-square text-sm mr-2"></i>
+              Vist our website
+            </a>
+          )}
         </div>
       </div>
     </div>

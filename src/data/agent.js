@@ -847,6 +847,21 @@ export const agentArr = [
     smartpass: null,
   },
   // Mike Savoie Volkswagen of Troy END
+
+  // GAMBLE INTERIORS START
+  {
+    firstname: "Steve",
+    lastname: "Gamble",
+    agentid: "steve-gamble",
+    crmEmployerID: null,
+    title: "Creator & Artist",
+    email: "gambleinteriors@gmail.com",
+    cellphone: "4076959678",
+    company: "gamble-interiors",
+    img: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
+    smartpass: "https://smartpass.i1smartmarketing.com/en/p/_xv1cmavl-hjb6785499a971d2",
+  },
+  // GAMBLE INTERIORS END
 ];
 
 function mergeCompanyData(agentArr, companyArr) {
