@@ -321,40 +321,30 @@ export const companyArr = [
     // website: "www.mikesavoievw.com",
     logo: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
     // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
-    accent: "37, 92, 146",
-    address: "1644 Orlando Central Pkwy",
-    city: "Orlando",
-    region: "FL",
-    zipcode: "32809",
+    accent: "252, 185, 30",
+    address: "300 S Wacker Dr Suite 900",
+    city: "Chicago",
+    region: "IL",
+    zipcode: "60606",
     country: "US",
     countrycode: "1",
-    workphone: "4076959678",
+    // workphone: "4076959678",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
-    emailSubject: "Gamble Interiors Lead | Landing Page",
+    emailSubject: "Affinitiv | Landing Page",
     // defaultProfileImg: "",
     about: (
       <>
-        For over 20 years, our Orlando-based interior design studio has been
-        transforming spaces into breathtaking, functional works of art. We
-        specialize in creating timeless designs that reflect your personality,
-        enhance your lifestyle, and elevate every corner of your home or
-        business. From concept to completion, we blend creativity with
-        meticulous attention to detail, crafting environments that inspire and
-        endure. <br />
-        <a
-          href="https://www.facebook.com/profile.php?id=100057285286840&sk=reviews"
-          className="underline"
-        >
-          See what our customers say
-        </a>
+        Enabling automotive dealers to overcome their challenges and establish
+        strong customer connections with custom-tailored tools for sales,
+        service, and retention.
       </>
     ),
-    social: [
-      {
-        icon: "facebook",
-        href: "https://www.facebook.com/profile.php?id=100057285286840",
-      },
-    ],
+    // social: [
+    //   {
+    //     icon: "facebook",
+    //     href: "https://www.facebook.com/profile.php?id=100057285286840",
+    //   },
+    // ],
   },
 ];
