@@ -186,6 +186,17 @@ export const agentArr = [
       "https://smartpass.i1smartmarketing.com/en/p/p_1iofaqos-nc64f21e54c5e6c",
   },
   {
+    firstname: "Steven",
+    lastname: "Lukancic",
+    agentid: "steven-lukancic",
+    title: "Sales",
+    email: "dwayneg@dempseyplano.com",
+    cellphone: "630-466-3246",
+    company: "dempsey",
+    // img: null,
+    smartpass: "#",
+  },
+  {
     firstname: "Dwayne",
     lastname: "Gustave",
     agentid: "dwayne-gustave",
@@ -863,6 +874,7 @@ export const agentArr = [
       "https://smartpass.i1smartmarketing.com/en/p/_xv1cmavl-hjb6785499a971d2",
   },
   // GAMBLE INTERIORS END
+  
 ];
 
 function mergeCompanyData(agentArr, companyArr) {
