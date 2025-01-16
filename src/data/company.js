@@ -353,4 +353,104 @@ export const companyArr = [
       },
     ],
   },
+  {
+    name: "Barb's Harley Davidson",
+    company: "barbshd",
+    dealerId: "DEALER-2108",
+    affinitiv: true,
+    website: "https://www.barbshd.com",
+    logo: "/companies/barbshd-logo.png",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "252, 185, 30",
+    address: "926 Black Horse Pike",
+    city: "Mt Ephraim",
+    region: "NJ",
+    zipcode: "8059",
+    country: "US",
+    countrycode: "1",
+    workphone: "856-456-4141",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Barbshd | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Enabling automotive dealers to overcome their challenges and establish
+        strong customer connections with custom-tailored tools for sales,
+        service, and retention.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/BarbsHD",
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/barbshd",
+      },
+      {
+        icon: "youtube",
+        href: "https://www.youtube.com/channel/UCP_YdP1AsO2v_uR9wA2hOKA/videos",
+      },
+      {
+        icon: "x",
+        href: "https://x.com/search?q=%23BarbsHD",
+      },
+      {
+        icon: "flicker",
+        href: "https://www.flickr.com/photos/105529750@N03/collections/",
+      },
+    ],
+  },
+  {
+    name: "Tiyo",
+    company: "tio",
+    dealerId: "DEALER-2108",
+    affinitiv: true,
+    website: "https://www.barbshd.com",
+    logo: "/companies/barbshd-logo.png",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "252, 185, 30",
+    address: "926 Black Horse Pike",
+    city: "Mt Ephraim",
+    region: "NJ",
+    zipcode: "8059",
+    country: "US",
+    countrycode: "1",
+    workphone: "856-456-4141",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Barbshd | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Enabling automotive dealers to overcome their challenges and establish
+        strong customer connections with custom-tailored tools for sales,
+        service, and retention.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/BarbsHD",
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/barbshd",
+      },
+      {
+        icon: "youtube",
+        href: "https://www.youtube.com/channel/UCP_YdP1AsO2v_uR9wA2hOKA/videos",
+      },
+      {
+        icon: "x",
+        href: "https://x.com/search?q=%23BarbsHD",
+      },
+      {
+        icon: "flicker",
+        href: "https://www.flickr.com/photos/105529750@N03/collections/",
+      },
+    ],
+  },
 ];
