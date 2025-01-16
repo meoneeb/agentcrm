@@ -3,7 +3,6 @@ import { useState } from "react";
 import { agentArr } from "@/data/agent";
 import { companyArr } from "@/data/company";
 
-// Helper function to merge agent and company data
 const mergeAgentWithCompany = (agents, companies) => {
   return agents.map((agent) => {
     const companyInfo = companies.find(
@@ -11,7 +10,7 @@ const mergeAgentWithCompany = (agents, companies) => {
     );
     return {
       ...agent,
-      companyInfo: companyInfo || { name: "Unknown", logo: "" }, // Handle missing company data
+      companyInfo: companyInfo || { name: "Unknown", logo: "" },
     };
   });
 };
@@ -20,12 +19,11 @@ export default function Page() {
   const [selectedCompany, setSelectedCompany] = useState("All companies");
   const [selectedAgent, setSelectedAgent] = useState(null);
 
-  // Enrich agents with company information
   const enrichedAgents = mergeAgentWithCompany(agentArr, companyArr);
 
   const handleChange = (e) => {
     setSelectedCompany(e.target.value);
-    setSelectedAgent(null); // Reset selected agent when company changes
+    setSelectedAgent(null);
   };
 
   const handleAgentClick = (agent) => {
@@ -107,13 +105,21 @@ export default function Page() {
                   </p>
                 )}
 
-                {agent.companyInfo.logo && (
+                {agent.img && (
+                  <img
+                    src={agent.img}
+                    alt={`${agent.companyInfo.name} logo`}
+                    className="w-16 h-16 object-cover mt-2 rounded-full"
+                  />
+                )}
+                {/* {agent.companyInfo.logo && (
+
                   <img
                     src={agent.companyInfo.logo}
                     alt={`${agent.companyInfo.name} logo`}
                     className="w-16 h-16 object-cover mt-2"
                   />
-                )}
+                )} */}
                 <div
                   className="p-2 flex flex-row flex-wrap items-center justify-between rounded border border-black/20 mt-2 bg-black/5 hover:bg-black/10"
                   onClick={() =>
