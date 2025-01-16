@@ -12,7 +12,7 @@ export const companyArr = [
     zipcode: "60000",
     country: "PK",
     countrycode: "92",
-    workphone: "3246807263",
+    // workphone: "3106082275",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "hi@meoneeb.com",
     emailSubject: "Lead Generation",
