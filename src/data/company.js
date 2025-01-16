@@ -1,5 +1,26 @@
 export const companyArr = [
   {
+    name: "Figics",
+    company: "figics",
+    website: "www.figics.com",
+    logo: "/companies/logo-figics.svg",
+    favicon: "/companies/favicon-dempsey.png",
+    accent: "63, 190, 167",
+    address: "24 C3 Kickstart, MM Alam Rd",
+    city: "Lahore",
+    region: "Punjab",
+    zipcode: "60000",
+    country: "PK",
+    countrycode: "92",
+    // workphone: "3106082275",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "hi@meoneeb.com",
+    emailSubject: "Lead Generation",
+    // defaultProfileImg: "",
+    about: <></>,
+    affinitiv: true,
+  },
+  {
     name: "Edge Performance Sports",
     company: "edge",
     website: "www.edgeperformancesports.com",
@@ -77,26 +98,6 @@ export const companyArr = [
     emailSubject: "Tapped Business Card",
     defaultProfileImg:
       "https://media.gettyimages.com/id/458624423/photo/2010-jeep-wrangler.jpg?s=612x612&w=0&k=20&c=sDhnGNsti2dAeoWaqg3QSoW2oY5MJ2Y7okPaT_iQQlA=",
-    about: <></>,
-  },
-  {
-    name: "Figics",
-    company: "figics",
-    website: "www.figics.com",
-    logo: "/companies/figics-logo.jpg",
-    favicon: "/companies/favicon-dempsey.png",
-    accent: "24, 24, 24",
-    address: "24 C3 Kickstart, MM Alam Rd",
-    city: "Lahore",
-    region: "Punjab",
-    zipcode: "60000",
-    country: "PK",
-    countrycode: "92",
-    workphone: "3246807263",
-    providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "hi@meoneeb.com",
-    emailSubject: "Lead Generation",
-    // defaultProfileImg: "",
     about: <></>,
   },
   {
@@ -311,6 +312,44 @@ export const companyArr = [
       {
         icon: "facebook",
         href: "https://www.facebook.com/profile.php?id=100057285286840",
+      },
+    ],
+  },
+  {
+    name: "Affinitiv",
+    company: "affinitiv",
+    dealerId: "DEALER-12",
+    affinitiv: true,
+    website: "www.affinitiv.com",
+    logo: "/companies/logo-affinitiv.svg",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "252, 185, 30",
+    address: "300 S Wacker Dr Suite 900",
+    city: "Chicago",
+    region: "IL",
+    zipcode: "60606",
+    country: "US",
+    countrycode: "1",
+    // workphone: "4076959678",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Affinitiv | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Enabling automotive dealers to overcome their challenges and establish
+        strong customer connections with custom-tailored tools for sales,
+        service, and retention.
+      </>
+    ),
+    social: [
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/affinitiv-inc/",
+      },
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/affinitiv",
       },
     ],
   },

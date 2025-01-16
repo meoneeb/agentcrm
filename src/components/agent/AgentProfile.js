@@ -8,6 +8,7 @@ import Form from "./form/Form";
 import { useState } from "react";
 import AboutCompany from "./details/Company";
 import VCardDownload from "./button/VCardDownload";
+import AffinitivForm from "./form/AffinitivForm";
 
 export default function AgentProfile({ agentProfile, companyProfile }) {
   const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
@@ -75,10 +76,17 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
               </StyledButton>
               <div>
                 <ScreenModal isOpen={isModalOpen} onClose={handleCloseModal}>
-                  <Form
-                    agentProfile={agentProfile}
-                    companyProfile={companyProfile}
-                  />
+                  {companyProfile.affinitiv ? (
+                    <AffinitivForm
+                      companyProfile={companyProfile}
+                      agentProfile={agentProfile}
+                    />
+                  ) : (
+                    <Form
+                      agentProfile={agentProfile}
+                      companyProfile={companyProfile}
+                    />
+                  )}
                 </ScreenModal>
               </div>
             </div>
