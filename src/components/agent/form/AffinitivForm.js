@@ -8,6 +8,8 @@ export default function AffinitivForm({ agentProfile, companyProfile }) {
   const agentName = `${agentProfile.firstname} ${agentProfile.lastname}`;
   const agentEmail = agentProfile.email;
   const providerUri = companyProfile.providerUri;
+  const dealerId = companyProfile.dealerId;
+  console.log(dealerId);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -143,6 +145,13 @@ export default function AffinitivForm({ agentProfile, companyProfile }) {
               <phone><![CDATA[${formData.phone}]]></phone>
             </contact>
           </customer>
+          <vendor>
+                <id>${dealerId}</id>
+                <contact>
+                    <name part="full">${agentName}</name>
+                    <email><![CDATA[${agentEmail}]]></email>
+                </contact>
+            </vendor>
           <provider>
             <name part="full">i1Smart Marketing</name>
             <service>i1Smart Marketing</service>
@@ -276,7 +285,10 @@ export default function AffinitivForm({ agentProfile, companyProfile }) {
             {isLoading ? "Sending..." : "Submit"}
           </StyledButton>
           <div>
-            {formData.latitude}, {formData.longitude}
+            <p className="text-xs text-gray-600">
+              Keep your location enabled for best results.
+            </p>
+            {/* {formData.latitude}, {formData.longitude} */}
           </div>
         </div>
       </form>

@@ -318,8 +318,10 @@ export const companyArr = [
   {
     name: "Affinitiv",
     company: "affinitiv",
-    // website: "www.mikesavoievw.com",
-    logo: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
+    dealerId: "DEALER-12",
+    affinitiv: true,
+    website: "www.affinitiv.com",
+    logo: "/companies/logo-affinitiv.svg",
     // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
     accent: "252, 185, 30",
     address: "300 S Wacker Dr Suite 900",
@@ -340,11 +342,15 @@ export const companyArr = [
         service, and retention.
       </>
     ),
-    // social: [
-    //   {
-    //     icon: "facebook",
-    //     href: "https://www.facebook.com/profile.php?id=100057285286840",
-    //   },
-    // ],
+    social: [
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/affinitiv-inc/",
+      },
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/affinitiv",
+      },
+    ],
   },
 ];

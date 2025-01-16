@@ -60,6 +60,8 @@ export default function Page() {
     overflow: "hidden",
   };
 
+  const profilesQty = filteredAgents.length;
+
   return (
     <div className="w-full">
       <title>List - All Agents Landing Pages DB</title>
@@ -85,6 +87,8 @@ export default function Page() {
             </select>
           </div>
           <div className="w-full flex flex-col justify-start items-center gap-4">
+            <p>Available Profile: {profilesQty}</p>
+
             {filteredAgents.map((agent, index) => (
               <div
                 key={index}
@@ -97,7 +101,11 @@ export default function Page() {
                 <p>
                   {agent.title}, {agent.companyInfo.name}
                 </p>
-                {agent.companyInfo.crm && <p className="py-1 px-2 border border-solid border-black w-fit font-bold text-sm">{agent.companyInfo.crm}</p>}
+                {agent.companyInfo.crm && (
+                  <p className="py-1 px-2 border border-solid border-black w-fit font-bold text-sm">
+                    {agent.companyInfo.crm}
+                  </p>
+                )}
 
                 {agent.companyInfo.logo && (
                   <img

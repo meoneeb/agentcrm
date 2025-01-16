@@ -864,18 +864,103 @@ export const agentArr = [
   },
   // GAMBLE INTERIORS END
   // AFFINITIV START
+
   {
     firstname: "Russ",
     lastname: "Beckenstein",
     agentid: "russ-beckenstein",
     crmEmployerID: null,
-    title: "",
+    title: null,
     email: "rbeckenstein@affinitiv.com",
-    cellphone: "4073833787",
+    cellphone: "(407) 383-3787",
     company: "affinitiv",
-    // img: "https://scontent.flhe33-1.fna.fbcdn.net/v/t39.30808-6/354586280_769230928329743_8323609709966347146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFVI-nozFUFzGlCYlCyezCrlEZHJFvxGZ6URkckW_EZnqb7tCqLOloK1m05b48pQbYo3DTLdlmU-3c4ltliVjUi&_nc_ohc=NC4JcM9QTgQQ7kNvgFaKiFj&_nc_oc=AdgSvPwYzgh6v_ImNRMVEwFKC37kKoSVC2DomM0Wy-wCaOWvcrCiP6ioKH66tidyoog&_nc_zt=23&_nc_ht=scontent.flhe33-1.fna&_nc_gid=AEzx_GqZrBA6jWKVTaLMI51&oh=00_AYBSxv3ayN6ecBxUqJdFgITCESfrY_i3lSpsqxim0Vbvjg&oe=678BDDEF",
-    smartpass: "#",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/s4_ewpm8_z67q664e35868eacf",
   },
+  {
+    firstname: "Dennis",
+    lastname: "Zavada",
+    agentid: "dennis-zavada",
+    crmEmployerID: null,
+    title: null,
+    email: "dzavada@affinitiv.com",
+    cellphone: "(201) 780-9017",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/dnkldwuoj8icu664e5380b730f",
+  },
+  {
+    firstname: "Ben",
+    lastname: "Seiden",
+    agentid: "ben-seiden",
+    crmEmployerID: null,
+    title: null,
+    email: "bseiden@affinitiv.com",
+    cellphone: "(847) 987-3586",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/exgslkk-vb3u-664e5da89dd08",
+  },
+  {
+    firstname: "Vince",
+    lastname: "Hopkins",
+    agentid: "vince-hopkins",
+    crmEmployerID: null,
+    title: null,
+    email: "vhopkins@affinitiv.com",
+    cellphone: "(518) 415-7055",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/-s786bdnxjjtm664e8ed9da2a0",
+  },
+  {
+    firstname: "Larry",
+    lastname: "Wischnewsky",
+    agentid: "larry-wischnewsky",
+    crmEmployerID: null,
+    title: null,
+    email: "lwischnewsky@affinitiv.com",
+    cellphone: "(713) 857-4616",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/_s_070_efpu-e664e6913b52d9",
+  },
+  {
+    firstname: "Frank",
+    lastname: "Scialdone",
+    agentid: "frank-scialdone",
+    crmEmployerID: null,
+    title: null,
+    email: "fscialdone@affinitiv.com",
+    cellphone: "(989) 529-5564",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/4sizbrl0otdsp664e71ea97dbf",
+  },
+  {
+    firstname: "Marci",
+    lastname: "Stiles",
+    agentid: "marci-stiles",
+    crmEmployerID: null,
+    title: null,
+    email: "mstiles@affinitiv.com",
+    cellphone: "(865) 924-3082",
+    company: "affinitiv",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/bfhd1bwshbvuf664e6f7d7b286",
+  },
+  {
+    firstname: "Anthony",
+    lastname: "Tran",
+    agentid: "anthony-tran",
+    crmEmployerID: null,
+    title: null,
+    email: "atran@affinitiv.com",
+    cellphone: "(469) 879-9087",
+    company: "affinitiv",
+    smartpass: "https://affinitiv.com",
+  },
+
   // AFFINITIV END
 ];
 
