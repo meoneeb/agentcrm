@@ -190,7 +190,7 @@ export const agentArr = [
     lastname: "Lukancic",
     agentid: "steven-lukancic",
     title: "Sales",
-    email: "dwayneg@dempseyplano.com",
+    email: "stevenL@dempseysplano.com",
     cellphone: "630-466-3246",
     company: "dempsey",
     // img: null,
@@ -874,7 +874,6 @@ export const agentArr = [
       "https://smartpass.i1smartmarketing.com/en/p/_xv1cmavl-hjb6785499a971d2",
   },
   // GAMBLE INTERIORS END
-  
 ];
 
 function mergeCompanyData(agentArr, companyArr) {
