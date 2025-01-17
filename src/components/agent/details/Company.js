@@ -1,6 +1,7 @@
-export default function AboutCompany({ companyProfile }) {
+export default function AboutCompany({ companyProfile, agentProfile }) {
   const fulladdress = `${companyProfile.address} ${companyProfile.city} ${companyProfile.region}, ${companyProfile.zipcode}`;
   const accent = companyProfile.accent;
+  const displayPhone = companyProfile.workphone || agentProfile.cellphone;
   return (
     <div
       className="w-full px-4 flex flex-col justify-start items-center"
@@ -19,12 +20,12 @@ export default function AboutCompany({ companyProfile }) {
             {fulladdress}
           </p>
           <a
-            href={`tel:+1${companyProfile.workphone}`}
+            href={`tel:+1${displayPhone}`}
             target="_blank"
             className="text-neutral-500"
           >
             <i className="fi fi-rr-phone-call text-sm mr-2"></i>
-            {companyProfile.workphone}
+            {displayPhone}
           </a>
           {companyProfile.website && (
             <a

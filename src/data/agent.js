@@ -494,7 +494,7 @@ export const agentArr = [
   },
   // MONETARY GOLD END
 
-  // Mike Savoie Volkswagen of Troy START
+  // MIKE VW Savoie Volkswagen of Troy START
 
   {
     firstname: "Brandon",

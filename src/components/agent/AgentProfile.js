@@ -95,7 +95,10 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
               companyProfile={companyProfile}
             />
           </div>
-          <AboutCompany companyProfile={companyProfile} />
+          <AboutCompany
+            agentProfile={agentProfile}
+            companyProfile={companyProfile}
+          />
           <PoweredBy />
         </div>
         {/* ACTIONBAR START */}
