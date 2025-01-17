@@ -220,6 +220,8 @@ export const companyArr = [
   },
   {
     name: "Mike Savoie Volkswagen of Troy",
+    affinitiv: true,
+    dealerId: "DEALER-2138",
     company: "mikesavoievw",
     website: "www.mikesavoievw.com",
     logo: "/companies/mikesavoievw-logo.webp",
@@ -232,6 +234,63 @@ export const companyArr = [
     country: "US",
     countrycode: "1",
     workphone: "2483729026",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        Check out our new specials and used specials for additional savings on
+        your next vehicle. As a premier Michigan Volkswagen dealer, we have a
+        huge selection of new and used vehicles from which to choose. Mike
+        Savoie Volkswagen of Troy online and offline customers enjoy vehicle
+        specials every day. We offer Volkswagen service & parts, an online
+        inventory, and outstanding financing options, making Mike Savoie
+        Volkswagen of Troy a preferred dealer serving Troy, Rochester,
+        Bloomfield Hills, Sterling Heights and Royal Oak area Volkswagen buyers.
+        Ready to set up a test drive? Visit our Rochester area Volkswagen
+        dealership in Troy, MI today!
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "www.facebook.com/VWoftroy",
+      },
+      {
+        icon: "instagram",
+        href: "www.instagram.com/volkswagenoftroy",
+      },
+      {
+        icon: "tiktok",
+        href: "www.tiktok.com/@volkswagenoftroy",
+      },
+      {
+        icon: "yelp",
+        href: "www.yelp.com/biz/mike-savoie-volkswagen-of-troy-troy",
+      },
+      {
+        icon: "google",
+        href: "https://g.page/r/CXKzhvUbBWFNEBM/review",
+      },
+    ],
+  },
+  {
+    name: "Mike Savoie Chevrolet",
+    affinitiv: true,
+    dealerId: "DEALER-720",
+    company: "mikesavoiechevy",
+    website: "www.mikesavoievw.com",
+    logo: "/companies/mikesavoievw-logo.webp",
+    favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "0, 43, 92",
+    address: "1828 Maplelawn Rd",
+    city: "Troy",
+    region: "MI",
+    zipcode: "48084",
+    country: "US",
+    countrycode: "1",
+    workphone: null,
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
     emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
@@ -404,52 +463,155 @@ export const companyArr = [
     ],
   },
   {
-    name: "Tiyo",
-    company: "tio",
-    dealerId: "DEALER-2108",
+    name: "Tio Chuy Auto Sales - Tulsa",
+    company: "tio-tulsa",
+    dealerId: "DEALER-2115",
     affinitiv: true,
-    website: "https://www.barbshd.com",
-    logo: "/companies/barbshd-logo.png",
+    website: "https://www.tiochuys.com/",
+    logo: "/companies/tc-logo-hor.png",
     // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
-    accent: "252, 185, 30",
-    address: "926 Black Horse Pike",
-    city: "Mt Ephraim",
-    region: "NJ",
-    zipcode: "8059",
+    accent: "3, 35, 58",
+    address: "440 S Memorial Dr",
+    city: "Tulsa",
+    region: "OK",
+    zipcode: "74112",
     country: "US",
     countrycode: "1",
-    workphone: "856-456-4141",
+    workphone: "918-794-7161",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
-    emailSubject: "Barbshd | Landing Page",
+    emailSubject: "Tio Chuy - Tulsa | Landing Page",
     // defaultProfileImg: "",
     about: (
       <>
-        Enabling automotive dealers to overcome their challenges and establish
-        strong customer connections with custom-tailored tools for sales,
-        service, and retention.
+        At Tio Chuy's Auto Sales we strive to be your first choice for buying
+        used vehicles, with financing designed for us, the Latinos of Oklahoma.
+        You will live your best and warmest experience in a familiar and truly
+        Latino environment. Our credit process is easy and tailored to you.
       </>
     ),
     social: [
       {
         icon: "facebook",
-        href: "https://www.facebook.com/BarbsHD",
+        href: "https://www.facebook.com/tiochuys",
       },
       {
-        icon: "instagram",
-        href: "https://www.instagram.com/barbshd",
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/tio-chuy%27s-auto-sales",
       },
       {
         icon: "youtube",
-        href: "https://www.youtube.com/channel/UCP_YdP1AsO2v_uR9wA2hOKA/videos",
+        href: "https://www.youtube.com/channel/UCLbPn1YbqzEsMlcVqwP14WA",
       },
       {
         icon: "x",
-        href: "https://x.com/search?q=%23BarbsHD",
+        href: "https://x.com/i/flow/login?redirect_after_login=%2Ftiochuys",
       },
       {
-        icon: "flicker",
-        href: "https://www.flickr.com/photos/105529750@N03/collections/",
+        icon: "instagram",
+        href: "https://www.instagram.com/tiochuys/",
+      },
+    ],
+  },
+  {
+    name: "Tio Chuy Auto Sale - Yukon",
+    company: "tio-yukon",
+    dealerId: "DEALER-2114",
+    affinitiv: true,
+    website: "https://www.tiochuys.com/",
+    logo: "/companies/tc-logo-hor.png",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "3, 35, 58",
+    address: "6 E Main St",
+    city: "Yukon",
+    region: "OK",
+    zipcode: "73099",
+    country: "US",
+    countrycode: "1",
+    workphone: "405-350-1030",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Tio Chuy - Yukon | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        At Tio Chuy's Auto Sales we strive to be your first choice for buying
+        used vehicles, with financing designed for us, the Latinos of Oklahoma.
+        You will live your best and warmest experience in a familiar and truly
+        Latino environment. Our credit process is easy and tailored to you.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/tiochuys",
+      },
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/tio-chuy%27s-auto-sales",
+      },
+      {
+        icon: "youtube",
+        href: "https://www.youtube.com/channel/UCLbPn1YbqzEsMlcVqwP14WA",
+      },
+      {
+        icon: "x",
+        href: "https://x.com/i/flow/login?redirect_after_login=%2Ftiochuys",
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/tiochuys/",
+      },
+    ],
+  },
+  {
+    name: "Tio Chuy Auto Sales - Oklahoma City",
+    company: "tio-okcity",
+    dealerId: "DEALER-2116",
+    affinitiv: true,
+    website: "https://www.tiochuys.com/",
+    logo: "/companies/tc-logo-hor.png",
+    // favicon: "/companies/favicon/mikesavoievw-favicon.ico",
+    accent: "3, 35, 58",
+    address: "6220 S-I35 Service Rd",
+    city: "Oklahoma City",
+    region: "OK",
+    zipcode: "73149",
+    country: "US",
+    countrycode: "1",
+    workphone: "405-772-7600",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "leads@i1smartmarketing.com",
+    emailSubject: "Tio Chuy - Oklahoma City | Landing Page",
+    // defaultProfileImg: "",
+    about: (
+      <>
+        At Tio Chuy's Auto Sales we strive to be your first choice for buying
+        used vehicles, with financing designed for us, the Latinos of Oklahoma.
+        You will live your best and warmest experience in a familiar and truly
+        Latino environment. Our credit process is easy and tailored to you.
+      </>
+    ),
+    social: [
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/tiochuys",
+      },
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/tio-chuy%27s-auto-sales",
+      },
+      {
+        icon: "youtube",
+        href: "https://www.youtube.com/channel/UCLbPn1YbqzEsMlcVqwP14WA",
+      },
+      {
+        icon: "x",
+        href: "https://x.com/i/flow/login?redirect_after_login=%2Ftiochuys",
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/tiochuys/",
       },
     ],
   },
