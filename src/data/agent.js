@@ -1565,7 +1565,7 @@ export const agentArr = [
     firstname: "Robert",
     lastname: "Ruelle",
     title: "Used Sales Consultant",
-    cellphone: "248.458.1619",
+    cellphone: "248 458 1619",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/58g-ejm0n8wz4676da65f1b6f9",
     email: "bruelle@mikesavoie.com",
@@ -1577,7 +1577,7 @@ export const agentArr = [
     firstname: "Robert",
     lastname: "Carbone",
     title: "Service Manager",
-    cellphone: "248.643.8000",
+    cellphone: "2486438000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/dyfzvspwq-8e9676eeb2d23f09",
     email: "rcarbone@mikesavoie.com",
@@ -1589,7 +1589,7 @@ export const agentArr = [
     firstname: "Craig",
     lastname: "Pitt",
     title: "Lane Manager",
-    cellphone: "(248) 458-1623",
+    cellphone: "(248) 458 1623",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ngkdu6xp3t6nw676eec7dbfb99",
     email: "cpitt@mikesavoie.com",
@@ -1601,7 +1601,7 @@ export const agentArr = [
     firstname: "Maryann",
     lastname: "Parrish",
     title: "Rental Vehicle Administrator ",
-    cellphone: "(248)458-1625",
+    cellphone: "(248) 458-1625",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/zaj5mi5xxn1ru676eee4a6ee55",
     email: "mparrish@mikesavoie.com",
@@ -1733,7 +1733,7 @@ export const agentArr = [
     firstname: "William",
     lastname: "Baker",
     title: null,
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/dizkets2__hr8676dada3dab74",
     email: null,
@@ -1745,7 +1745,7 @@ export const agentArr = [
     firstname: "Eric",
     lastname: "Chan",
     title: null,
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/v7343pr_c3hxw676db5b3750ec",
     email: null,
@@ -1757,7 +1757,7 @@ export const agentArr = [
     firstname: "Justin",
     lastname: "Clippard",
     title: null,
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/pyergtgl54mtl676db41cd1906",
     email: null,
@@ -1769,7 +1769,7 @@ export const agentArr = [
     firstname: "Kyle",
     lastname: "Copley",
     title: "Service Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/rboov0apvq271676db883f276d",
     email: null,
@@ -1781,7 +1781,7 @@ export const agentArr = [
     firstname: "Dillion",
     lastname: "Doetsch",
     title: "Service Tech ",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/8q5uc1l4xlr4n676db9bd9a2e2",
     email: null,
@@ -1793,7 +1793,7 @@ export const agentArr = [
     firstname: "Paul",
     lastname: "Krajenke",
     title: "Service Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/0_bu__bfcula2676dbb19521a5",
     email: null,
@@ -1805,7 +1805,7 @@ export const agentArr = [
     firstname: "Justin",
     lastname: "Poff",
     title: "Quick Lube Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/yile5cqhgn9d8676dbc95c0cd8",
     email: null,
@@ -1817,7 +1817,7 @@ export const agentArr = [
     firstname: "Christopher",
     lastname: "Rolando",
     title: "Service Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/kx37w2_tm8lwc676eff212c8b4",
     email: null,
@@ -1829,7 +1829,7 @@ export const agentArr = [
     firstname: "Xzavion",
     lastname: "Simmons",
     title: null,
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/8ayae51xr-x5s676dbda2526b3",
     email: null,
@@ -1841,7 +1841,7 @@ export const agentArr = [
     firstname: "Joshua",
     lastname: "Tiseo",
     title: "Service Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/tlavj428iraji676dbf212a233",
     email: null,
@@ -1853,7 +1853,7 @@ export const agentArr = [
     firstname: "Askley",
     lastname: "Whitted",
     title: "Service Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/w7_xgg1qgi3ul676dc34c59788",
     email: null,
@@ -1865,7 +1865,7 @@ export const agentArr = [
     firstname: "Michael",
     lastname: "Awe",
     title: null,
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/x2m_44ftjh-9u676dc5d9230d1",
     email: null,
@@ -1877,7 +1877,7 @@ export const agentArr = [
     firstname: "Kevin",
     lastname: "Forgue",
     title: "Body Shop Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/xb8aa5b1g1b8s676dc731b9368",
     email: null,
@@ -1889,7 +1889,7 @@ export const agentArr = [
     firstname: "Derrick",
     lastname: "Herman",
     title: "Body Shop Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/fhhqiu0_ok5m7676dc85721397",
     email: null,
@@ -1901,7 +1901,7 @@ export const agentArr = [
     firstname: "Owen",
     lastname: "Herman",
     title: "Body Shop Apprentice ",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/059d3912ze6tb676dcb0ba28c5",
     email: null,
@@ -1913,7 +1913,7 @@ export const agentArr = [
     firstname: "Xavier",
     lastname: "Huyge",
     title: "Body Shop Painter Apprentice",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/zgezv6bdhfndi676dcc655ede0",
     email: null,
@@ -1925,7 +1925,7 @@ export const agentArr = [
     firstname: "Joseph",
     lastname: "Lesnau",
     title: "Body Shop Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/d9350tjtdp4fr676dce0232f4a",
     email: null,
@@ -1937,7 +1937,7 @@ export const agentArr = [
     firstname: "Marco",
     lastname: "Ramirez-Gomez",
     title: "Body Shop Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/kp0x3uaay9wuk676dcf4ebed6c",
     email: null,
@@ -1949,7 +1949,7 @@ export const agentArr = [
     firstname: "Brian",
     lastname: "Smith",
     title: "Body Shop Tech",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/e651w6u2tznnb676dd073b68d6",
     email: null,
@@ -1961,7 +1961,7 @@ export const agentArr = [
     firstname: "Joann",
     lastname: "Connolly",
     title: "BDC Lead Cooridinator",
-    cellphone: "248.643.7910",
+    cellphone: "(248) 643-7910",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/kjet4x9-srms3676f00e76c9c2",
     email: "leadcooridinator@mikesavoie.com",
@@ -1973,7 +1973,7 @@ export const agentArr = [
     firstname: "Danielle",
     lastname: "Greig",
     title: "Service BDC Consultant",
-    cellphone: "248.643.7607",
+    cellphone: "(248) 643-7607",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/tv1th4-z7081x676dd1f5420ff",
     email: "dgreig@mikesavoie.com",
@@ -1985,7 +1985,7 @@ export const agentArr = [
     firstname: "Evan",
     lastname: "Mamic",
     title: "Sales BDC Consultant",
-    cellphone: "248.643.8958",
+    cellphone: "(248) 643-8958",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/3tj9z8twd-j9t676f026d311d8",
     email: "emamic@mikesavoie.com",
@@ -1997,7 +1997,7 @@ export const agentArr = [
     firstname: "Kathryn",
     lastname: "McFarland",
     title: "Service BDC Consultant",
-    cellphone: "248.643.8928",
+    cellphone: "(248) 643-8928",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/yxrl0mj9s2ig4676f03b8e891f",
     email: "kmcfarland@mikesavoie.com",
@@ -2009,7 +2009,7 @@ export const agentArr = [
     firstname: "Jessica",
     lastname: "Tulecki",
     title: "Service BDC Lead",
-    cellphone: "248.643.8957",
+    cellphone: "(248) 643-8957",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/i-n5sn0d5xeg6676f061852c7c",
     email: "jtulecki@mikesavoie.com",
@@ -2021,7 +2021,7 @@ export const agentArr = [
     firstname: "Megan",
     lastname: "Alva",
     title: "Marketing Cooridinator ",
-    cellphone: "947.205.3623",
+    cellphone: "(947) 205-3623",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/gjnx98t3p1k1y676dd467d3c34",
     email: "mavla@mikesavoie.com",
@@ -2033,7 +2033,7 @@ export const agentArr = [
     firstname: "Michael",
     lastname: "Savoie",
     title: "Dealer",
-    cellphone: "248.458.1601",
+    cellphone: "(248) 458-1601",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/w5qp81vluwrz5676dd5c745fd6",
     email: "msavoie@mikesavoie.com",
@@ -2045,7 +2045,7 @@ export const agentArr = [
     firstname: "Rachel",
     lastname: "Savoie",
     title: "General Manager",
-    cellphone: "248.528.2000",
+    cellphone: "2485282000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/_hbxuk8aort3i676dd8281b898",
     email: "rsavoie@mikesavoie.com",
@@ -2057,7 +2057,7 @@ export const agentArr = [
     firstname: "Ben",
     lastname: "Highfield",
     title: "Parts Consultant",
-    cellphone: "248.643.8000",
+    cellphone: "(248) 643-8000",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/0-04t96qdkfkd676dda1f03f34",
     email: "bhighfield@mikesavoie.com",
