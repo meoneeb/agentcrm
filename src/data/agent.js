@@ -506,7 +506,8 @@ export const agentArr = [
     cellphone: "9472053309",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/brandon-dadou.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/v0_wvcvpzcwa867746917c8102",
   },
   {
     firstname: "Jim",
@@ -518,7 +519,8 @@ export const agentArr = [
     cellphone: "9472053302",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/jim-castiglione.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/yfyrgffj_5eux67746c10e295b",
   },
   {
     firstname: "Alex",
@@ -530,7 +532,8 @@ export const agentArr = [
     cellphone: "9472033306",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/alex-palmateer.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/ataoo226u01uo677488179de1b",
   },
   {
     firstname: "Drew",
@@ -542,7 +545,8 @@ export const agentArr = [
     cellphone: "9472053304",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/drew-cholette.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/v6wcwpuf0rpq1677490cdd0f6e",
   },
   {
     firstname: "Andrew",
@@ -554,7 +558,8 @@ export const agentArr = [
     cellphone: "9472053301",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/andrew-norris.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/v1wdsetoh1ngq677492e7ea0bb",
   },
   {
     firstname: "Walter",
@@ -566,7 +571,8 @@ export const agentArr = [
     cellphone: "9472053303",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/walter-houk.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/5rcccy5xcno1s67749bdc3c09b",
   },
   {
     firstname: "Demetrius",
@@ -578,7 +584,8 @@ export const agentArr = [
     cellphone: "9472053308",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/demetrius-spicer.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p9h1yxgobwdi767749d52057ca",
   },
 
   {
@@ -591,7 +598,8 @@ export const agentArr = [
     cellphone: "9472053305",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/brandon-muraszewski.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/9ew9uwvlps_ag67749f077f8ce",
   },
   {
     firstname: "Martin",
@@ -603,7 +611,8 @@ export const agentArr = [
     cellphone: "9472053320",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/martin-andreski.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/641lm74p39wbo6775856e38ecf",
   },
   {
     firstname: "Carlos",
@@ -615,7 +624,8 @@ export const agentArr = [
     cellphone: "9472053330",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/carlos-williams.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/vwvbeq7_w-1ob67758a56c80aa",
   },
   {
     firstname: "Brent",
@@ -627,7 +637,8 @@ export const agentArr = [
     cellphone: "9472053322",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/brent-valrance.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/g2mlgnhit-3y867758ba965722",
   },
   {
     firstname: "Ken",
@@ -639,7 +650,8 @@ export const agentArr = [
     cellphone: "9172053331",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/ken-andreoni.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/-2rq0fbx6waxo67758cd0718a1",
   },
   {
     firstname: "Jeremy",
@@ -651,7 +663,8 @@ export const agentArr = [
     cellphone: "9472053333",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/jeremy-raceles.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/89jr75a828dbh67758e49e35c2",
   },
   {
     firstname: "Anthony",
@@ -663,7 +676,8 @@ export const agentArr = [
     cellphone: "9472053321",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/anthony-dibenedetto.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/xez5c-dy8_md1677590b2ee731",
   },
   {
     firstname: "Jeff",
@@ -675,7 +689,8 @@ export const agentArr = [
     cellphone: "2484581620",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/jeff-groom.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p_s_4p6x1e2096776f74c17b48",
   },
   {
     firstname: "Rachel",
@@ -687,7 +702,8 @@ export const agentArr = [
     cellphone: "2485282000",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/rachel-savoie.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/02cgyfew42ig_6776f84679f85",
   },
   {
     firstname: "Tahmina",
@@ -699,7 +715,8 @@ export const agentArr = [
     cellphone: "2486438616",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/tahmina-uddin.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/iyn3ra-aqj92h6775977031697",
   },
   {
     firstname: "Michael",
@@ -711,7 +728,8 @@ export const agentArr = [
     cellphone: "2486438981",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/michael-battles.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/ppdjt-yxrw5vr6776d3ed4f06d",
   },
   {
     firstname: "Jessica",
@@ -723,7 +741,8 @@ export const agentArr = [
     cellphone: "9472053611",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/jessica-tulecki.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p0l9f4yfjp0xr6776d615253d3",
   },
   {
     firstname: "Jon",
@@ -735,7 +754,8 @@ export const agentArr = [
     cellphone: "2486437604",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/jon-hoke.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/d_ww97u3shkms6776d7a25d1a1",
   },
   {
     firstname: "Blake",
@@ -747,7 +767,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/blake-andreoni.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/j3-g1fc3s9of66776e378d543f",
   },
   {
     firstname: "Noah",
@@ -759,7 +780,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/noah-choub.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p_bcwhrwjtp-86776e4c6adb4a",
   },
   {
     firstname: "Tim",
@@ -771,7 +793,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/tim-olszewski.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/vm92pps6ygd3z6776e9b98d1b4",
   },
   {
     firstname: "Evan",
@@ -783,7 +806,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/evan-russman.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/yt4r2t4hxeu1m6776eb65d9009",
   },
   {
     firstname: "Jonathan",
@@ -795,7 +819,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/jonathan-sivec.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/ydav8vwdfqbcg6776ec72361f5",
   },
   {
     firstname: "Brian",
@@ -807,7 +832,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/brian-skelton.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/6dgf76ut4n_ad6776eecb5c150",
   },
   {
     firstname: "Christopher",
@@ -819,7 +845,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/christopher-walker-johnson.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/wiwlz2zcl6gmd6776f1f166f1f",
   },
   {
     firstname: "Angelina",
@@ -831,7 +858,8 @@ export const agentArr = [
     cellphone: "9472053310",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/angelina-hogan.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/l1vmz68zk_x416776f3bc03dc1",
   },
   {
     firstname: "Michael",
@@ -843,7 +871,8 @@ export const agentArr = [
     cellphone: "2487817900",
     company: "mikesavoievw",
     img: "/profile/mikesavoievw/michael-riley.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/4osnkrt85d95h677592735c638",
   },
   {
     firstname: "Michael",
@@ -855,7 +884,8 @@ export const agentArr = [
     cellphone: "2484581601",
     company: "mikesavoievw",
     // img: "/profile/mikesavoievw/michael-savoie.jpg",
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/p_jrcp-kc4ao16776f4a07f1f5",
   },
   // Mike Savoie Volkswagen of Troy END
 
@@ -973,6 +1003,22 @@ export const agentArr = [
   },
 
   // AFFINITIV END
+
+  // BARBSHD START
+  {
+    firstname: "Jay",
+    lastname: "Jaconetti",
+    agentid: "anthony-tran",
+    crmEmployerID: null,
+    title: "General Sales Manager",
+    email: "JJACONETTI@BARBSHD.COM",
+    cellphone: "609-330-1798",
+    company: "barbshd",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/_s44-hxq47j1d667494db25027",
+  },
+
+  // BARBSHD END
 ];
 
 function mergeCompanyData(agentArr, companyArr) {
