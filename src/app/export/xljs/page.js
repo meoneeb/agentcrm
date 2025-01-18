@@ -117,34 +117,29 @@ const CsvUploadForm = () => {
       </div>
 
       {error && <div style={{ color: "red" }}>{error}</div>}
-      <div>
-        <div className="flex flex-row gap-2 justify-start items-center mt-4 mb-2">
-          <h3 className="font-semibold">Mapped JSON</h3>
-          {/* <button
-            className="text-sm font-medium py-2 px-4 rounded-xl border border-blue-500 bg-white text-blue-500"
-            onClick={copyToClipboard}
-          >
-            <i class="fi fi-rr-clone mr-1"></i> Copy
-          </button> */}
-        </div>
-        <div className="bg-gray-800 text-white border border-gray-200 min-h-40 max-h-screen p-4 overflow-auto relative">
-          <div className="absolute top-4 right-4">
+
+      {jsonData && (
+        <div>
+          <div className="flex flex-row gap-2 justify-start items-center mt-4 mb-2">
+            <h3 className="font-semibold">Mapped JSON</h3>
             <button
-              className="sticky top-4 text-sm font-medium py-2 px-4 rounded-xl border border-gray-400 bg-gray-300/10 text-gray-400 hover:text-gray-200"
+              className="text-sm font-medium py-2 px-4 rounded-xl border border-blue-500 bg-white text-blue-500"
               onClick={copyToClipboard}
             >
               <i class="fi fi-rr-clone mr-1"></i> Copy
             </button>
           </div>
-          <pre>{JSON.stringify(jsonData, null, 2)}</pre>
-        </div>
-      </div>
-      {jsonData && (
-        <div>
-          <h3>Mapped JSON</h3>
-          <button onClick={copyToClipboard}>Copy JSON</button>
-          <pre>{JSON.stringify(jsonData, null, 2)}</pre>
-          <button onClick={copyToClipboard}>Copy JSON</button>
+          <div className="bg-gray-800 text-white border border-gray-200 min-h-40 max-h-screen p-4 overflow-auto relative">
+            <div className="absolute top-4 right-4">
+              <button
+                className="sticky top-4 text-sm font-medium py-2 px-4 rounded-xl border border-gray-400 bg-gray-300/10 text-gray-400 hover:text-gray-200"
+                onClick={copyToClipboard}
+              >
+                <i class="fi fi-rr-clone mr-1"></i> Copy
+              </button>
+            </div>
+            <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+          </div>
         </div>
       )}
     </div>
