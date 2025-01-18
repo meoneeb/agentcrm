@@ -99,7 +99,7 @@ export default function AgentProfile({ agentProfile, companyProfile }) {
             agentProfile={agentProfile}
             companyProfile={companyProfile}
           />
-          <PoweredBy />
+          <PoweredBy company={companyProfile} />
         </div>
         {/* ACTIONBAR START */}
         <div className="fixed bottom-0 w-full max-w-sm">

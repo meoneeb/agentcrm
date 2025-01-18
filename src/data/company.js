@@ -6,9 +6,9 @@ export const companyArr = [
     logo: "/companies/logo-figics.svg",
     favicon: "/companies/favicon-dempsey.png",
     accent: "63, 190, 167",
-    address: "24 C3 Kickstart, MM Alam Rd",
+    address: "158D, Commercial Broadway Ph# 8 DHA,",
     city: "Lahore",
-    region: "Punjab",
+    region: "PU",
     zipcode: "60000",
     country: "PK",
     countrycode: "92",
@@ -17,67 +17,68 @@ export const companyArr = [
     recipientEmail: "hi@meoneeb.com",
     emailSubject: "Lead Generation",
     // defaultProfileImg: "",
-    about: <></>,
+    about: <>Get your website a new look!</>,
     affinitiv: true,
+    isFigics: true,
   },
-  {
-    name: "Edge Performance Sports",
-    company: "edge",
-    website: "www.edgeperformancesports.com",
-    logo: "/companies/edge-logo.jpg",
-    favicon: "/companies/favicon-edge.png",
-    accent: "234, 22, 44",
-    address: "1625 N. Oregon St.",
-    city: "Ontario",
-    region: "Oregon",
-    zipcode: "97914",
-    country: "Canada",
-    countrycode: "1",
-    workphone: "5418894099",
-    crm: "PSX Digital",
-    providerUri: "www.i1smartmarketing.com",
-    recipientEmail: "adf@psxdigital.com",
-    emailSubject: "Tapped Business Card",
-    social: [
-      {
-        icon: "facebook",
-        href: "https://www.facebook.com/edgeperformancesports",
-      },
-      {
-        icon: "linkedin",
-        href: "https://www.linkedin.com/company/edge-performance-sports/",
-      },
-      {
-        icon: "tiktok",
-        href: "https://www.tiktok.com/@edge_performance_sports",
-      },
-      {
-        icon: "instagram",
-        href: "https://www.instagram.com/edge_performance_sports/",
-      },
-      {
-        icon: "yelp",
-        href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
-      },
-      {
-        icon: "youtube",
-        href: "https://www.youtube.com/@edgeperformancesports",
-      },
-    ],
-    about: (
-      <>
-        Edge Performance Sports in Ontario, OR is a premier ATV & Motorcycle
-        Dealership. Only a short drive from Boise, Idaho; our Dealership sells a
-        variety of powersports to the heart of the Western Treasure Valley.
-        We're a full-service dealership that offers new and used sales, parts,
-        and service. To keep up with demand, we continue to expand our business
-        and grow in conjunction with the community. We now offer 11 brands under
-        one roof. Brands like: Can-Am, KTM, Sea-Doo, Ski-Doo, Timbersled, Honda,
-        Suzuki, Kawasaki, Polaris, Kayo, Segway and CFMOTO. We also specialize
-        in Powersports recreation and racing merchandise.
-      </>
-    ),
-  },
+  // {
+  //   name: "Edge Performance Sports",
+  //   company: "edge",
+  //   website: "www.edgeperformancesports.com",
+  //   logo: "/companies/edge-logo.jpg",
+  //   favicon: "/companies/favicon-edge.png",
+  //   accent: "234, 22, 44",
+  //   address: "1625 N. Oregon St.",
+  //   city: "Ontario",
+  //   region: "Oregon",
+  //   zipcode: "97914",
+  //   country: "Canada",
+  //   countrycode: "1",
+  //   workphone: "5418894099",
+  //   crm: "PSX Digital",
+  //   providerUri: "www.i1smartmarketing.com",
+  //   recipientEmail: "adf@psxdigital.com",
+  //   emailSubject: "Tapped Business Card",
+  //   social: [
+  //     {
+  //       icon: "facebook",
+  //       href: "https://www.facebook.com/edgeperformancesports",
+  //     },
+  //     {
+  //       icon: "linkedin",
+  //       href: "https://www.linkedin.com/company/edge-performance-sports/",
+  //     },
+  //     {
+  //       icon: "tiktok",
+  //       href: "https://www.tiktok.com/@edge_performance_sports",
+  //     },
+  //     {
+  //       icon: "instagram",
+  //       href: "https://www.instagram.com/edge_performance_sports/",
+  //     },
+  //     {
+  //       icon: "yelp",
+  //       href: "https://www.yelp.com/biz/edge-performance-sports-ontario",
+  //     },
+  //     {
+  //       icon: "youtube",
+  //       href: "https://www.youtube.com/@edgeperformancesports",
+  //     },
+  //   ],
+  //   about: (
+  //     <>
+  //       Edge Performance Sports in Ontario, OR is a premier ATV & Motorcycle
+  //       Dealership. Only a short drive from Boise, Idaho; our Dealership sells a
+  //       variety of powersports to the heart of the Western Treasure Valley.
+  //       We're a full-service dealership that offers new and used sales, parts,
+  //       and service. To keep up with demand, we continue to expand our business
+  //       and grow in conjunction with the community. We now offer 11 brands under
+  //       one roof. Brands like: Can-Am, KTM, Sea-Doo, Ski-Doo, Timbersled, Honda,
+  //       Suzuki, Kawasaki, Polaris, Kayo, Segway and CFMOTO. We also specialize
+  //       in Powersports recreation and racing merchandise.
+  //     </>
+  //   ),
+  // },
   {
     name: "Dempsey CDJR Plano",
     company: "dempsey",
@@ -234,6 +235,7 @@ export const companyArr = [
     country: "US",
     countrycode: "1",
     workphone: "2487817900",
+    crm: "Affinitiv",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
     emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
@@ -291,6 +293,7 @@ export const companyArr = [
     country: "US",
     countrycode: "1",
     workphone: null,
+    crm: "Affinitiv",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
     emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
