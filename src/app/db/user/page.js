@@ -76,9 +76,9 @@ export default function dbUserPage() {
                 All Users
               </Link>
 
-              <Link className={buttonStyle} href={`/db/user/all`}>
+              {/* <Link className={buttonStyle} href={`/db/user/all`}>
                 Add New User
-              </Link>
+              </Link> */}
 
               <Link className={buttonStyle} href={`/db/user/all/edit`}>
                 Update All Users Image
