@@ -1,5 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import { useState, useEffect, useMemo } from "react";
 import { companyArr } from "@/data/company";
 import EditUserDataCard from "./EditUserDataCard";
 
@@ -33,12 +34,10 @@ export default function AllUserDataEdit() {
         if (Array.isArray(data)) {
           setUsers(data);
         } else {
-          console.error("Invalid data received from API:", data);
-          setUsers([]); // Fallback to an empty array
+          console.error("Invalid data received:", data);
         }
       } catch (error) {
-        console.error("Failed to fetch users:", error);
-        setUsers([]); // Fallback to an empty array
+        console.error("Error fetching users:", error);
       } finally {
         setLoading(false);
       }
@@ -47,20 +46,20 @@ export default function AllUserDataEdit() {
     fetchUsers();
   }, []);
 
-  const enrichedUsers = mergeUserWithCompany(users, companyArr);
+  const enrichedUsers = useMemo(
+    () => mergeUserWithCompany(users, companyArr),
+    [users, companyArr]
+  );
 
   const handleChange = (e) => {
     setSelectedCompany(e.target.value);
     setSelectedUser(null);
-  };
-
-  const handleUserClick = (user) => {
-    setSelectedUser(user);
+    setCurrentPage(1);
   };
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
-    setCurrentPage(1); // Reset to first page when search changes
+    setCurrentPage(1);
   };
 
   const filteredUsers = enrichedUsers.filter((user) => {
@@ -83,88 +82,55 @@ export default function AllUserDataEdit() {
     currentPage * usersPerPage
   );
 
-  const profilesQty = filteredUsers.length;
-
-  const totalPages = Math.ceil(profilesQty / usersPerPage);
-
-  const goToNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const goToPreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-  const mobileFrame = {
-    width: 360,
-    height: 720,
-    border: "16px solid black",
-    borderWidth: "40px 10px 40px 10px",
-    borderRadius: 36,
-    boxShadow: "0 0 20px rgba(0, 0, 0, 0.2)",
-    overflow: "hidden",
-  };
+  const totalPages = Math.ceil(filteredUsers.length / usersPerPage);
 
   return (
     <div className="w-full mx-auto">
-      <div className="flex lg:flex-row flex-col w-full">
-        {loading ? (
-          <p>Loading users...</p>
-        ) : (
-          <div className="flex flex-col flex-wrap gap-8 mt-4 lg:w-1/2 w-full p-4">
-            <div className="flex flex-col justify-start items-start">
-              <h1 className="text-center text-black text-2xl font-bold mt-4 mb-6">
-                All Users Landing Pages DB
-              </h1>
-              <div className="grid grid-cols-2 space-x-4">
-                <div className="w-full">
-                  <input
-                    type="text"
-                    placeholder="Search by name, company, or ID"
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    className="p-4 border border-black/20 rounded w-full"
+      {loading ? (
+        <p>Loading users...</p>
+      ) : (
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="lg:w-1/2 p-4">
+            <h1 className="text-2xl font-bold mb-4">All Users Landing Pages</h1>
+            <input
+              type="text"
+              placeholder="Search users..."
+              value={searchTerm}
+              onChange={handleSearchChange}
+              className="p-2 border rounded mb-4"
+            />
+            <select
+              value={selectedCompany}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            >
+              <option>All companies</option>
+              {companyArr.map((company) => (
+                <option key={company.company} value={company.company}>
+                  {company.name}
+                </option>
+              ))}
+            </select>
+
+            {filteredUsers.length === 0 ? (
+              <p>No users found</p>
+            ) : (
+              <div className="grid grid-cols-2 gap-4 mt-4">
+                {paginatedUsers.map((user) => (
+                  <EditUserDataCard
+                    key={user._id}
+                    user={user}
+                    onClick={() => setSelectedUser(user)}
                   />
-                </div>
-                <div className="w-full flex flex-row gap-4 items-center justify-start">
-                  Filter by company:
-                  <select
-                    value={selectedCompany}
-                    onChange={handleChange}
-                    className="p-4 border border-black/20 rounded w-full max-w-60"
-                  >
-                    <option>All companies</option>
-                    {companyArr.map((company) => (
-                      <option key={company.company} value={company.company}>
-                        {company.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                ))}
               </div>
+            )}
 
-              <div className="w-full flex flex-col justify-start items-start gap-4 mt-6">
-                <p>Available Profiles: {profilesQty}</p>
-                <div className="grid grid-cols-2 gap-4">
-                  {paginatedUsers.map((user) => (
-                    <EditUserDataCard
-                      key={user._id}
-                      user={user}
-                      onClick={() => handleUserClick(user)}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full flex justify-between mt-4">
+            <div className="flex justify-between mt-4">
               <button
-                onClick={goToPreviousPage}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-gray-500 text-white rounded disabled:opacity-50"
+                onClick={() => setCurrentPage((prev) => prev - 1)}
+                className="px-4 py-2 bg-gray-500 text-white rounded"
               >
                 Previous
               </button>
@@ -172,37 +138,27 @@ export default function AllUserDataEdit() {
                 Page {currentPage} of {totalPages}
               </span>
               <button
-                onClick={goToNextPage}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-gray-500 text-white rounded disabled:opacity-50"
+                onClick={() => setCurrentPage((prev) => prev + 1)}
+                className="px-4 py-2 bg-gray-500 text-white rounded"
               >
                 Next
               </button>
             </div>
           </div>
-        )}
-
-        <div className="lg:w-1/2 w-full">
-          {selectedUser ? (
-            <div
-              id="preview"
-              className="w-full h-screen sticky top-0 flex justify-center items-center"
-            >
-              <div style={mobileFrame} className="lg:mt-0 mt-24">
-                <iframe
-                  src={`/${selectedUser.company}/${selectedUser.agentid}`}
-                  title="User Preview"
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-          ) : (
-            <div className="text-center w-full h-screen flex justify-center items-center sticky top-0">
-              Select a user to preview
-            </div>
-          )}
+          <div className="lg:w-1/2">
+            {selectedUser ? (
+              <iframe
+                src={`/${selectedUser.company}/${selectedUser.agentid}`}
+                title={`${selectedUser.firstname} Preview`}
+                className="w-full h-screen"
+              />
+            ) : (
+              <p>Select a user to preview</p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
