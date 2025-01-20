@@ -1,10 +1,50 @@
 "use client";
 
 import AgentProfile from "@/components/agent/AgentProfile";
-import { updatedAgentArr } from "@/data/agent";
+import { companyArr } from "@/data/company";
+import { useState, useEffect } from "react";
+
+const mergeUserWithCompany = (users, companies) => {
+  return users.map((user) => {
+    const companyInfo = companies.find(
+      (company) => company.company.toLowerCase() === user.company.toLowerCase()
+    );
+    return {
+      ...user,
+      companyInfo: companyInfo || { name: "Unknown", logo: "" },
+    };
+  });
+};
 
 export default function AgentPage({ params }) {
   const { company, agentid } = params;
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true); // New loading state
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch("/api/mongo/get-user-data");
+        const data = await response.json();
+
+        if (Array.isArray(data)) {
+          setUsers(data);
+        } else {
+          console.error("Invalid data received from API:", data);
+          setUsers([]); // Fallback to an empty array
+        }
+      } catch (error) {
+        console.error("Failed to fetch users:", error);
+        setUsers([]); // Fallback to an empty array
+      } finally {
+        setLoading(false); // Set loading to false after the fetch is complete
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  const enrichedUsers = mergeUserWithCompany(users, companyArr);
 
   const username = (text) => {
     if (!text) {
@@ -13,23 +53,28 @@ export default function AgentPage({ params }) {
     return text.toLowerCase().replace(/\s+/g, "-");
   };
 
-  const agentProfile = updatedAgentArr.find(
+  const userData = enrichedUsers.find(
     (value) =>
       agentid === username(value.agentid) && company === username(value.company)
   );
 
-  if (!agentProfile) {
-    return <div>Agent not found</div>; // You can replace this with a custom 404 component
+  if (loading) {
+    return <div>Loading...</div>; // Show loading message or spinner
   }
 
-  const fullname = `${agentProfile.firstname} ${agentProfile.lastname}`;
-  const companyProfile = agentProfile.companyDetails;
-  const favicon = companyProfile.favicon || "/icons/fav.png";
+  if (!userData) {
+    return <div>User not found</div>; // You can replace this with a custom 404 component
+  }
+
+  const fullname = `${userData.firstname} ${userData.lastname}`;
+  const companyProfile = userData.companyInfo; // Updated to use companyInfo
+  const favicon = companyProfile.logo || "/icons/fav.png"; // Updated to use logo field if available
   const profileImg =
-    agentProfile.img ||
+    userData.img ||
     `https://placehold.co/150?text=${
-      agentProfile.firstname[0] + agentProfile.lastname[0]
+      userData.firstname[0] + userData.lastname[0]
     }`;
+
   return (
     <>
       <head>
@@ -45,10 +90,7 @@ export default function AgentPage({ params }) {
         <title>{`${fullname} - ${companyProfile.name}`}</title>
       </head>
       <div>
-        <AgentProfile
-          companyProfile={companyProfile}
-          agentProfile={agentProfile}
-        />
+        <AgentProfile companyProfile={companyProfile} agentProfile={userData} />
       </div>
     </>
   );
