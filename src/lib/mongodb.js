@@ -3,6 +3,8 @@ import { MongoClient } from "mongodb";
 const uri = process.env.MONGODB_URI;
 const options = {};
 
+console.log("env:", process.env.MONGODB_URI);
+
 let client;
 let clientPromise;
 
