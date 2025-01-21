@@ -283,7 +283,7 @@ export const companyArr = [
     dealerId: "DEALER-720",
     company: "mikesavoiechevy",
     website: "www.mikesavoievw.com",
-    logo: "/companies/mikesavoievw-logo.webp",
+    logo: "/companies/msc-logo.jpg",
     favicon: "/companies/favicon/mikesavoievw-favicon.ico",
     accent: "0, 43, 92",
     address: "1828 Maplelawn Rd",
