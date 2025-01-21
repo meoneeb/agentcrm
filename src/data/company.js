@@ -4,7 +4,7 @@ export const companyArr = [
     company: "figics",
     website: "www.figics.com",
     logo: "/companies/logo-figics.svg",
-    favicon: "/companies/favicon-dempsey.png",
+    favicon: "/companies/logo-figics.svg",
     accent: "63, 190, 167",
     address: "158D, Commercial Broadway Ph# 8 DHA,",
     city: "Lahore",
