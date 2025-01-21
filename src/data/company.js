@@ -282,7 +282,7 @@ export const companyArr = [
     affinitiv: true,
     dealerId: "DEALER-720",
     company: "mikesavoiechevy",
-    website: "www.mikesavoievw.com",
+    website: "www.mikesavoie.com",
     logo: "/companies/msc-logo.jpg",
     favicon: "/companies/favicon/mikesavoievw-favicon.ico",
     accent: "0, 43, 92",
