@@ -286,7 +286,7 @@ export const companyArr = [
     logo: "/companies/msc-logo.jpg",
     favicon: "/companies/favicon/mikesavoievw-favicon.ico",
     accent: "0, 43, 92",
-    address: "1828 Maplelawn Rd",
+    address: "1900 Maple Rd",
     city: "Troy",
     region: "MI",
     zipcode: "48084",
@@ -300,10 +300,16 @@ export const companyArr = [
     // defaultProfileImg: "",
     about: (
       <>
-        If you're looking to lease or finance your next vehicle, we have
-        competitive lease specials and financing options on most of the new
-        vehicles we sell. We also have a lot of quality used and certified
-        vehicles, both domestic and foreign, at affordable prices
+        Check out our new specials and used specials for additional savings on
+        your next vehicle. As a premier Michigan Chevrolet dealer, we have a
+        huge selection of new and used vehicles from which to choose. Mike
+        Savoie Chevrolet online and offline customers enjoy vehicle
+        specials every day. We offer Chevrolet service & parts, an online
+        inventory, and outstanding financing options, making Mike Savoie
+        Chevrolet a preferred dealer serving Troy, Rochester,
+        Bloomfield Hills, Sterling Heights and Royal Oak area Chevrolet buyers.
+        Ready to set up a test drive? Visit our Rochester area Chevrolet
+        dealership in Troy, MI today!
       </>
     ),
     social: [
