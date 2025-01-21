@@ -8,7 +8,7 @@
 //   );
 // }
 
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -21,7 +21,6 @@ export default function dbUserPage() {
 
   const buttonStyle = `border border-black h-12 my-2 w-fit min-w-24 px-12 flex justify-center items-center hover:translate-x-2 hover:border-l-8 transition-all`;
 
-  // Check if the user is authenticated on page load
   useEffect(() => {
     const storedAuth = sessionStorage.getItem("isAuthenticated");
     if (storedAuth === "true") {
@@ -33,7 +32,7 @@ export default function dbUserPage() {
     if (userId === correctUserId && password === correctPassword) {
       setIsAuthenticated(true);
       setError("");
-      sessionStorage.setItem("isAuthenticated", "true"); // Store in session
+      sessionStorage.setItem("isAuthenticated", "true");
     } else {
       setError("Invalid User ID or Password");
     }
@@ -41,7 +40,7 @@ export default function dbUserPage() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    sessionStorage.removeItem("isAuthenticated"); // Remove from session
+    sessionStorage.removeItem("isAuthenticated");
   };
 
   return (
