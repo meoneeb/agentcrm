@@ -52,7 +52,6 @@ export default function dbUserPage() {
             <div className="flex flex-col items-center">
               <h2 className="text-xl mb-4">Please Log In</h2>
               <div>
-                {/* Your login form can go here */}
                 <input
                   type="text"
                   placeholder="User ID"
