@@ -296,42 +296,36 @@ export const companyArr = [
     crm: "Affinitiv",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
-    emailSubject: "Mike Savoie Volkswagen of Troy | Landing Pages",
+    emailSubject: "Mike Savoie Chevrolet | Landing Pages",
     // defaultProfileImg: "",
     about: (
       <>
-        Check out our new specials and used specials for additional savings on
-        your next vehicle. As a premier Michigan Volkswagen dealer, we have a
-        huge selection of new and used vehicles from which to choose. Mike
-        Savoie Volkswagen of Troy online and offline customers enjoy vehicle
-        specials every day. We offer Volkswagen service & parts, an online
-        inventory, and outstanding financing options, making Mike Savoie
-        Volkswagen of Troy a preferred dealer serving Troy, Rochester,
-        Bloomfield Hills, Sterling Heights and Royal Oak area Volkswagen buyers.
-        Ready to set up a test drive? Visit our Rochester area Volkswagen
-        dealership in Troy, MI today!
+        If you're looking to lease or finance your next vehicle, we have
+        competitive lease specials and financing options on most of the new
+        vehicles we sell. We also have a lot of quality used and certified
+        vehicles, both domestic and foreign, at affordable prices
       </>
     ),
     social: [
       {
         icon: "facebook",
-        href: "www.facebook.com/VWoftroy",
+        href: "https://www.facebook.com/MikeSavoieChevy",
       },
       {
         icon: "instagram",
-        href: "www.instagram.com/volkswagenoftroy",
+        href: "https://www.instagram.com/mikesavoie_chevrolet/",
       },
       {
         icon: "tiktok",
-        href: "www.tiktok.com/@volkswagenoftroy",
+        href: "https://www.tiktok.com/@mikesavoiechevrolet",
       },
       {
         icon: "yelp",
-        href: "www.yelp.com/biz/mike-savoie-volkswagen-of-troy-troy",
+        href: "https://www.yelp.com/biz/mike-savoie-chevrolet-troy",
       },
       {
         icon: "google",
-        href: "https://g.page/r/CXKzhvUbBWFNEBM/review",
+        href: "https://g.page/r/CVdVfsLnGfiPEBM/review",
       },
     ],
   },
