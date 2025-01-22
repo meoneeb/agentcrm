@@ -114,12 +114,12 @@ export default function AllUserDataEdit() {
         {loading ? (
           <p>Loading users...</p>
         ) : (
-          <div className="flex flex-col flex-wrap gap-8 mt-4 lg:w-1/2 w-full p-4">
+          <div className="flex flex-col gap-8 mt-4 lg:w-1/2 w-full p-4">
             <div className="flex flex-col justify-start items-start">
               <h1 className="text-center text-black text-2xl font-bold mt-4 mb-6">
                 All Users Landing Pages DB
               </h1>
-              <div className="grid grid-cols-2 space-x-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 space-x-4">
                 <div className="w-full">
                   <input
                     type="text"
@@ -148,7 +148,7 @@ export default function AllUserDataEdit() {
 
               <div className="w-full flex flex-col justify-start items-start gap-4 mt-6">
                 <p>Available Profiles: {profilesQty}</p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {paginatedUsers.map((user) => (
                     <EditUserDataCard
                       key={user._id}
@@ -182,7 +182,7 @@ export default function AllUserDataEdit() {
           </div>
         )}
 
-        <div className="lg:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full hidden md:block">
           {selectedUser ? (
             <div
               id="preview"
