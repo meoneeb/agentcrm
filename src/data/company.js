@@ -21,6 +21,32 @@ export const companyArr = [
     affinitiv: true,
     isFigics: true,
   },
+  {
+    name: "i1SmartMarketing",
+    company: "i1sm",
+    website: "www.i1smartmarketing.com",
+    logo: "/companies/i1sm-logo.png",
+    favicon: "/companies/i1sm-logo.png",
+    accent: "51, 101, 150",
+    address: "2341 Randall Road",
+    city: "Carpentersville",
+    region: "IL",
+    zipcode: "60110",
+    country: "US",
+    countrycode: "1",
+    workphone: "847-994-4409",
+    providerUri: "www.i1smartmarketing.com",
+    recipientEmail: "tony@i1smartmarketing.com",
+    emailSubject: "Landing Page - ",
+    // defaultProfileImg: "",
+    about: <>Get your website a new look!</>,
+    social: [
+      {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/i1smartmarketing/",
+      },
+    ],
+  },
   // {
   //   name: "Edge Performance Sports",
   //   company: "edge",
@@ -303,13 +329,12 @@ export const companyArr = [
         Check out our new specials and used specials for additional savings on
         your next vehicle. As a premier Michigan Chevrolet dealer, we have a
         huge selection of new and used vehicles from which to choose. Mike
-        Savoie Chevrolet online and offline customers enjoy vehicle
-        specials every day. We offer Chevrolet service & parts, an online
-        inventory, and outstanding financing options, making Mike Savoie
-        Chevrolet a preferred dealer serving Troy, Rochester,
-        Bloomfield Hills, Sterling Heights and Royal Oak area Chevrolet buyers.
-        Ready to set up a test drive? Visit our Rochester area Chevrolet
-        dealership in Troy, MI today!
+        Savoie Chevrolet online and offline customers enjoy vehicle specials
+        every day. We offer Chevrolet service & parts, an online inventory, and
+        outstanding financing options, making Mike Savoie Chevrolet a preferred
+        dealer serving Troy, Rochester, Bloomfield Hills, Sterling Heights and
+        Royal Oak area Chevrolet buyers. Ready to set up a test drive? Visit our
+        Rochester area Chevrolet dealership in Troy, MI today!
       </>
     ),
     social: [

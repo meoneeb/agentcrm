@@ -12,6 +12,18 @@ export const agentArr = [
     img: "/profile/figics/meoneeb.jpg",
     smartpass: "https://figics.com",
   },
+  {
+    firstname: "Anthony",
+    lastname: "Iannone",
+    agentid: "anthony-iannone",
+    title: "CEO and Founder",
+    email: "tony@i1smartmarketing.com",
+    cellphone: "847-994-4409",
+    company: "i1sm",
+    img: "/profile/i1sm/tony.jpg",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/1z219-7lie6xv64f0de19b9e30",
+  },
   // FIGICS DEMO END //
   // EDGE PERFORMANCE SPORTS START
   // {
