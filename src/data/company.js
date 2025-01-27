@@ -39,7 +39,15 @@ export const companyArr = [
     recipientEmail: "tony@i1smartmarketing.com",
     emailSubject: "Landing Page - ",
     // defaultProfileImg: "",
-    about: <>Get your website a new look!</>,
+    about: (
+      <>
+        At i1SmartMarketing, we provide a comprehensive suite of services
+        designed to elevate your business. Our solutions are tailored to
+        meet your unique needs. Each service is crafted to enhance your customer
+        interactions, streamline your operations, and drive growth. Discover how
+        our innovative marketing solutions can transform your business today.
+      </>
+    ),
     social: [
       {
         icon: "linkedin",
