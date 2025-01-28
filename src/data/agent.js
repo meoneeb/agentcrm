@@ -1371,7 +1371,7 @@ export const agentArr = [
   },
   {
     firstname: "Sandy",
-    lastname: "Mcmenomay",
+    lastname: "McMenomay",
     title: "Sales Consultant",
     cellphone: "(248) 458-1602",
     smartpass:
@@ -1443,7 +1443,7 @@ export const agentArr = [
   },
   {
     firstname: "Anthony",
-    lastname: "Desantis",
+    lastname: "DeSantis",
     title: "Sales Consultant",
     cellphone: "(248) 458-1610",
     smartpass:
@@ -1610,7 +1610,7 @@ export const agentArr = [
     company: "mikesavoiechevy",
   },
   {
-    firstname: "Maryann",
+    firstname: "MaryAnn",
     lastname: "Parrish",
     title: "Rental Vehicle Administrator ",
     cellphone: "(248) 458-1625",
@@ -2075,6 +2075,18 @@ export const agentArr = [
     email: "bhighfield@mikesavoie.com",
     crmEmployeeId: 1296,
     agentid: "ben-highfield",
+    company: "mikesavoiechevy",
+  },
+  {
+    firstname: "Alexander",
+    lastname: "Westmorland",
+    title: "Salesperson",
+    cellphone: "9472053307",
+    smartpass:
+      null,
+    email: "awestmorland@mikesavoie.com",
+    crmEmployeeId: 9137,
+    agentid: "alexander-westmorland",
     company: "mikesavoiechevy",
   },
 
