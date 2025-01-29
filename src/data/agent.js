@@ -2080,7 +2080,7 @@ export const agentArr = [
   {
     firstname: "Alexander",
     lastname: "Westmorland",
-    title: "Salesperson",
+    title: "Sales Representative",
     cellphone: "9472053307",
     smartpass:
       null,
