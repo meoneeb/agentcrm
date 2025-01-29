@@ -24,7 +24,7 @@ VERSION:3.0
 FN;CHARSET=UTF-8:${fname} ${lname}
 N;CHARSET=UTF-8:${lname};${fname};;;
 EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:${email}
-TEL;TYPE=HOME,VOICE:${cellphone}
+TEL;TYPE=CELL,VOICE:${cellphone}
 TEL;TYPE=WORK,VOICE:${workphone}
 ADR;CHARSET=UTF-8;TYPE=WORK:;;${address};${city};${region};${zipcode};
 TITLE;CHARSET=UTF-8:${title}
@@ -32,7 +32,6 @@ ORG;CHARSET=UTF-8:${company}
 URL;type=WORK;CHARSET=UTF-8:${website}
 REV:2024-06-28T20:20:54.620Z
 END:VCARD`;
-  // console.log(vcardContent, "vCard");
   const handleDownload = () => {
     const blob = new Blob([vcardContent], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);

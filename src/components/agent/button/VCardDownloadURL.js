@@ -32,7 +32,7 @@ ORG;CHARSET=UTF-8:${company}
 URL;type=WORK;CHARSET=UTF-8:${website}
 REV:2024-06-28T20:20:54.620Z
 END:VCARD`;
-  console.log(vcardContent, "vCard");
+  // console.log(vcardContent, "vCard");
   const handleDownload = () => {
     const blob = new Blob([vcardContent], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);
