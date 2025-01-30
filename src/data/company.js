@@ -326,7 +326,7 @@ export const companyArr = [
     zipcode: "48084",
     country: "US",
     countrycode: "1",
-    workphone: null,
+    workphone: "(877) 819-1038",
     crm: "Affinitiv",
     providerUri: "www.i1smartmarketing.com",
     recipientEmail: "leads@i1smartmarketing.com",
