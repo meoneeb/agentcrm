@@ -1,4 +1,3 @@
-// components/CsvUploadForm.js
 "use client";
 import React, { useState } from "react";
 import Papa from "papaparse";
