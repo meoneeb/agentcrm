@@ -18,6 +18,7 @@ const mergeAgentWithCompany = (agents, companies) => {
 export default function Page() {
   const [selectedCompany, setSelectedCompany] = useState("All companies");
   const [selectedAgent, setSelectedAgent] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const enrichedAgents = mergeAgentWithCompany(agentArr, companyArr);
 
@@ -41,12 +42,26 @@ export default function Page() {
     );
   };
 
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value.toLowerCase());
+  };
+
   const filteredAgents =
-    selectedCompany === "All companies"
-      ? enrichedAgents
-      : enrichedAgents.filter(
-          (agent) => agent.company === selectedCompany.toLowerCase()
-        );
+  selectedCompany === "All companies"
+    ? enrichedAgents
+    : enrichedAgents.filter(
+        (agent) => agent.company && agent.company === selectedCompany.toLowerCase()
+      );
+
+const searchedAgents = filteredAgents.filter(
+  (agent) =>
+    (agent.firstname && agent.firstname.toLowerCase().includes(searchQuery)) ||
+    (agent.lastname && agent.lastname.toLowerCase().includes(searchQuery)) ||
+    (agent.company && agent.company.toLowerCase().includes(searchQuery)) ||
+    (agent.companyInfo.crmEmployeeId &&
+      agent.companyInfo.crmEmployeeId.toLowerCase().includes(searchQuery))
+);
+
 
   const mobileFrame = {
     width: 360,
@@ -58,7 +73,7 @@ export default function Page() {
     overflow: "hidden",
   };
 
-  const profilesQty = filteredAgents.length;
+  const profilesQty = searchedAgents.length;
 
   return (
     <div className="w-full">
@@ -84,10 +99,19 @@ export default function Page() {
               ))}
             </select>
           </div>
+          <div className="w-full flex flex-row gap-4 items-center justify-center">
+            <input
+              type="text"
+              placeholder="Search by name, company, or CRM ID"
+              value={searchQuery}
+              onChange={handleSearch}
+              className="p-4 border border-black/20 rounded w-full max-w-96"
+            />
+          </div>
           <div className="w-full flex flex-col justify-start items-center gap-4">
             <p>Available Profile: {profilesQty}</p>
 
-            {filteredAgents.map((agent, index) => (
+            {searchedAgents.map((agent, index) => (
               <div
                 key={index}
                 onClick={() => handleAgentClick(agent)}
@@ -112,14 +136,6 @@ export default function Page() {
                     className="w-16 h-16 object-cover mt-2 rounded-full"
                   />
                 )}
-                {/* {agent.companyInfo.logo && (
-
-                  <img
-                    src={agent.companyInfo.logo}
-                    alt={`${agent.companyInfo.name} logo`}
-                    className="w-16 h-16 object-cover mt-2"
-                  />
-                )} */}
                 <div
                   className="p-2 flex flex-row flex-wrap items-center justify-between rounded border border-black/20 mt-2 bg-black/5 hover:bg-black/10"
                   onClick={() =>
