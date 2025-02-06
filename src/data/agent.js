@@ -8,6 +8,7 @@ export const agentArr = [
     title: "Full Stack Designer",
     email: "meoneeb@figics.com",
     cellphone: "3246807263",
+    ext: "301",
     company: "figics",
     img: "/profile/figics/meoneeb.jpg",
     smartpass: "https://figics.com",
