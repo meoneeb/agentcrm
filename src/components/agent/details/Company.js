@@ -1,7 +1,9 @@
 export default function AboutCompany({ companyProfile, agentProfile }) {
   const fulladdress = `${companyProfile.address} ${companyProfile.city} ${companyProfile.region}, ${companyProfile.zipcode}`;
   const accent = companyProfile.accent;
-  const displayPhone = companyProfile.workphone || agentProfile.cellphone;
+  const displayPhone = companyProfile.workphone || `${agentProfile.cellphone}${agentProfile.ext ? ` Ext:${agentProfile.ext}` : ""}`;
+  const callPhone = companyProfile.workphone || `${agentProfile.cellphone}${agentProfile.ext ? `,${agentProfile.ext}` : ""}`;
+
   return (
     <div
       className="w-full px-4 flex flex-col justify-start items-center"
@@ -20,7 +22,7 @@ export default function AboutCompany({ companyProfile, agentProfile }) {
             {fulladdress}
           </p>
           <a
-            href={`tel:+1${displayPhone}`}
+            href={`tel:+1${callPhone}`}
             target="_blank"
             className="text-neutral-500"
           >

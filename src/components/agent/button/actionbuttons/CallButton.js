@@ -3,7 +3,10 @@ import { useState } from "react";
 
 export default function CallButton({ companyProfile, agentProfile }) {
   const [hover, setHover] = useState(false);
-  const callAgent = `tel:+${companyProfile.countrycode}${agentProfile.cellphone}`;
+
+  const callAgent = `tel:+${companyProfile.countrycode}${
+    agentProfile.cellphone
+  }${agentProfile.ext ? `,${agentProfile.ext}` : ""}`;
   const callCompany = `tel:+${companyProfile.countrycode}${companyProfile.workphone}`;
 
   const accent = companyProfile ? companyProfile.accent : "0, 0, 0"; // Default to black if no companyProfile

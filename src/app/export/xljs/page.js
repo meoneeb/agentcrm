@@ -10,12 +10,14 @@ const CsvUploadForm = () => {
   const [companyName, setCompanyName] = useState("");
 
   const fieldMappings = {
-    "First Name": "firstname",
-    "Last Name": "lastname",
-    "Job Title": "title",
-    "Cell Phone": "cellphone",
-    Email: "email",
+    fname: "firstname",
+    lname: "lastname",
+    title: "title",
+    phone: "cellphone",
+    ext: "ext",
+    email: "email",
     id: "crmEmployeeId",
+    image: "img",
     smartpass: "smartpass",
   };
 
