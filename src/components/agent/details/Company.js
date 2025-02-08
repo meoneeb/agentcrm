@@ -1,8 +1,27 @@
-export default function AboutCompany({ companyProfile, agentProfile }) {
-  const fulladdress = `${companyProfile.address} ${companyProfile.city} ${companyProfile.region}, ${companyProfile.zipcode}`;
-  const accent = companyProfile.accent;
-  const displayPhone = companyProfile.workphone || `${agentProfile.cellphone}${agentProfile.ext ? ` Ext:${agentProfile.ext}` : ""}`;
-  const callPhone = companyProfile.workphone || `${agentProfile.cellphone}${agentProfile.ext ? `,${agentProfile.ext}` : ""}`;
+export default function AboutCompany({ company, user }) {
+  const fulladdress = `${company.address} ${company.city} ${company.region}, ${company.zipcode}`;
+  const accent = company.accent;
+
+  const isUserPrime = company.isUserPrime;
+  const dialCode = company.countrycode;
+  const ext = user.ext;
+  const userPhone = user.cellphone ? `${dialCode}${user.cellphone}` : "";
+  const companyPhone = company.workphone
+    ? `${dialCode}${company.workphone}`
+    : "";
+
+  const phoneExt =
+    companyPhone ||
+    (userPhone ? `${userPhone}${ext ? ` Ext:${ext}` : ""}` : "");
+  const phoneExtUrl =
+    companyPhone || (userPhone ? `${userPhone}${ext ? `,${ext}` : ""}` : "");
+
+  const phone = isUserPrime ? userPhone || companyPhone : phoneExt;
+  const phoneUrl = isUserPrime
+    ? userPhone
+      ? `tel:${userPhone}`
+      : `tel:${companyPhone}`
+    : `tel:${phoneExtUrl}`;
 
   return (
     <div
@@ -12,26 +31,23 @@ export default function AboutCompany({ companyProfile, agentProfile }) {
       <div className="p-4 w-full border border-solid border-neutral-300 rounded-xl flex flex-col gap-4">
         <div>
           <h3 className="font-bold text-sm text-center mb-2">
-            About {companyProfile.name}
+            About {company.name}
           </h3>
-          <p className="text-neutral-500">{companyProfile.about}</p>
+          <p className="text-neutral-500">{company.about}</p>
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-neutral-500">
             <i className="fi fi-rr-marker text-sm mr-2"></i>
             {fulladdress}
           </p>
-          <a
-            href={`tel:+1${callPhone}`}
-            target="_blank"
-            className="text-neutral-500"
-          >
+          <a href={phoneUrl} target="_blank" className="text-neutral-500">
             <i className="fi fi-rr-phone-call text-sm mr-2"></i>
-            {displayPhone}
+            {phone}
           </a>
-          {companyProfile.website && (
+
+          {company.website && (
             <a
-              href={`https://${companyProfile.website}`}
+              href={`https://${company.website}`}
               target="_blank"
               className="text-neutral-500"
             >

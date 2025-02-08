@@ -17,7 +17,7 @@ export default function ActionBar({ agentProfile, companyProfile }) {
 
   return (
     <div className="justify-center items-center grid grid-cols-4 pt-4 px-8 pb-8 bg-white border-t border-solid border-neutral-200">
-      <CallButton companyProfile={companyProfile} agentProfile={agentProfile} />
+      <CallButton company={companyProfile} user={agentProfile} />
       <TextButton companyProfile={companyProfile} agentProfile={agentProfile} />
       <EmailButton
         companyProfile={companyProfile}

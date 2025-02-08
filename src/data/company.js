@@ -2,6 +2,7 @@ export const companyArr = [
   {
     name: "Figics",
     company: "figics",
+    isUserPrime: false,
     website: "www.figics.com",
     logo: "/companies/logo-figics.svg",
     favicon: "/companies/logo-figics.svg",
@@ -18,7 +19,7 @@ export const companyArr = [
     emailSubject: "Lead Generation",
     // defaultProfileImg: "",
     about: <>Get your website a new look!</>,
-    affinitiv: true,
+    // affinitiv: true,
     isFigics: true,
   },
   {
@@ -255,6 +256,7 @@ export const companyArr = [
   },
   {
     name: "Mike Savoie Volkswagen of Troy",
+    isUserPrime: true,
     affinitiv: true,
     dealerId: "DEALER-2138",
     company: "mikesavoievw",
@@ -313,6 +315,7 @@ export const companyArr = [
   },
   {
     name: "Mike Savoie Chevrolet",
+    isUserPrime: true,
     affinitiv: true,
     dealerId: "DEALER-720",
     company: "mikesavoiechevy",
