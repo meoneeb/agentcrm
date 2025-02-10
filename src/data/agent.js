@@ -1514,7 +1514,7 @@ export const agentArr = [
     agentid: "anthony-desantis",
     company: "mikesavoiechevy",
     ext: 210,
-    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Gary_yarger_dqu5sr",
+    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Anthony_Desantis_f7pksl",
   },
   {
     firstname: "Salvatore",
@@ -2223,8 +2223,7 @@ export const agentArr = [
     lastname: "Westmorland",
     title: "Sales Representative",
     cellphone: "9472053307",
-    smartpass:
-      null,
+    smartpass: null,
     email: "awestmorland@mikesavoie.com",
     crmEmployeeId: 9137,
     agentid: "alexander-westmorland",
