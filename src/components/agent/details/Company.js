@@ -19,9 +19,9 @@ export default function AboutCompany({ company, user }) {
   const phone = isUserPrime ? userPhone || companyPhone : phoneExt;
   const phoneUrl = isUserPrime
     ? userPhone
-      ? `tel:${userPhone}`
-      : `tel:${companyPhone}`
-    : `tel:${phoneExtUrl}`;
+      ? `tel:+${userPhone}`
+      : `tel:+${companyPhone}`
+    : `tel:+${phoneExtUrl}`;
 
   return (
     <div

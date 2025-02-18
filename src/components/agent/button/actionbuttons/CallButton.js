@@ -17,12 +17,12 @@ export default function CallButton({ company, user }) {
 
   const phoneUrl = isUserPrime
     ? userPhone
-      ? `tel:${userPhone}`
+      ? `tel:+${userPhone}`
       : companyPhone
-      ? `tel:${companyPhone}`
+      ? `tel:+${companyPhone}`
       : "#"
     : phoneExtUrl
-    ? `tel:${phoneExtUrl}`
+    ? `tel:+${phoneExtUrl}`
     : "#"; // Prevent empty tel links
 
   const accent = company?.accent ?? "0, 0, 0"; // Default to black if no company
