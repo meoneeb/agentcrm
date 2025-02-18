@@ -546,7 +546,7 @@ export const agentArr = [
     email: "apalmateer@mikesavoie.com",
     cellphone: "9472053306",
     ext: "306",
-    company: "mikesavoie",
+    company: "mikesavoievw",
     // img: "/profile/mikesavoievw/alex-palmateer.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ataoo226u01uo677488179de1b",
@@ -921,6 +921,19 @@ export const agentArr = [
     // img: "/profile/mikesavoievw/michael-savoie.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/p_jrcp-kc4ao16776f4a07f1f5",
+  },
+  {
+    firstname: "Raul",
+    lastname: "Caraballo-Zayas",
+    agentid: "raul-caraballo-zayas",
+    crmEmployerID: 9109,
+    title: "Parts Consultant",
+    email: "rcaraballo-zaya@mikesavoievw.com",
+    cellphone: "(947) 205-3332",
+    company: "mikesavoievw",
+    ext: 332,
+    // img: "/profile/mikesavoievw/michael-savoie.jpg",
+    smartpass: "/",
   },
   // Mike Savoie Volkswagen of Troy END
 
@@ -2227,7 +2240,7 @@ export const agentArr = [
     email: "awestmorland@mikesavoie.com",
     crmEmployeeId: 9137,
     agentid: "alexander-westmorland",
-    company: "mikesavoiechevy",
+    company: "mikesavoievw",
   },
 
   // MIKE CHEVY END
