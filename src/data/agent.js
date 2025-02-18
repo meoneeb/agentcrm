@@ -1049,6 +1049,18 @@ export const agentArr = [
     company: "affinitiv",
     smartpass: "https://affinitiv.com",
   },
+  {
+    firstname: "Stuart",
+    lastname: "McNichols",
+    agentid: "stuart-mcnichols",
+    crmEmployerID: null,
+    title: "CRM/TIV Field Performance Manager",
+    email: "smcnichols@affinitiv.com",
+    cellphone: "(336) 483-5411",
+    company: "affinitiv",
+    smartpass: "https://affinitiv.com",
+    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Stuart_McNichols_cbb6hm"
+  },
 
   // AFFINITIV END
 
