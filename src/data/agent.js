@@ -547,7 +547,7 @@ export const agentArr = [
     cellphone: "2484581607", // "9472053306",
     ext: "306",
     company: "mikesavoiechevy",
-    // img: "/profile/mikesavoievw/alex-palmateer.jpg",
+    img: "/profile/mikesavoievw/alex-palmateer.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ataoo226u01uo677488179de1b",
   },
