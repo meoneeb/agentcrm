@@ -544,9 +544,9 @@ export const agentArr = [
     crmEmployerID: "9116",
     title: "Business Manager",
     email: "apalmateer@mikesavoie.com",
-    cellphone: "9472053306",
+    cellphone: "2484581607", // "9472053306",
     ext: "306",
-    company: "mikesavoievw",
+    company: "mikesavoiechevy",
     // img: "/profile/mikesavoievw/alex-palmateer.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ataoo226u01uo677488179de1b",
@@ -1059,7 +1059,7 @@ export const agentArr = [
     cellphone: "(336) 483-5411",
     company: "affinitiv",
     smartpass: "https://affinitiv.com",
-    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Stuart_McNichols_cbb6hm"
+    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Stuart_McNichols_cbb6hm",
   },
 
   // AFFINITIV END
