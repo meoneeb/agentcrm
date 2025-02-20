@@ -1,4 +1,4 @@
-import CameraScanner from "@/components/vehicle/new/Scanner";
+import CameraScanner from "@/components/scan/Scanner";
 
 export default function ScannerPage() {
   return (
