@@ -1683,14 +1683,14 @@ export const agentArr = [
     firstname: "Robert",
     lastname: "Ruelle",
     title: "Used Sales Consultant",
-    cellphone: "248 458 1619",
+    cellphone: "248 458 1633",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/58g-ejm0n8wz4676da65f1b6f9",
     email: "bruelle@mikesavoie.com",
     crmEmployeeId: 1293,
     agentid: "robert-ruelle",
     company: "mikesavoiechevy",
-    ext: 219,
+    ext: 233,
   },
   {
     firstname: "Robert",
