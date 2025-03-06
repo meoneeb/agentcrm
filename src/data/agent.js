@@ -13,6 +13,18 @@ export const agentArr = [
     img: "/profile/figics/meoneeb.jpg",
     smartpass: "https://figics.com",
   },
+  {
+    firstname: "Anthony",
+    lastname: "Iannone",
+    agentid: "anthony-iannone",
+    title: "CEO and Founder",
+    email: "tony@i1smartmarketing.com",
+    cellphone: "847-994-4409",
+    company: "i1sm",
+    img: "/profile/i1sm/tony.jpg",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/1z219-7lie6xv64f0de19b9e30",
+  },
   // FIGICS DEMO END //
   // EDGE PERFORMANCE SPORTS START
   // {
@@ -532,10 +544,10 @@ export const agentArr = [
     crmEmployerID: "9116",
     title: "Business Manager",
     email: "apalmateer@mikesavoie.com",
-    cellphone: "9472053306",
+    cellphone: "2484581607", // "9472053306",
     ext: "306",
-    company: "mikesavoie",
-    // img: "/profile/mikesavoievw/alex-palmateer.jpg",
+    company: "mikesavoiechevy",
+    img: "/profile/mikesavoievw/alex-palmateer.jpg",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/ataoo226u01uo677488179de1b",
   },
@@ -910,6 +922,32 @@ export const agentArr = [
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/p_jrcp-kc4ao16776f4a07f1f5",
   },
+  {
+    firstname: "Raul",
+    lastname: "Caraballo-Zayas",
+    agentid: "raul-caraballo-zayas",
+    crmEmployerID: 9109,
+    title: "Parts Consultant",
+    email: "rcaraballo-zaya@mikesavoievw.com",
+    cellphone: "(947) 205-3332",
+    company: "mikesavoievw",
+    ext: 332,
+    // img: "/profile/mikesavoievw/michael-savoie.jpg",
+    smartpass: "/",
+  },
+  {
+    firstname: "Maya Georgievski",
+    lastname: "Georgievski",
+    agentid: "maya-georgievski",
+    crmEmployerID: null,
+    title: "Social Media",
+    email: "mgeorgievski@mikesavoievw.com",
+    cellphone: "2487817900",
+    company: "mikesavoievw",
+    ext: 332,
+    // img: "/profile/mikesavoievw/michael-savoie.jpg",
+    smartpass: "/",
+  },
   // Mike Savoie Volkswagen of Troy END
 
   // GAMBLE INTERIORS START
@@ -1034,7 +1072,7 @@ export const agentArr = [
     cellphone: "(336) 483-5411",
     company: "affinitiv",
     smartpass: "https://affinitiv.com",
-    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Stuart_McNichols_cbb6hm"
+    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Stuart_McNichols_cbb6hm",
   },
 
   // AFFINITIV END
@@ -1420,7 +1458,7 @@ export const agentArr = [
   },
   {
     firstname: "Sandy",
-    lastname: "Mcmenomay",
+    lastname: "McMenomay",
     title: "Sales Consultant",
     cellphone: "(248) 458-1602",
     smartpass:
@@ -1504,7 +1542,7 @@ export const agentArr = [
   },
   {
     firstname: "Anthony",
-    lastname: "Desantis",
+    lastname: "DeSantis",
     title: "Sales Consultant",
     cellphone: "(248) 458-1610",
     smartpass:
@@ -1514,7 +1552,7 @@ export const agentArr = [
     agentid: "anthony-desantis",
     company: "mikesavoiechevy",
     ext: 210,
-    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Gary_yarger_dqu5sr",
+    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Anthony_Desantis_f7pksl",
   },
   {
     firstname: "Salvatore",
@@ -1640,32 +1678,32 @@ export const agentArr = [
     ext: 235,
     img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Joe_Rios_ckvbck",
   },
-  {
-    firstname: "Louie",
-    lastname: "Herfi",
-    title: "Used Sales Consultant",
-    cellphone: "(248) 458-1634",
-    smartpass:
-      "https://smartpass.i1smartmarketing.com/en/p/rctahbv-3rkfz676ee9d60daeb",
-    email: "lherfi@mikesavoie.com",
-    crmEmployeeId: 1120,
-    agentid: "louie-herfi",
-    company: "mikesavoiechevy",
-    ext: 234,
-    img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Louie_Herfi_bqgql1",
-  },
+  // {
+  //   firstname: "Louie",
+  //   lastname: "Herfi",
+  //   title: "Used Sales Consultant",
+  //   cellphone: "(248) 458-1634",
+  //   smartpass:
+  //     "https://smartpass.i1smartmarketing.com/en/p/rctahbv-3rkfz676ee9d60daeb",
+  //   email: "lherfi@mikesavoie.com",
+  //   crmEmployeeId: 1120,
+  //   agentid: "louie-herfi",
+  //   company: "mikesavoiechevy",
+  //   ext: 234,
+  //   img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Louie_Herfi_bqgql1",
+  // },
   {
     firstname: "Robert",
     lastname: "Ruelle",
     title: "Used Sales Consultant",
-    cellphone: "248 458 1619",
+    cellphone: "248 458 1633",
     smartpass:
       "https://smartpass.i1smartmarketing.com/en/p/58g-ejm0n8wz4676da65f1b6f9",
     email: "bruelle@mikesavoie.com",
     crmEmployeeId: 1293,
     agentid: "robert-ruelle",
     company: "mikesavoiechevy",
-    ext: 219,
+    ext: 233,
   },
   {
     firstname: "Robert",
@@ -1696,7 +1734,7 @@ export const agentArr = [
     img: "https://res.cloudinary.com/digggrvsi/image/upload/t_avatar/Craig_Pitt_vso7qo",
   },
   {
-    firstname: "Maryann",
+    firstname: "MaryAnn",
     lastname: "Parrish",
     title: "Rental Vehicle Administrator ",
     cellphone: "(248) 458-1625",
@@ -2217,6 +2255,53 @@ export const agentArr = [
     agentid: "ben-highfield",
     company: "mikesavoiechevy",
     ext: 263,
+  },
+  {
+    firstname: "Alexander",
+    lastname: "Westmorland",
+    title: "Sales Representative",
+    cellphone: "9472053307",
+    smartpass: null,
+    email: "awestmorland@mikesavoie.com",
+    crmEmployeeId: 9137,
+    agentid: "alexander-westmorland",
+    company: "mikesavoievw",
+  },
+  {
+    firstname: "Elizabeth",
+    lastname: "Nutting",
+    title: "HR & Payroll Administrator",
+    cellphone: "2483850996",
+    ext: 228,
+    smartpass: null,
+    email: "enutting@mikesavoie.com",
+    crmEmployeeId: 9137,
+    agentid: "elizabeth-nutting",
+    company: "mikesavoiechevy",
+  },
+  {
+    firstname: "Frederick",
+    lastname: "Jennings",
+    title: "New Car Sales Consultant",
+    cellphone: "2486430803",
+    ext: 241,
+    smartpass: null,
+    email: "fjennings@mikesavoie.com",
+    crmEmployeeId: 1311,
+    agentid: "frederick-jennings",
+    company: "mikesavoiechevy",
+  },
+  {
+    firstname: "John",
+    lastname: "O'Connor",
+    title: "Pre-owned Sales Consultant",
+    cellphone: "2484581634",
+    ext: 234,
+    smartpass: null,
+    email: "joconnor@mikesavoie.com",
+    // crmEmployeeId: 1311,
+    agentid: "john-oconnor",
+    company: "mikesavoiechevy",
   },
 
   // MIKE CHEVY END
