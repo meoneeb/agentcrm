@@ -936,7 +936,7 @@ export const agentArr = [
     smartpass: "/",
   },
   {
-    firstname: "Maya Georgievski",
+    firstname: "Maya",
     lastname: "Georgievski",
     agentid: "maya-georgievski",
     crmEmployerID: null,
