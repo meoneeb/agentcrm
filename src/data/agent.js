@@ -939,14 +939,15 @@ export const agentArr = [
     firstname: "Maya",
     lastname: "Georgievski",
     agentid: "maya-georgievski",
-    crmEmployerID: null,
+    crmEmployerID: "",
     title: "Social Media",
     email: "mgeorgievski@mikesavoievw.com",
     cellphone: "2487817900",
     company: "mikesavoievw",
     ext: 332,
     // img: "/profile/mikesavoievw/michael-savoie.jpg",
-    smartpass: "/",
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/vr4b78cdpbjw767d0aaef2ab64",
   },
   // Mike Savoie Volkswagen of Troy END
 
@@ -2285,7 +2286,8 @@ export const agentArr = [
     title: "New Car Sales Consultant",
     cellphone: "2486430803",
     ext: 241,
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/oqi612976i70467d099224f6da",
     email: "fjennings@mikesavoie.com",
     crmEmployeeId: 1311,
     agentid: "frederick-jennings",
@@ -2297,7 +2299,8 @@ export const agentArr = [
     title: "Pre-owned Sales Consultant",
     cellphone: "2484581634",
     ext: 234,
-    smartpass: null,
+    smartpass:
+      "https://smartpass.i1smartmarketing.com/en/p/7r3bs2hg6l9xq67d0a5956379b",
     email: "joconnor@mikesavoie.com",
     // crmEmployeeId: 1311,
     agentid: "john-oconnor",
